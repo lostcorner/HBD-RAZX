@@ -1,5 +1,7 @@
 .DS_Store
 .sites-runtime/
+**/__pycache__/
+*.py[cod]
 
 # 离线贴吧页面会附带大量可再下载的前端缓存；只保留正文 HTML 和证据图片。
 school-bell-archive/resource/*_files/*
@@ -8,6 +10,8 @@ school-bell-archive/resource/*_files/*
 !school-bell-archive/resource/*_files/*.png
 !school-bell-archive/resource/*_files/*.webp
 !school-bell-archive/resource/*_files/*.gif
+school-bell-archive/resource/*_files/image_emoticon*
+school-bell-archive/resource/*_files/image_editoricon*
 
 # 本地试听片段不进入仓库。
 school-bell-archive/dist/audio/*.mp3
