@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="从课间音乐里，重新找到属于你的瑞中三年。" />
+    <title>循声忆起 · 瑞安中学声音档案</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a41'/%3E%3Cpath d='M17 40h8l12 9V15l-12 9h-8z' fill='%23f5c45e'/%3E%3Cpath d='M43 25c5 4 5 10 0 14M48 19c10 8 10 18 0 26' fill='none' stroke='%23fff7e3' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#quiz" aria-label="瑞安中学铃声档案首页">
+          <img src="./razx-logo.jpg" alt="浙江省瑞安中学" />
+        </a>
+        <div class="anniversary-mark" aria-label="瑞安中学建校130周年">
+          <strong>130</strong><span>1896—2026<br />百卅瑞中</span>
+        </div>
+        <nav class="nav-tabs" aria-label="主导航">
+          <button class="nav-tab is-active" data-view="quiz">铃声回忆</button>
+          <button class="nav-tab" data-view="archive">铃声档案</button>
+        </nav>
+      </header>
+
+      <main>
+        <section id="quiz-view" class="view is-active" aria-labelledby="quiz-heading">
+          <div class="quiz-layout">
+            <aside class="context-panel">
+              <p class="eyebrow">RUIAN HIGH SCHOOL · SOUND ARCHIVE</p>
+              <h1 id="quiz-heading">循声<br /><em>忆起</em></h1>
+              <p class="intro">一首歌是一枚时间坐标。圈出你在瑞中的日子，再从某一个课间开始。</p>
+
+              <div class="school-motto">
+                <span aria-hidden="true">✦</span>
+                <p><strong>百卅瑞中 · 甄综致远</strong><small>甄综术艺，以应时需</small></p>
+              </div>
+
+              <label class="field-label" for="enrollment-year">入学届别</label>
+              <select id="enrollment-year">
+                <option value="2012">2012 年入学</option>
+                <option value="2013">2013 年入学</option>
+                <option value="2014" selected>2014 年入学</option>
+                <option value="2015">2015 年入学</option>
+                <option value="2016">2016 年入学</option>
+                <option value="2017">2017 年入学</option>
+                <option value="custom">自定义时间</option>
+              </select>
+
+              <div class="range-grid" aria-label="我的在校时间">
+                <label>从<input id="range-start" type="month" value="2014-07" /></label>
+                <span aria-hidden="true">—</span>
+                <label>到<input id="range-end" type="month" value="2017-06" /></label>
+              </div>
+              <p id="range-note" class="range-note">默认按 2014.07—2017.06；实验班或转学经历可直接修改。</p>
+
+              <dl class="dataset-stats">
+                <div><dt>当前档案</dt><dd id="record-count">40 条</dd></div>
+                <div><dt>当前范围</dt><dd id="range-stat">2014.07—2017.06</dd></div>
+                <div><dt>来源</dt><dd>百度贴吧</dd></div>
+              </dl>
+            </aside>
+
+            <article class="radio-card">
+              <div class="radio-topline">
+                <span class="live-dot"></span>
+                <span>瑞中校园广播 · 随机回忆</span>
+                <span id="question-progress">第 1 题</span>
+              </div>
+
+              <div class="player-stage">
+                <div class="record-visual" aria-hidden="true">
+                  <span class="star-orbit"></span>
+                  <span class="record-label">✦</span>
+                </div>
+                <div class="player-copy">
+                  <p class="eyebrow">MEMORY SIGNAL · 请先听一段</p>
+                  <h2 id="mystery-title">未知铃声</h2>
+                  <audio id="audio-player" controls preload="metadata"></audio>
+                  <p id="audio-status" class="audio-status" role="status"></p>
+                </div>
+              </div>
+
+              <form id="answer-form" class="answer-form">
+                <fieldset>
+                  <legend>这段回忆属于哪个月份？</legend>
+                  <div id="month-options" class="choice-grid"></div>
+                </fieldset>
+                <fieldset>
+                  <legend>它在一天里的哪个课间响起？</legend>
+                  <div id="period-options" class="period-groups"></div>
+                </fieldset>
+                <button class="primary-button" type="submit">唤醒这段回忆</button>
+              </form>
+
+              <section id="result-panel" class="result-panel" hidden aria-live="polite"></section>
+            </article>
+          </div>
+        </section>
+
+        <section id="archive-view" class="view" aria-labelledby="archive-heading">
+          <header class="archive-header">
+            <div>
+              <p class="eyebrow" id="archive-range-label">我的瑞中时间 · 2014.07—2017.06</p>
+              <h1 id="archive-heading">铃声档案</h1>
+            </div>
+            <label class="archive-scope-toggle">
+              <input id="archive-show-all" type="checkbox" />
+              <span>显示全部年份</span>
+            </label>
+          </header>
+          <aside id="playlist-collections" class="playlist-collections" aria-label="网易云合集歌单"></aside>
+          <div id="archive-list" class="archive-list"></div>
+        </section>
+      </main>
+    </div>
+    <script src="./netmusic-playlists.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
