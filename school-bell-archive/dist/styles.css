@@ -232,7 +232,7 @@ textarea { width: 100%; min-height: 96px; resize: vertical; border: 1px solid va
 
 @media (prefers-reduced-motion: no-preference) {
   .record-visual { animation: float 5s ease-in-out infinite; }
-  .radio-card:has(audio:not([src=""]) ) .record-visual { animation: spin 8s linear infinite; }
+  .record-visual.is-playing .star-orbit { animation: orbit-spin 8s linear infinite; }
   @keyframes float { 50% { transform: translateY(-5px); } }
-  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes orbit-spin { to { transform: rotate(342deg) scaleY(.45); } }
 }

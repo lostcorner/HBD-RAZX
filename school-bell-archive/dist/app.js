@@ -475,10 +475,12 @@ audioToggle.addEventListener("click", () => {
   else audioPlayer.pause();
 });
 audioPlayer.addEventListener("play", () => {
+  audioToggle.classList.add("is-playing");
   audioToggle.setAttribute("aria-label", "暂停未知铃声");
   $("#audio-status").textContent = "正在播放 30 秒预览。";
 });
 audioPlayer.addEventListener("pause", () => {
+  audioToggle.classList.remove("is-playing");
   audioToggle.setAttribute("aria-label", "播放未知铃声");
 });
 audioPlayer.addEventListener("loadedmetadata", () => {
@@ -490,6 +492,7 @@ audioPlayer.addEventListener("timeupdate", () => {
   $("#audio-current").textContent = formatTime(audioPlayer.currentTime);
 });
 audioPlayer.addEventListener("ended", () => {
+  audioToggle.classList.remove("is-playing");
   audioToggle.setAttribute("aria-label", "重播未知铃声");
   $("#audio-status").textContent = "预览结束，可以重新播放或直接作答。";
 });
