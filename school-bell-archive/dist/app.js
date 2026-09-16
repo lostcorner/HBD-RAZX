@@ -270,24 +270,27 @@ function renderChoices() {
   const years = [...new Set(months.map((month) => month.slice(0, 4)))];
   $("#month-options").innerHTML = `
     <label class="answer-select-label">年份
-      <select id="answer-year" name="year">
+      <select id="answer-year" name="year" class="answer-select">
         <option value="">选择年份</option>
         ${years.map((year) => `<option value="${year}">${year} 年</option>`).join("")}
       </select>
     </label>
     <label class="answer-select-label">月份
-      <select id="answer-month" name="month" disabled>
+      <select id="answer-month" name="month" class="answer-select" disabled>
         <option value="">先选择年份</option>
       </select>
     </label>`;
   $("#answer-year").addEventListener("change", (event) => {
     const year = event.target.value;
+    event.target.classList.toggle("has-value", Boolean(year));
     const monthSelect = $("#answer-month");
     const available = months.filter((month) => month.startsWith(`${year}-`));
     monthSelect.disabled = !year;
     monthSelect.innerHTML = year
       ? `<option value="">选择月份</option>${available.map((month) => `<option value="${month.slice(5)}">${Number(month.slice(5))} 月</option>`).join("")}`
       : `<option value="">先选择年份</option>`;
+    monthSelect.classList.remove("has-value");
+    monthSelect.onchange = (monthEvent) => monthEvent.target.classList.toggle("has-value", Boolean(monthEvent.target.value));
   });
 
   $("#period-options").innerHTML = periodGroups.map((group) => `
@@ -371,10 +374,8 @@ function revealResult(month, period) {
       <div class="memory-box">
         <h4>关于这首铃声，你想起了什么？</h4>
         <textarea id="memory-input" maxlength="500" placeholder="走廊、教室、同桌，或者那一天发生的小事……"></textarea>
-        <div class="memory-actions">
-          <button type="button" class="secondary-button" id="next-question">下一首</button>
-          <button type="button" class="primary-button" id="save-memory">留下回忆</button>
-        </div>
+        <button type="button" class="primary-button memory-save-button" id="save-memory">留下回忆</button>
+        <div class="memory-actions"><button type="button" class="secondary-button" id="next-question">下一首</button></div>
         <div class="memories" id="memory-list">${renderMemories(record.id)}</div>
       </div>
     </div>`;
@@ -480,9 +481,13 @@ updateRange();
 renderCollectionPlaylists();
 
 $("#forget-month").addEventListener("click", () => {
-  $("#answer-year").value = "";
-  $("#answer-month").disabled = true;
-  $("#answer-month").innerHTML = `<option value="">先选择年份</option>`;
+  const year = $("#answer-year");
+  const month = $("#answer-month");
+  year.value = "";
+  month.disabled = true;
+  month.innerHTML = `<option value="">先选择年份</option>`;
+  year.classList.remove("has-value");
+  month.classList.remove("has-value");
 });
 
 $("#answer-form").addEventListener("submit", (event) => {
