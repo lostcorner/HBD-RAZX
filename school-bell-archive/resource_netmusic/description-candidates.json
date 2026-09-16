@@ -1,0 +1,3968 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-16T15:26:48.900Z",
+  "source": "resource_netmusic/merged-catalog.json",
+  "rules": {
+    "candidate": "歌单简介明确写出时段，但尚未与贴吧、截图或校友记忆交叉确认",
+    "promoted": "只有经过人工审核或投票达到门槛后，才进入正式猜歌题库"
+  },
+  "stats": {
+    "candidates": 208,
+    "withCanonicalPeriod": 208,
+    "months": 22
+  },
+  "candidates": [
+    {
+      "id": "netease-description-2013-04-01",
+      "month": "2013-04",
+      "period": "早起",
+      "periodLabel": "早起床",
+      "title": "Firework",
+      "artist": "Katy Perry",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "早 起床 Katy Perry - Firework"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-02",
+      "month": "2013-04",
+      "period": "第一节",
+      "periodLabel": "第一节下课",
+      "title": "Because You Live",
+      "artist": "Jesse Mccartney",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "第一节下课 Jesse Mccartney - Because You Live"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-03",
+      "month": "2013-04",
+      "period": "第三节",
+      "periodLabel": "第三节下课",
+      "title": "What Makes You Beautiful",
+      "artist": "One Direction",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "第三节下课 One Direction - What Makes You Beautiful"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-04",
+      "month": "2013-04",
+      "period": "第四节",
+      "periodLabel": "第四节下课",
+      "title": "Work of Art",
+      "artist": "Demi Lovato",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "第四节下课 Demi Lovato - Work of Art"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-05",
+      "month": "2013-04",
+      "period": "第五节",
+      "periodLabel": "第五节下课",
+      "title": "Start Of Something New",
+      "artist": "歌舞青春主题曲",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "第五节下课 歌舞青春主题曲 - Start Of Something New"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-06",
+      "month": "2013-04",
+      "period": "第六节",
+      "periodLabel": "第六节下课",
+      "title": "I Stay In Love",
+      "artist": "Mariah Carey",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "第六节下课 Mariah Carey - I Stay In Love"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-07",
+      "month": "2013-04",
+      "period": "第七节",
+      "periodLabel": "第七节下课",
+      "title": "The Climb",
+      "artist": "Miley Cyrus",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "第七节下课 Miley Cyrus - The Climb"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-08",
+      "month": "2013-04",
+      "period": "第八节",
+      "periodLabel": "第八节下课",
+      "title": "apologize",
+      "artist": "Timbaland",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "第八节下课 Timbaland - apologize"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-09",
+      "month": "2013-04",
+      "period": "晚自习第一节",
+      "periodLabel": "晚第一节下课",
+      "title": "Mad World",
+      "artist": "Adam Lambert",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "晚 第一节下课 Adam Lambert - Mad World"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-10",
+      "month": "2013-04",
+      "period": "晚自习第二节",
+      "periodLabel": "晚第二节下课",
+      "title": "Trouble Is A Friend",
+      "artist": "Lenka",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "晚 第二节下课 Lenka - Trouble Is A Friend"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-04-11",
+      "month": "2013-04",
+      "period": "就寝",
+      "periodLabel": "晚睡觉",
+      "title": "Leona Lewis",
+      "artist": "Better In Time",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703009",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703009",
+        "descriptionRaw": "晚 睡觉 Leona Lewis - Better In Time"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-01",
+      "month": "2013-08",
+      "period": "早起",
+      "periodLabel": "早起床",
+      "title": "Russian Roulette",
+      "artist": "Rihanna",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "早 起床 Russian Roulette - Rihanna"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-02",
+      "month": "2013-08",
+      "period": "第一节",
+      "periodLabel": "第一节下课",
+      "title": "Domino",
+      "artist": "Jessie J",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "第一节下课 Domino - Jessie J"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-03",
+      "month": "2013-08",
+      "period": "第三节",
+      "periodLabel": "第三节下课",
+      "title": "Love is a lie",
+      "artist": "Simple Plan",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "第三节下课 Love is a lie - Simple Plan"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-04",
+      "month": "2013-08",
+      "period": "第四节",
+      "periodLabel": "第四节下课",
+      "title": "Almost Lover",
+      "artist": "A Fine Frenzy",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "第四节下课 Almost Lover - A Fine Frenzy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-05",
+      "month": "2013-08",
+      "period": "第五节",
+      "periodLabel": "第五节下课",
+      "title": "Free Loop",
+      "artist": "Daniel Powter",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "第五节下课 Free Loop - Daniel Powter"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-06",
+      "month": "2013-08",
+      "period": "第六节",
+      "periodLabel": "第六节下课",
+      "title": "Goodbye Alice in Wonderland",
+      "artist": "Jewel",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "第六节下课 Goodbye Alice in Wonderland - Jewel"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-07",
+      "month": "2013-08",
+      "period": "第七节",
+      "periodLabel": "第七节下课",
+      "title": "Better that I know myself",
+      "artist": "Adam Lambert （？）",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "第七节下课 Better that I know myself - Adam Lambert （？）"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-08",
+      "month": "2013-08",
+      "period": "第八节",
+      "periodLabel": "第八节下课",
+      "title": "No promises",
+      "artist": "Shayne Ward",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "第八节下课 No promises - Shayne Ward"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-09",
+      "month": "2013-08",
+      "period": "晚自习第一节",
+      "periodLabel": "晚第一节下课",
+      "title": "Second Time Around",
+      "artist": "Lady Gaga",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "晚 第一节下课 Second Time Around - Lady Gaga"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-10",
+      "month": "2013-08",
+      "period": "晚自习第二节",
+      "periodLabel": "晚第二节下课",
+      "title": "All the Lovers",
+      "artist": "Kylie Minogue",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "晚 第二节下课 All the Lovers - Kylie Minogue"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-08-11",
+      "month": "2013-08",
+      "period": "就寝",
+      "periodLabel": "晚睡觉",
+      "title": "If you want me",
+      "artist": "Glen Hansard Marketa Irglova",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445669980",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445669980",
+        "descriptionRaw": "晚 睡觉 If you want me - Glen Hansard Marketa Irglova"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-01",
+      "month": "2013-09",
+      "period": "早起",
+      "periodLabel": "早起床",
+      "title": "No Boundaries",
+      "artist": "Adam Lambert",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "早 起床 No Boundaries - Adam Lambert"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-02",
+      "month": "2013-09",
+      "period": "第一节",
+      "periodLabel": "第一节下课",
+      "title": "Crazy Kids",
+      "artist": "Ke$ha 后改成 Blow- Ke$ha",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "第一节下课 Crazy Kids - Ke$ha 后改成 Blow- Ke$ha"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-03",
+      "month": "2013-09",
+      "period": "第三节",
+      "periodLabel": "第三节下课",
+      "title": "Never Know",
+      "artist": "Jack Johnson",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "第三节下课 Never Know - Jack Johnson"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-04",
+      "month": "2013-09",
+      "period": "第四节",
+      "periodLabel": "第四节下课",
+      "title": "Stand",
+      "artist": "Jewel",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "第四节下课 Stand - Jewel"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-05",
+      "month": "2013-09",
+      "period": "第五节",
+      "periodLabel": "第五节下课",
+      "title": "Call You Tonight",
+      "artist": "Johnta Austin",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "第五节下课 Call You Tonight - Johnta Austin"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-06",
+      "month": "2013-09",
+      "period": "第六节",
+      "periodLabel": "第六节下课",
+      "title": "Safe & Sound",
+      "artist": "Taylor Swift",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "第六节下课 Safe & Sound - Taylor Swift"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-07",
+      "month": "2013-09",
+      "period": "第七节",
+      "periodLabel": "第七节下课",
+      "title": "Somebody That I Used To Know",
+      "artist": "Gotye",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "第七节下课 Somebody That I Used To Know - Gotye"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-08",
+      "month": "2013-09",
+      "period": "第八节",
+      "periodLabel": "第八节下课",
+      "title": "Burning In The Skies",
+      "artist": "Linkin Park",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "第八节下课 Burning In The Skies - Linkin Park"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-09",
+      "month": "2013-09",
+      "period": "晚自习第一节",
+      "periodLabel": "晚第一节下课",
+      "title": "Roar",
+      "artist": "Katy perry",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "晚 第一节下课 Roar - Katy perry"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-10",
+      "month": "2013-09",
+      "period": "晚自习第二节",
+      "periodLabel": "晚第二节下课",
+      "title": "We Are Young",
+      "artist": "Fun.",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "晚 第二节下课 We Are Young - Fun."
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-09-11",
+      "month": "2013-09",
+      "period": "就寝",
+      "periodLabel": "晚睡觉",
+      "title": "The Sound Of Silence",
+      "artist": "Ania",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445702221",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445702221",
+        "descriptionRaw": "晚 睡觉 The Sound Of Silence - Ania"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-01",
+      "month": "2013-12",
+      "period": "早起",
+      "periodLabel": "早起床",
+      "title": "Better Than I Know Myself",
+      "artist": "Adam Lambert",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "早 起床 Better Than I Know Myself - Adam Lambert"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-02",
+      "month": "2013-12",
+      "period": "第一节",
+      "periodLabel": "第一节下课",
+      "title": "Applause",
+      "artist": "Lady Gaga",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "第一节下课 Applause - Lady Gaga"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-03",
+      "month": "2013-12",
+      "period": "第三节",
+      "periodLabel": "第三节下课",
+      "title": "Beauty And A Beat",
+      "artist": "Justin Bieber",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "第三节下课 Beauty And A Beat - Justin Bieber"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-04",
+      "month": "2013-12",
+      "period": "第四节",
+      "periodLabel": "第四节下课",
+      "title": "Red",
+      "artist": "Taylor Swift",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "第四节下课 Red - Taylor Swift"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-05",
+      "month": "2013-12",
+      "period": "第五节",
+      "periodLabel": "第五节下课",
+      "title": "International Smile",
+      "artist": "Katy Perry",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "第五节下课 International Smile - Katy Perry"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-06",
+      "month": "2013-12",
+      "period": "第六节",
+      "periodLabel": "第六节下课",
+      "title": "Let Her Go",
+      "artist": "Passenger",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "第六节下课 Let Her Go - Passenger"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-07",
+      "month": "2013-12",
+      "period": "第七节",
+      "periodLabel": "第七节下课",
+      "title": "Plan B",
+      "artist": "Kylee",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "第七节下课 Plan B - Kylee"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-08",
+      "month": "2013-12",
+      "period": "第八节",
+      "periodLabel": "第八节下课",
+      "title": "Here’s To Never Growing Up",
+      "artist": "Avril Lavigne",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "第八节下课 Here’s To Never Growing Up - Avril Lavigne"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-09",
+      "month": "2013-12",
+      "period": "晚自习第一节",
+      "periodLabel": "晚第一节下课",
+      "title": "We Can’t Stop",
+      "artist": "Miley Cyrus",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "晚 第一节下课 We Can’t Stop - Miley Cyrus"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-10",
+      "month": "2013-12",
+      "period": "晚自习第二节",
+      "periodLabel": "晚第二节下课",
+      "title": "Good Time",
+      "artist": "Owl City",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "晚 第二节下课 Good Time - Owl City"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2013-12-11",
+      "month": "2013-12",
+      "period": "就寝",
+      "periodLabel": "晚睡觉",
+      "title": "Chasing Pavements",
+      "artist": "Adele",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701417",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701417",
+        "descriptionRaw": "晚 睡觉 Chasing Pavements - Adele"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-01",
+      "month": "2014-01",
+      "period": "早起",
+      "periodLabel": "早起床",
+      "title": "Brightest Morning Star",
+      "artist": "Britney Spears",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "早 起床 Brightest Morning Star - Britney Spears"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-02",
+      "month": "2014-01",
+      "period": "第一节",
+      "periodLabel": "第一节下课",
+      "title": "Burn",
+      "artist": "Ellie Goulding",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "第一节下课 Burn - Ellie Goulding"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-03",
+      "month": "2014-01",
+      "period": "第三节",
+      "periodLabel": "第三节下课",
+      "title": "Counting Stars",
+      "artist": "OneRepublic",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "第三节下课 Counting Stars - OneRepublic"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-04",
+      "month": "2014-01",
+      "period": "第四节",
+      "periodLabel": "第四节下课",
+      "title": "Unconditionally",
+      "artist": "Katy Perry",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "第四节下课 Unconditionally - Katy Perry"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-05",
+      "month": "2014-01",
+      "period": "第五节",
+      "periodLabel": "第五节下课",
+      "title": "The Monster",
+      "artist": "Rihanna",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "第五节下课 The Monster - Rihanna"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-06",
+      "month": "2014-01",
+      "period": "第六节",
+      "periodLabel": "第六节下课",
+      "title": "Young And Beautiful",
+      "artist": "Lana Del Rey",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "第六节下课 Young And Beautiful - Lana Del Rey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-07",
+      "month": "2014-01",
+      "period": "第七节",
+      "periodLabel": "第七节下课",
+      "title": "Stay Here Forever",
+      "artist": "Jewel",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "第七节下课 Stay Here Forever - Jewel"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-08",
+      "month": "2014-01",
+      "period": "第八节",
+      "periodLabel": "第八节下课",
+      "title": "Breathless",
+      "artist": "Shayne Ward",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "第八节下课 Breathless - Shayne Ward"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-09",
+      "month": "2014-01",
+      "period": "晚自习第一节",
+      "periodLabel": "晚第一节下课",
+      "title": "Demons",
+      "artist": "Imagine Dragon",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "晚 第一节下课 Demons - Imagine Dragon"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-10",
+      "month": "2014-01",
+      "period": "晚自习第二节",
+      "periodLabel": "晚第二节下课",
+      "title": "Jet Lag",
+      "artist": "Simple Plan",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "晚 第二节下课 Jet Lag - Simple Plan"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-01-11",
+      "month": "2014-01",
+      "period": "就寝",
+      "periodLabel": "晚睡觉",
+      "title": "Say Something",
+      "artist": "A Great Big World(ft. Christina Aguilera)",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445728222",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445728222",
+        "descriptionRaw": "晚 睡觉 Say Something - A Great Big World(ft. Christina Aguilera)"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-01",
+      "month": "2014-03",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Into The Blue",
+      "artist": "Kylie Minoque",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "早起：Into The Blue - Kylie Minoque"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-02",
+      "month": "2014-03",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Can’t Remember To Forget You",
+      "artist": "Rihanna&Shakira",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第一节：Can’t Remember To Forget You - Rihanna&Shakira"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-03",
+      "month": "2014-03",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Alien",
+      "artist": "Britney Spears",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第三节：Alien - Britney Spears"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-04",
+      "month": "2014-03",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Radioactive",
+      "artist": "Imagine Dragon",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第四节：Radioactive - Imagine Dragon"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-05",
+      "month": "2014-03",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Wild Heart",
+      "artist": "The Vamps",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第五节：Wild Heart - The Vamps"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-06",
+      "month": "2014-03",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Stay",
+      "artist": "Rihanna",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第一节：Stay - Rihanna"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-07",
+      "month": "2014-03",
+      "period": "第二节",
+      "periodLabel": "第二节",
+      "title": "Diet Mountain Dew",
+      "artist": "Lana Del Rey",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第二节：Diet Mountain Dew - Lana Del Rey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-08",
+      "month": "2014-03",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Dark Horse",
+      "artist": "Katy Perry",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第三节：Dark Horse - Katy Perry"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-09",
+      "month": "2014-03",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Rather Be(feat.Christina)",
+      "artist": "Clean Bandit",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第一节：Rather Be(feat.Christina) - Clean Bandit"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-10",
+      "month": "2014-03",
+      "period": "第二节",
+      "periodLabel": "第二节",
+      "title": "I Really Want It",
+      "artist": "A Great Big World",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "第二节：I Really Want It - A Great Big World"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-03-11",
+      "month": "2014-03",
+      "period": "就寝",
+      "periodLabel": "就寝",
+      "title": "You Lost Me",
+      "artist": "Christina Aguilera",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445701600",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445701600",
+        "descriptionRaw": "就寝：You Lost Me - Christina Aguilera"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-01",
+      "month": "2014-05",
+      "period": "第二节",
+      "periodLabel": "第二节",
+      "title": "Best day of my life——American Authors 后换成 wake me up",
+      "artist": "Avicii",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第二节：Best day of my life——American Authors 后换成 wake me up -Avicii"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-02",
+      "month": "2014-05",
+      "period": "就寝",
+      "periodLabel": "就寝",
+      "title": "月光曲——Achille",
+      "artist": "Claude Debussy",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "就寝：月光曲——Achille-Claude Debussy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-01",
+      "month": "2014-06",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "You raise me up",
+      "artist": "Westlife",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "早起：You raise me up - Westlife"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-02",
+      "month": "2014-06",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Love you so",
+      "artist": "Natalie",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第一节：Love you so - Natalie"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-03",
+      "month": "2014-06",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Mad",
+      "artist": "Ne-yo",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第三节：Mad - Ne-yo"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-04",
+      "month": "2014-06",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "I Believe",
+      "artist": "Agnes Clarlsson",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第四节：I Believe - Agnes Clarlsson"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-05",
+      "month": "2014-06",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Where is the love?",
+      "artist": "Black Eyed Peas",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第五节：Where is the love? - Black Eyed Peas"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-06",
+      "month": "2014-06",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Lucky",
+      "artist": "Jason Marz",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第一节：Lucky - Jason Marz"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-07",
+      "month": "2014-06",
+      "period": "第二节",
+      "periodLabel": "第二节",
+      "title": "Farewell",
+      "artist": "Rihanna",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第二节：Farewell - Rihanna"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-08",
+      "month": "2014-06",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Burn It Down",
+      "artist": "Linkin Park",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第三节：Burn It Down - Linkin Park"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-09",
+      "month": "2014-06",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Hush Hush",
+      "artist": "The Pussycats Dolls",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第一节：Hush Hush - The Pussycats Dolls"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-06-10",
+      "month": "2014-06",
+      "period": "第二节",
+      "periodLabel": "第二节",
+      "title": "Nothing On You",
+      "artist": "B.O.B",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447115262",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447115262",
+        "descriptionRaw": "第二节：Nothing On You - B.O.B"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-01",
+      "month": "2015-05",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Fight Song",
+      "artist": "Rachel Platten",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "早起: Fight Song-Rachel Platten"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-02",
+      "month": "2015-05",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Trouble",
+      "artist": "IggyAzalea/Jennifer Hudson",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "第一节: Trouble-IggyAzalea/Jennifer Hudson"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-03",
+      "month": "2015-05",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Lay Me Down",
+      "artist": "Sam Smith",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "第三节: Lay Me Down-Sam Smith"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-04",
+      "month": "2015-05",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "I Will Return",
+      "artist": "Skylar Grey",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "第四节: I Will Return-Skylar Grey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-05",
+      "month": "2015-05",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "This Love",
+      "artist": "BigBang",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "第五节: This Love-BigBang"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-06",
+      "month": "2015-05",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Paper Hearts",
+      "artist": "Tory Kelly",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "第六节: Paper Hearts-Tory Kelly"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-07",
+      "month": "2015-05",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Ghost Town",
+      "artist": "Adam Lambert",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "第七节:Ghost Town-Adam Lambert"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-08",
+      "month": "2015-05",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Walkashame",
+      "artist": "Meghan Trainor",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "第十节: Walkashame-Meghan Trainor"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-05-09",
+      "month": "2015-05",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "Get Lucky",
+      "artist": "Daft Punk",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448514142",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448514142",
+        "descriptionRaw": "第十一节:Get Lucky-Daft Punk"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-01",
+      "month": "2015-06",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Can We Dance",
+      "artist": "The Vamps",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "早起：Can We Dance-The Vamps"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-02",
+      "month": "2015-06",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Bad Blood",
+      "artist": "Taylor Swift",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第一节:Bad Blood-Taylor Swift"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-03",
+      "month": "2015-06",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Go Hard Or Go Home",
+      "artist": "Wiz Khalifa&Iggy(Furious7)",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第三节:Go Hard Or Go Home-Wiz Khalifa&Iggy(Furious7)"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-04",
+      "month": "2015-06",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Big Girls Cry",
+      "artist": "Sia",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第四节:Big Girls Cry-Sia"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-05",
+      "month": "2015-06",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Get Low",
+      "artist": "Dillon Francis&Dj Snake(Furious7)",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第五节:Get Low-Dillon Francis&Dj Snake(Furious7)"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-06",
+      "month": "2015-06",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Wear Me Out",
+      "artist": "Skylar Grey",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第六节:Wear Me Out-Skylar Grey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-07",
+      "month": "2015-06",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Poison",
+      "artist": "Rita Ora",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第七节:Poison-Rita Ora"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-08",
+      "month": "2015-06",
+      "period": "第八、九节",
+      "periodLabel": "第八、九节",
+      "title": "Shut Up And Dance",
+      "artist": "Walk The Moon",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第八、九节:Shut Up And Dance-Walk The Moon"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-09",
+      "month": "2015-06",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Evil In The Night",
+      "artist": "Adam Lambert",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第十节:Evil In The Night-Adam Lambert"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-06-10",
+      "month": "2015-06",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "This Summer's Gonna Hurt Like A MotherFucker",
+      "artist": "Maroon5",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448513597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448513597",
+        "descriptionRaw": "第十一节:This Summer's Gonna Hurt Like A MotherFucker-Maroon5"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-01",
+      "month": "2015-09",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Go Big Or Go Home",
+      "artist": "American Authors",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "早起：Go Big Or Go Home-American Authors"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-02",
+      "month": "2015-09",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Blank Space",
+      "artist": "Taylor Swift",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第一节：Blank Space-Taylor Swift"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-03",
+      "month": "2015-09",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Drag Me Down",
+      "artist": "One Direction",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第三节：Drag Me Down-One Direction"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-04",
+      "month": "2015-09",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "One Last Time",
+      "artist": "Ariana Grande",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第四节：One Last Time-Ariana Grande"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-05",
+      "month": "2015-09",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Uma Thurman",
+      "artist": "Fall Out Boy",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第五节：Uma Thurman-Fall Out Boy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-06",
+      "month": "2015-09",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Wings（Acoustic）",
+      "artist": "Birdy",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第六节：Wings（Acoustic）-Birdy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-07",
+      "month": "2015-09",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Cheerleader",
+      "artist": "Omi",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第七节：Cheerleader-Omi"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-08",
+      "month": "2015-09",
+      "period": "第八、九节",
+      "periodLabel": "第八、九节",
+      "title": "Honey, I'm Good",
+      "artist": "Andy Grammer",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第八、九节：Honey, I'm Good-Andy Grammer"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-09",
+      "month": "2015-09",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Rumors",
+      "artist": "Adam Lambert（feat.Tove Lo）",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第十节：Rumors-Adam Lambert（feat.Tove Lo）"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-09-10",
+      "month": "2015-09",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "Lean On",
+      "artist": "Major Lazer＆DJ Snake＆MØ",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448508597",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448508597",
+        "descriptionRaw": "第十一节：Lean On-Major Lazer＆DJ Snake＆MØ"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-01",
+      "month": "2015-10",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Invincible",
+      "artist": "Kelly Clarkson",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "早起：Invincible-Kelly Clarkson"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-02",
+      "month": "2015-10",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Today's The Day",
+      "artist": "P!NK",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第一节：Today's The Day-P!NK"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-03",
+      "month": "2015-10",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Stitches",
+      "artist": "Shawn Mendes",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第三节：Stitches-Shawn Mendes"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-04",
+      "month": "2015-10",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Somebody",
+      "artist": "Natalie La Rose&Jeremih",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第四节：Somebody-Natalie La Rose&Jeremih"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-05",
+      "month": "2015-10",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Friend Zone",
+      "artist": "Danielle Bradbery",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第五节：Friend Zone-Danielle Bradbery"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-06",
+      "month": "2015-10",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "One Call Away",
+      "artist": "Charlie Puth",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第六节：One Call Away-Charlie Puth"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-07",
+      "month": "2015-10",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Style",
+      "artist": "Taylor Swift",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第七节：Style-Taylor Swift"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-08",
+      "month": "2015-10",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "Cannonball",
+      "artist": "Skylar Grey&X Ambassadors",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第九节：Cannonball-Skylar Grey&X Ambassadors"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-09",
+      "month": "2015-10",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Fire N Gold",
+      "artist": "Bea Miller",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第十节：Fire N Gold-Bea Miller"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-10-10",
+      "month": "2015-10",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "What Do You Mean",
+      "artist": "Justin Bieber",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449121404",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449121404",
+        "descriptionRaw": "第十一节：What Do You Mean-Justin Bieber"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-01",
+      "month": "2015-11",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "I Don't Want to Go to Bed",
+      "artist": "Simple Plan&Nelly",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "早起：I Don't Want to Go to Bed-Simple Plan&Nelly"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-02",
+      "month": "2015-11",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Turnin'",
+      "artist": "Young Rising Sons",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第一节：Turnin'-Young Rising Sons"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-03",
+      "month": "2015-11",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Something In the Way You Move",
+      "artist": "Ellie Goulding",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第三节：Something In the Way You Move-Ellie Goulding"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-04",
+      "month": "2015-11",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Perfect",
+      "artist": "One Direction",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第四节：Perfect-One Direction"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-05",
+      "month": "2015-11",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Confident",
+      "artist": "Demi Lovato",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第五节：Confident-Demi Lovato"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-06",
+      "month": "2015-11",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Hello",
+      "artist": "Adele",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第六节：Hello-Adele"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-07",
+      "month": "2015-11",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Lay It All On Me",
+      "artist": "Rudimental&Ed Sheeren",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第七节：Lay It All On Me-Rudimental&Ed Sheeren"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-08",
+      "month": "2015-11",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "Bang my Head",
+      "artist": "David Guetta&Sia&Fetty Wap",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第九节：Bang my Head-David Guetta&Sia&Fetty Wap"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-09",
+      "month": "2015-11",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Fire N Gold",
+      "artist": "Bea Miller(这一首歌上个月没有放于是挪到这个月）",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第十节：Fire N Gold-Bea Miller(这一首歌上个月没有放于是挪到这个月）"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-11-10",
+      "month": "2015-11",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "How Deep Is Your Love",
+      "artist": "Calvin Harris",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449130666",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449130666",
+        "descriptionRaw": "第十一节：How Deep Is Your Love-Calvin Harris"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-01",
+      "month": "2015-12",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Get Over Me",
+      "artist": "Nick Carter&Avril Lavigne",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "早起：Get Over Me-Nick Carter&Avril Lavigne"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-02",
+      "month": "2015-12",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Stand By You",
+      "artist": "Rachel Platten",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第一节：Stand By You-Rachel Platten"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-03",
+      "month": "2015-12",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Hoping For Snow",
+      "artist": "The Vamps",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第三节：Hoping For Snow-The Vamps"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-04",
+      "month": "2015-12",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Wildest Dream",
+      "artist": "Taylor Swift",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第四节：Wildest Dream-Taylor Swift"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-05",
+      "month": "2015-12",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Wolves",
+      "artist": "Rag'n'bone Man",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第五节：Wolves-Rag'n'bone Man"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-06",
+      "month": "2015-12",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Wild",
+      "artist": "Troye Sivan",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第六节：Wild-Troye Sivan"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-07",
+      "month": "2015-12",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Boys Like You",
+      "artist": "Ariana Grande&Meghan Trainor&Who Is Fancy",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第七节：Boys Like You-Ariana Grande&Meghan Trainor&Who Is Fancy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-08",
+      "month": "2015-12",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "A Head Full Of Dreams",
+      "artist": "Coldplay",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第九节：A Head Full Of Dreams-Coldplay"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-09",
+      "month": "2015-12",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "I Know What You Did Last SummerS",
+      "artist": "Shawn Mendes&Camila Cabello",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第十节：I Know What You Did Last SummerS - Shawn Mendes&Camila Cabello"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-12-10",
+      "month": "2015-12",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "Roses",
+      "artist": "The Chainsmokers&Rozes",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150828",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150828",
+        "descriptionRaw": "第十一节：Roses-The Chainsmokers&Rozes"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-01",
+      "month": "2016-01",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Army",
+      "artist": "Ellie Goulding",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "早起：Army-Ellie Goulding"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-02",
+      "month": "2016-01",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Rule The World",
+      "artist": "Walk Off The Earth",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第一节：Rule The World-Walk Off The Earth"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-03",
+      "month": "2016-01",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Marvin Gaye",
+      "artist": "Charlie Puth",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第三节：Marvin Gaye-Charlie Puth"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-04",
+      "month": "2016-01",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "For Him",
+      "artist": "Troye Sivan",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第四节：For Him-Troye Sivan"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-05",
+      "month": "2016-01",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Runaway",
+      "artist": "Andrew Watt",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第五节：Runaway-Andrew Watt"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-06",
+      "month": "2016-01",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "I Love You All The Time",
+      "artist": "Imagine Dragon",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第六节：I Love You All The Time-Imagine Dragon"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-07",
+      "month": "2016-01",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Runnin' (Lose It All)",
+      "artist": "Naughty Boy & Beyoncé & Arrow Benjamin",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第七节：Runnin' (Lose It All)-Naughty Boy & Beyoncé & Arrow Benjamin"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-08",
+      "month": "2016-01",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "Keeping Your Head Up",
+      "artist": "Birdy",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第九节：Keeping Your Head Up-Birdy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-09",
+      "month": "2016-01",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Cheap Thrill",
+      "artist": "Sia",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第十节：Cheap Thrill-Sia"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-01-10",
+      "month": "2016-01",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "Stay (feat. Maty Noyes)",
+      "artist": "Kygo",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165273",
+        "descriptionRaw": "第十一节：Stay (feat. Maty Noyes)-Kygo"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-01",
+      "month": "2016-02",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Something Better",
+      "artist": "Audien&Lady Antebellum",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "早起：Something Better-Audien&Lady Antebellum"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-02",
+      "month": "2016-02",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "History",
+      "artist": "One Direction",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第一节：History-One Direction"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-03",
+      "month": "2016-02",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Hide Away",
+      "artist": "Daya",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第三节：Hide Away-Daya"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-04",
+      "month": "2016-02",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "House Party",
+      "artist": "Sam Hunt",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第四节：House Party-Sam Hunt"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-05",
+      "month": "2016-02",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Hey Hey Hallelujah",
+      "artist": "Rachel Platten⩓y Grammer",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第五节：Hey Hey Hallelujah-Rachel Platten⩓y Grammer"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-06",
+      "month": "2016-02",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Photograph",
+      "artist": "Ed Sheeren",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第六节：Photograph-Ed Sheeren"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-07",
+      "month": "2016-02",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "We Don't Talk Anymore",
+      "artist": "Charlie Puth & Selena Gomez",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第七节：We Don't Talk Anymore-Charlie Puth & Selena Gomez"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-08",
+      "month": "2016-02",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "Work",
+      "artist": "Rihanna&Drake",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第九节：Work-Rihanna&Drake"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-09",
+      "month": "2016-02",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Ghost (Lost Kings Remix)",
+      "artist": "Halsey",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第十节：Ghost (Lost Kings Remix)-Halsey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-02-10",
+      "month": "2016-02",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "Hymn For The Weekend",
+      "artist": "Coldplay",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449174186",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449174186",
+        "descriptionRaw": "第十一节：Hymn For The Weekend-Coldplay"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-01",
+      "month": "2016-04",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Try Everything",
+      "artist": "Shakira",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "早起：Try Everything-Shakira"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-02",
+      "month": "2016-04",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "7 Years",
+      "artist": "Lukas Graham",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第一节：7 Years-Lukas Graham"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-03",
+      "month": "2016-04",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "NO",
+      "artist": "Meghan Trainor",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第三节：NO-Meghan Trainor"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-04",
+      "month": "2016-04",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Unstoppable",
+      "artist": "Sia",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第四节：Unstoppable-Sia"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-05",
+      "month": "2016-04",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Step It Up",
+      "artist": "Alexandra Stan",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第五节：Step It Up-Alexandra Stan"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-06",
+      "month": "2016-04",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Wild Horses",
+      "artist": "Birdy",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第六节：Wild Horses-Birdy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-07",
+      "month": "2016-04",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Some Kind Of Heaven",
+      "artist": "Hurts",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第七节：Some Kind Of Heaven-Hurts"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-08",
+      "month": "2016-04",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "Can't Go Home",
+      "artist": "Steve Aoki&Felix Jaehn&Adam Lambert",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第九节：Can't Go Home-Steve Aoki&Felix Jaehn&Adam Lambert"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-09",
+      "month": "2016-04",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Never Forget You",
+      "artist": "Zara Larsson&MNEK",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第十节：Never Forget You-Zara Larsson&MNEK"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-04-10",
+      "month": "2016-04",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "Stole The Show",
+      "artist": "Kygo&Parson James",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449190098",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449190098",
+        "descriptionRaw": "第十一节：Stole The Show- Kygo&Parson James"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-01",
+      "month": "2016-05",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Just Like Fire",
+      "artist": "P!NK",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "早起：Just Like Fire-P!NK"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-02",
+      "month": "2016-05",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "When You Were Mine",
+      "artist": "Night Terrors Of 1927",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第一节：When You Were Mine-Night Terrors Of 1927"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-03",
+      "month": "2016-05",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Time Machine",
+      "artist": "Ingrid Michaelson",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第三节：Time Machine-Ingrid Michaelson"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-04",
+      "month": "2016-05",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Faded",
+      "artist": "Conor Maynard/Alan Walker/ANTH",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第四节：Faded-Conor Maynard/Alan Walker/ANTH"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-05",
+      "month": "2016-05",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Bad Man",
+      "artist": "Pitbull/Robin Thicke",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第五节：Bad Man-Pitbull/Robin Thicke"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-06",
+      "month": "2016-05",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Four Walls",
+      "artist": "Broods",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第六节：Four Walls-Broods"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-07",
+      "month": "2016-05",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "I Wanna Know",
+      "artist": "Alesso/Nico＆Vinz",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第七节：I Wanna Know- Alesso/Nico＆Vinz"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-08",
+      "month": "2016-05",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "No Money",
+      "artist": "Galantis",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第九节：No Money-Galantis"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-09",
+      "month": "2016-05",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Hair",
+      "artist": "Little Mix",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第十节：Hair-Little Mix"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-05-10",
+      "month": "2016-05",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "This Is What You Came For",
+      "artist": "Calvin Harris/Rihanna",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449165903",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449165903",
+        "descriptionRaw": "第十一节：This Is What You Came For-Calvin Harris/Rihanna"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-01",
+      "month": "2016-06",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "New Romantics",
+      "artist": "Taylor Swift",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "早起：New Romantics-Taylor Swift"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-02",
+      "month": "2016-06",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Treat You Better",
+      "artist": "Shawn Mendes",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第一节：Treat You Better-Shawn Mendes"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-03",
+      "month": "2016-06",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Thirsty",
+      "artist": "Daya",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第三节：Thirsty-Daya"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-04",
+      "month": "2016-06",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "CAN'T STOP THE FEELING!",
+      "artist": "Justin Timberlake",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第四节：CAN'T STOP THE FEELING!-Justin Timberlake"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-05",
+      "month": "2016-06",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Freedom",
+      "artist": "Pitbull",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第五节：Freedom-Pitbull"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-06",
+      "month": "2016-06",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Lost Boy",
+      "artist": "Ruth B",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第六节：Lost Boy-Ruth B"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-07",
+      "month": "2016-06",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Final Song",
+      "artist": "MØ",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第七节：Final Song-MØ"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-08",
+      "month": "2016-06",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "Back 2 U",
+      "artist": "Steve Aoki/Boehm/Walk The Moon",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第九节：Back 2 U-Steve Aoki/Boehm/Walk The Moon"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-09",
+      "month": "2016-06",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Send My Love (To Your New Lover)",
+      "artist": "Adele",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第十节：Send My Love (To Your New Lover)-Adele"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-06-10",
+      "month": "2016-06",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "Oasis",
+      "artist": "Kygo",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449138946",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449138946",
+        "descriptionRaw": "第十一节：Oasis-Kygo"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-01",
+      "month": "2016-07",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Cake By the Ocean",
+      "artist": "DNCE",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "早起：Cake By the Ocean-DNCE"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-02",
+      "month": "2016-07",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Growing Pains",
+      "artist": "Birdy",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第一节：Growing Pains-Birdy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-03",
+      "month": "2016-07",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "FOOLS",
+      "artist": "Troye Sivan",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第三节：FOOLS-Troye Sivan"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-04",
+      "month": "2016-07",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Work From Home",
+      "artist": "Fifth Harmony / Ty Dolla $ign （网易云暂缺）",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第四节：Work From Home-Fifth Harmony / Ty Dolla $ign （网易云暂缺）"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-05",
+      "month": "2016-07",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "What We Live For",
+      "artist": "American Authors",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第五节：What We Live For-American Authors"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-06",
+      "month": "2016-07",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Gasoline",
+      "artist": "Halsey",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第六节：Gasoline-Halsey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-07",
+      "month": "2016-07",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Change",
+      "artist": "Christina Aguilera",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第七节：Change-Christina Aguilera"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-08",
+      "month": "2016-07",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "Heathens",
+      "artist": "Twenty One Pilots",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第九节：Heathens-Twenty One Pilots"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-09",
+      "month": "2016-07",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Waving Goodbye",
+      "artist": "Sia",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第十节：Waving Goodbye-Sia"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-07-10",
+      "month": "2016-07",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "Middle",
+      "artist": "DJ Snake / Bipolar Sunshine",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449150566",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449150566",
+        "descriptionRaw": "第十一节：Middle-DJ Snake / Bipolar Sunshine"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-01",
+      "month": "2016-09",
+      "period": "早起",
+      "periodLabel": "早起",
+      "title": "Ride",
+      "artist": "Twenty One Pilots",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "早起：Ride -Twenty One Pilots"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-02",
+      "month": "2016-09",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "title": "Rise",
+      "artist": "Katy Perry",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第一节：Rise - Katy Perry"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-03",
+      "month": "2016-09",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "title": "Closer",
+      "artist": "The Chainsmokers ft.Halsey",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第三节：Closer - The Chainsmokers ft.Halsey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-04",
+      "month": "2016-09",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "title": "Make Me...",
+      "artist": "Britney Spears",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第四节：Make Me... - Britney Spears"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-05",
+      "month": "2016-09",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "title": "Gold",
+      "artist": "Kiiara",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第五节：Gold - Kiiara"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-06",
+      "month": "2016-09",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "title": "Somebody's Love",
+      "artist": "Passenger",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第六节：Somebody's Love - Passenger"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-07",
+      "month": "2016-09",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "title": "Never Be Like You",
+      "artist": "Flume",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第七节：Never Be Like You - Flume"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-08",
+      "month": "2016-09",
+      "period": "第九节",
+      "periodLabel": "第九节",
+      "title": "H.O.L.Y.",
+      "artist": "Florida Georgia Line",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第九节：H.O.L.Y. - Florida Georgia Line"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-09",
+      "month": "2016-09",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "title": "Cold Water",
+      "artist": "Major Lazer/Justin Bieber",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第十节：Cold Water - Major Lazer/Justin Bieber"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2016-09-10",
+      "month": "2016-09",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "title": "I Took A Pill In Abiza (SeeB Remix)",
+      "artist": "Mike Posner",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "449148391",
+        "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
+        "descriptionRaw": "第十一节：I Took A Pill In Abiza (SeeB Remix) - Mike Posner"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2021-04-01",
+      "month": "2021-04",
+      "period": "早三",
+      "periodLabel": "早三",
+      "title": "Gone",
+      "artist": "ROSÉ (로제)网易无资源",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "6716240824",
+        "playlistUrl": "https://music.163.com/#/playlist?id=6716240824",
+        "descriptionRaw": "早三 Gone - ROSÉ (로제)网易无资源"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    }
+  ]
+}
