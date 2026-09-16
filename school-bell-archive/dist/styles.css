@@ -28,15 +28,17 @@ button { cursor: pointer; }
 .anniversary-mark strong { font: 700 2.15rem/1 Georgia, serif; letter-spacing: -.06em; }
 .anniversary-mark span { color: var(--ink-soft); font-size: .68rem; line-height: 1.35; letter-spacing: .06em; }
 .enrollment-drawer { position: relative; margin-left: auto; color: var(--ink); }
-.enrollment-drawer > summary { display: flex; align-items: center; gap: 10px; min-height: 42px; padding: 6px 13px; border: 1px solid var(--line); border-radius: 12px; background: #fff; cursor: pointer; list-style: none; }
+.enrollment-drawer > summary { display: flex; align-items: center; gap: 10px; min-height: 42px; padding: 6px 0 6px 10px; cursor: pointer; list-style: none; }
 .enrollment-drawer > summary::-webkit-details-marker { display: none; }
 .enrollment-drawer > summary::after { content: "⌄"; color: var(--blue); font-size: 1rem; }
 .enrollment-drawer[open] > summary::after { content: "⌃"; }
 .enrollment-drawer > summary span { color: var(--ink-soft); font-size: .72rem; }
 .enrollment-drawer > summary strong { color: var(--blue-deep); font-size: .78rem; white-space: nowrap; }
-.enrollment-drawer-content { position: absolute; z-index: 20; top: calc(100% + 10px); right: 0; display: grid; gap: 9px; width: 270px; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: 0 14px 30px rgba(4,67,113,.16); }
+.enrollment-drawer-content { position: absolute; z-index: 20; top: calc(100% + 10px); right: 0; display: grid; gap: 9px; width: 340px; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: 0 14px 30px rgba(4,67,113,.16); }
+.enrollment-settings-grid { display: grid; grid-template-columns: .8fr 1.35fr; gap: 12px; align-items: end; }
 .enrollment-drawer-content label { color: var(--ink-soft); font-size: .76rem; font-weight: 750; }
 .enrollment-drawer-content select { min-height: 42px; }
+.enrollment-drawer-content .range-grid { gap: 6px; margin-top: 0; }
 .enrollment-drawer-content p { margin: 0; color: var(--ink-soft); font-size: .75rem; line-height: 1.5; }
 .enrollment-drawer-content .primary-button { margin-top: 2px; }
 .nav-tabs { display: flex; gap: 6px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; }
@@ -225,6 +227,7 @@ textarea { width: 100%; min-height: 96px; resize: vertical; border: 1px solid va
   .enrollment-drawer { width: 100%; margin-left: 0; }
   .enrollment-drawer > summary { justify-content: space-between; }
   .enrollment-drawer-content { position: static; width: 100%; margin-top: 8px; }
+  .enrollment-settings-grid { grid-template-columns: 1fr; }
   .nav-tabs { width: 100%; }
   .nav-tab { flex: 1; }
   .quiz-layout, .tab-layout { grid-template-columns: 1fr; }

@@ -156,10 +156,6 @@ function syncRangePanels() {
   });
   const enrollmentSummary = $("#enrollment-summary");
   if (enrollmentSummary) enrollmentSummary.textContent = `${$("#enrollment-year").selectedOptions[0].textContent} · ${compactMonth(start)}—${compactMonth(end)}`;
-  [["#memory-range-start", start], ["#memory-range-end", end], ["#archive-range-start", start], ["#archive-range-end", end]].forEach(([selector, value]) => {
-    const element = $(selector);
-    if (element) element.value = value;
-  });
 }
 
 function inActiveRange(month) {
@@ -508,18 +504,6 @@ $("#range-start").addEventListener("change", () => {
 $("#range-end").addEventListener("change", () => {
   $("#enrollment-year").value = "custom";
   updateRange("end");
-});
-[["memory-range-start", "memory-range-end"], ["archive-range-start", "archive-range-end"]].forEach(([startId, endId]) => {
-  $(`#${startId}`).addEventListener("change", (event) => {
-    $("#range-start").value = event.target.value;
-    $("#enrollment-year").value = "custom";
-    updateRange("start");
-  });
-  $(`#${endId}`).addEventListener("change", (event) => {
-    $("#range-end").value = event.target.value;
-    $("#enrollment-year").value = "custom";
-    updateRange("end");
-  });
 });
 $("#archive-show-all").addEventListener("change", renderArchive);
 $$(".nav-tab").forEach((tab) => tab.addEventListener("click", () => setView(tab.dataset.view)));
