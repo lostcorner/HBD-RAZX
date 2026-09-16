@@ -128,9 +128,9 @@ const state = { current: null, answered: false };
 
 const periodGroups = [
   { label: "早起", options: [["early", "早起"]] },
-  { label: "上午", options: [["morning-1", "第一个课间"], ["morning-2", "第二个课间"], ["morning-3", "第三个课间"], ["morning-4", "第四个课间"]] },
-  { label: "下午", options: [["afternoon-1", "第一个课间"], ["afternoon-2", "第二个课间"], ["afternoon-3", "第三个课间"], ["afternoon-4", "第四个课间"], ["joint-8-9", "连续课间"]] },
-  { label: "晚间", options: [["evening-1", "第一个课间"], ["evening-2", "第二个课间"], ["evening-3", "第三个课间"], ["sleep", "就寝"]] }
+  { label: "上午", options: [["morning-1", "第一节课"], ["morning-2", "第二节课"], ["morning-3", "第三节课"], ["morning-4", "第四节课"]] },
+  { label: "下午", options: [["afternoon-1", "第五节课"], ["afternoon-2", "第六节课"], ["afternoon-3", "第七节课"], ["afternoon-4", "第八节课"], ["joint-8-9", "第八、九节课"]] },
+  { label: "晚间", options: [["evening-1", "第九节课"], ["evening-2", "第十节课"], ["evening-3", "第十一节课"], ["sleep", "就寝"]] }
 ];
 
 const $ = (selector) => document.querySelector(selector);
@@ -165,10 +165,10 @@ function periodKey(period) {
 function periodLabel(period) {
   return {
     "早起": "早起",
-    "第一节": "上午 · 第一个课间", "第二节": "上午 · 第二个课间", "第三节": "上午 · 第三个课间", "第四节": "上午 · 第四个课间",
-    "第五节": "下午 · 第一个课间", "第六节": "下午 · 第二个课间", "第七节": "下午 · 第三个课间", "第八节": "下午 · 第四个课间",
-    "第八、九节": "下午 · 连续课间", "第九节": "晚间 · 第一个课间", "晚自习第一节": "晚间 · 第一个课间",
-    "第十节": "晚间 · 第二个课间", "晚自习第二节": "晚间 · 第二个课间", "第十一节": "晚间 · 第三个课间", "就寝": "就寝"
+    "第一节": "第一节课", "第二节": "第二节课", "第三节": "第三节课", "第四节": "第四节课",
+    "第五节": "第五节课", "第六节": "第六节课", "第七节": "第七节课", "第八节": "第八节课",
+    "第八、九节": "第八、九节课", "第九节": "第九节课", "晚自习第一节": "第九节课",
+    "第十节": "第十节课", "晚自习第二节": "第十节课", "第十一节": "第十一节课", "就寝": "就寝"
   }[period] || period;
 }
 
@@ -183,8 +183,10 @@ function searchableLinks(record) {
 }
 
 function renderPlatformLinks(record, compact = false) {
+  const icons = { "Apple Music": "", "网易云音乐": "云", "QQ 音乐": "Q", Spotify: "●" };
+  const classes = { "Apple Music": "apple", "网易云音乐": "netease", "QQ 音乐": "qq", Spotify: "spotify" };
   return `<div class="platform-links">${searchableLinks(record).map(([name, url]) =>
-    `<a href="${url}" target="_blank" rel="noreferrer" title="在${name}中搜索${record.title}">${compact ? name.replace("音乐", "") : name} ↗</a>`
+    `<a class="platform-link platform-${classes[name]}" href="${url}" target="_blank" rel="noreferrer" title="在${name}中搜索${record.title}"><span class="platform-icon" aria-hidden="true">${icons[name]}</span>${compact ? name.replace("音乐", "") : name} ↗</a>`
   ).join("")}</div>`;
 }
 
@@ -246,15 +248,11 @@ function renderChoices() {
       : `<option value="">先选择年份</option>`;
   });
 
-  $("#period-options").innerHTML = periodGroups.map((group) => `
-    <section class="period-group">
-      <h3>${group.label}</h3>
-      <div class="period-choice-row">${group.options.map(([value, label]) => `
+  $("#period-options").innerHTML = `<div class="period-choice-row">${periodGroups.flatMap((group) => group.options).map(([value, label]) => `
         <label class="period-choice">
           <input type="radio" name="period" value="${value}" ${value === "early" ? "required" : ""} />
           <span>${label}</span>
-        </label>`).join("")}</div>
-    </section>`).join("");
+        </label>`).join("")}</div>`;
 }
 
 function memoryKey(recordId) { return `bell-memories:${recordId}`; }
@@ -312,7 +310,6 @@ function escapeHtml(value) {
 
 function revealResult(month, period) {
   const record = state.current;
-  $("#audio-player").pause();
   const correct = Boolean(month) && record.month === month && periodKey(record.period) === period;
   state.answered = true;
   $("#mystery-title").textContent = record.title;
@@ -322,8 +319,8 @@ function revealResult(month, period) {
   panel.innerHTML = `
     <div class="result-card">
       <span class="result-badge ${correct ? "correct" : ""}">${correct ? "答对了" : "再听一次，也许就想起来了"}</span>
-      <h3>${record.title}</h3>
-      <p class="answer-line">${record.artist} · ${record.month.replace("-", " 年 ")} 月 · ${periodLabel(record.period)}</p>
+      <div class="result-heading"><h3>${record.title}</h3><span class="result-artist">${record.artist}</span></div>
+      <p class="answer-line"><strong>${record.month.replace("-", " 年 ")} 月</strong><span>·</span><strong>${periodLabel(record.period)}</strong></p>
       ${renderPlatformLinks(record)}
       <div class="memory-box">
         <h4>关于这首铃声，你想起了什么？</h4>

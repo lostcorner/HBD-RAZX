@@ -94,8 +94,6 @@ legend { font-weight: 750; margin-bottom: 12px; }
 .month-choice span { display: grid; place-items: center; min-height: 46px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font-weight: 700; }
 .month-choice input:checked + span { color: #fff; background: var(--blue); border-color: var(--blue); box-shadow: 0 6px 14px rgba(8,113,189,.18); }
 .period-groups { display: grid; gap: 12px; }
-.period-group { display: grid; grid-template-columns: 92px 1fr; gap: 12px; align-items: start; }
-.period-group h3 { margin: 12px 0 0; color: var(--ink-soft); font-size: .82rem; }
 .period-choice-row { display: flex; flex-wrap: wrap; gap: 8px; }
 .period-choice { position: relative; }
 .period-choice input { position: absolute; opacity: 0; pointer-events: none; }
@@ -108,16 +106,24 @@ legend { font-weight: 750; margin-bottom: 12px; }
 .result-card { border-top: 1px solid var(--line); padding-top: 28px; }
 .result-badge { display: inline-flex; border-radius: 999px; padding: 7px 11px; background: rgba(224,82,71,.1); color: #a33d31; font-weight: 800; font-size: .8rem; }
 .result-badge.correct { color: #176347; background: #e2f2e9; }
-.result-card h3 { margin: 13px 0 4px; font: 700 1.65rem Georgia, "Songti SC", serif; }
-.answer-line { color: var(--ink-soft); margin: 0 0 20px; }
+.result-heading { display: flex; align-items: baseline; gap: 10px; flex-wrap: nowrap; margin: 13px 0 8px; }
+.result-card h3 { margin: 0; font: 700 1.65rem Georgia, "Songti SC", serif; white-space: nowrap; }
+.result-artist { min-width: 0; color: var(--ink-soft); font-size: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.answer-line { display: flex; align-items: baseline; gap: 9px; color: var(--ink-soft); margin: 0 0 20px; font-size: 1.08rem; }
+.answer-line strong { color: var(--blue-deep); font-size: 1.18rem; }
 .platform-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 26px; }
-.platform-links a { color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 9px 13px; background: #fff; font-size: .86rem; font-weight: 700; }
+.platform-links a { display: inline-flex; align-items: center; gap: 7px; color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 9px 13px; background: #fff; font-size: .86rem; font-weight: 700; }
 .platform-links a:hover { border-color: var(--ink); }
+.platform-icon { display: inline-grid; place-items: center; width: 19px; height: 19px; border-radius: 50%; color: #fff; background: var(--blue); font: 800 .74rem/1 system-ui, sans-serif; }
+.platform-apple .platform-icon { background: #111; font-size: .95rem; }
+.platform-netease .platform-icon { background: #e83b3b; }
+.platform-qq .platform-icon { background: #1e9eff; }
+.platform-spotify .platform-icon { background: #1db954; }
 .memory-box { border-radius: 14px; padding: 18px; background: #eef6fb; border: 1px solid rgba(8,113,189,.12); }
 .memory-box h4 { margin: 0 0 12px; }
 textarea { width: 100%; min-height: 96px; resize: vertical; border: 1px solid var(--line); border-radius: 10px; background: #fff; padding: 12px; color: var(--ink); line-height: 1.6; }
-.memory-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 10px; }
-.secondary-button { border: 1px solid var(--line); border-radius: 9px; background: #fff; color: var(--ink); padding: 8px 14px; font-weight: 700; }
+.memory-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; margin-top: 10px; }
+.secondary-button { border: 1px solid var(--line); border-radius: 9px; background: #fff; color: var(--ink); padding: 8px 14px; font-weight: 700; white-space: nowrap; }
 .memories { margin-top: 18px; display: grid; gap: 10px; }
 .memory-item { border-left: 3px solid var(--gold); padding: 10px 12px; background: rgba(255,255,255,.65); }
 .memory-item p { margin: 0; line-height: 1.65; }
