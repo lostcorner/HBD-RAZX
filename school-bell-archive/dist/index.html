@@ -17,12 +17,17 @@
         <div class="anniversary-mark" aria-label="瑞安中学建校130周年">
           <strong>130</strong><span>1896—2026<br />百卅瑞中</span>
         </div>
-        <div class="header-controls">
-          <label for="enrollment-year">我的届别</label>
-          <select id="enrollment-year">
-            <option value="2012">2012 年入学</option><option value="2013">2013 年入学</option><option value="2014" selected>2014 年入学</option><option value="2015">2015 年入学</option><option value="2016">2016 年入学</option><option value="2017">2017 年入学</option><option value="custom">自定义时间</option>
-          </select>
-        </div>
+        <details class="enrollment-drawer">
+          <summary><span>我的届别</span><strong id="enrollment-summary">2014 年入学 · 2014.07—2017.06</strong></summary>
+          <div class="enrollment-drawer-content">
+            <label for="enrollment-year">选择入学年份</label>
+            <select id="enrollment-year">
+              <option value="2012">2012 年入学</option><option value="2013">2013 年入学</option><option value="2014" selected>2014 年入学</option><option value="2015">2015 年入学</option><option value="2016">2016 年入学</option><option value="2017">2017 年入学</option><option value="custom">自定义时间</option>
+            </select>
+            <p>确认后会自动设置左侧的瑞中时间范围。</p>
+            <button id="enrollment-confirm" class="primary-button" type="button">确认时间</button>
+          </div>
+        </details>
         <nav class="nav-tabs" aria-label="主导航">
           <button class="nav-tab is-active" data-view="quiz">铃声寻迹</button>
           <button class="nav-tab" data-view="memory">铃声回忆</button>

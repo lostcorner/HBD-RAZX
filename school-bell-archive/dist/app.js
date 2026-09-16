@@ -154,6 +154,8 @@ function syncRangePanels() {
     const element = $(selector);
     if (element) element.textContent = label;
   });
+  const enrollmentSummary = $("#enrollment-summary");
+  if (enrollmentSummary) enrollmentSummary.textContent = `${$("#enrollment-year").selectedOptions[0].textContent} · ${compactMonth(start)}—${compactMonth(end)}`;
   [["#memory-range-start", start], ["#memory-range-end", end], ["#archive-range-start", start], ["#archive-range-end", end]].forEach(([selector, value]) => {
     const element = $(selector);
     if (element) element.value = value;
@@ -496,6 +498,9 @@ $("#answer-form").addEventListener("submit", (event) => {
   revealResult(answerMonth, form.get("period"));
 });
 $("#enrollment-year").addEventListener("change", applyEnrollmentPreset);
+$("#enrollment-confirm").addEventListener("click", () => {
+  $(".enrollment-drawer").open = false;
+});
 $("#range-start").addEventListener("change", () => {
   $("#enrollment-year").value = "custom";
   updateRange("start");
