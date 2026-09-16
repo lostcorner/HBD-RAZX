@@ -147,6 +147,24 @@ function activeRange() {
   return { start: $("#range-start").value, end: $("#range-end").value };
 }
 
+function syncRangePanels() {
+  const { start, end } = activeRange();
+  const label = `我的瑞中时间 · ${compactMonth(start)}—${compactMonth(end)}`;
+  ["#quiz-range-label", "#memory-range-label", "#archive-range-label"].forEach((selector) => {
+    const element = $(selector);
+    if (element) element.textContent = label;
+  });
+  [["#memory-range-start", start], ["#memory-range-end", end], ["#archive-range-start", start], ["#archive-range-end", end]].forEach(([selector, value]) => {
+    const element = $(selector);
+    if (element) element.value = value;
+  });
+  const enrollment = $("#enrollment-year").value;
+  ["#memory-enrollment-year", "#archive-enrollment-year"].forEach((selector) => {
+    const element = $(selector);
+    if (element) element.value = enrollment;
+  });
+}
+
 function inActiveRange(month) {
   const { start, end } = activeRange();
   return monthSerial(month) >= monthSerial(start) && monthSerial(month) <= monthSerial(end);
@@ -225,7 +243,7 @@ function chooseQuestion() {
 }
 
 function chooseMemoryTrack() {
-  const pool = records.filter((record) => record.audio);
+  const pool = eligibleRecords();
   const previous = memoryState.current;
   const choices = pool.length > 1 ? pool.filter((record) => record.id !== previous?.id) : pool;
   const record = choices[Math.floor(Math.random() * choices.length)] || null;
@@ -444,9 +462,10 @@ function updateRange(changedInput) {
   }
 
   const label = `${compactMonth(start)}—${compactMonth(end)}`;
-  $("#archive-range-label").textContent = `我的瑞中时间 · ${label}`;
+  syncRangePanels();
   renderArchive();
   chooseQuestion();
+  if ($("#memory-audio-player")) chooseMemoryTrack();
 }
 
 function applyEnrollmentPreset() {
@@ -466,7 +485,6 @@ function setView(view) {
 
 updateRange();
 renderCollectionPlaylists();
-chooseMemoryTrack();
 
 $("#forget-month").addEventListener("click", () => {
   $("#answer-year").value = "";
@@ -490,6 +508,22 @@ $("#range-start").addEventListener("change", () => {
 $("#range-end").addEventListener("change", () => {
   $("#enrollment-year").value = "custom";
   updateRange("end");
+});
+[["memory", "memory-range-start", "memory-range-end", "memory-enrollment-year"], ["archive", "archive-range-start", "archive-range-end", "archive-enrollment-year"]].forEach(([, startId, endId, enrollmentId]) => {
+  $(`#${enrollmentId}`).addEventListener("change", (event) => {
+    $("#enrollment-year").value = event.target.value;
+    applyEnrollmentPreset();
+  });
+  $(`#${startId}`).addEventListener("change", (event) => {
+    $("#range-start").value = event.target.value;
+    $("#enrollment-year").value = "custom";
+    updateRange("start");
+  });
+  $(`#${endId}`).addEventListener("change", (event) => {
+    $("#range-end").value = event.target.value;
+    $("#enrollment-year").value = "custom";
+    updateRange("end");
+  });
 });
 $("#archive-show-all").addEventListener("change", renderArchive);
 $$(".nav-tab").forEach((tab) => tab.addEventListener("click", () => setView(tab.dataset.view)));
