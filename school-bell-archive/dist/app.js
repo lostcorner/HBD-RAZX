@@ -81,7 +81,9 @@ const records = [
   ["2018-07-11","2018-07","第十一节","Closer (80s Remix)","TRONICBOX / The Chainsmokers / Halsey","closer-80s-remix"]
 ].map(([id, month, period, title, artist, audioSlug]) => ({
   id, month, period, title, artist, audioSlug,
-  audio: `./audio/${audioSlug}.mp3`,
+  audio: window.NETEASE_TRACK_AUDIO?.[id]
+    ? `https://music.163.com/outchain/player?type=2&id=${window.NETEASE_TRACK_AUDIO[id]}&auto=0&height=66`
+    : "",
   source: {
     "2013-12": "https://tieba.baidu.com/p/2253394145",
     "2015-06": "https://tieba.baidu.com/p/3323924877",
@@ -178,7 +180,7 @@ function renderPlatformLinks(record, compact = false) {
 }
 
 function eligibleRecords() {
-  return records.filter((record) => inActiveRange(record.month));
+  return records.filter((record) => record.audio && inActiveRange(record.month));
 }
 
 function chooseQuestion() {
@@ -192,10 +194,14 @@ function chooseQuestion() {
   $("#answer-form").hidden = !state.current;
   $("#answer-form").reset();
   if (!state.current) {
+    const audio = $("#audio-player");
+    audio.removeAttribute("src");
     $("#audio-status").textContent = "可以扩大上面的时间范围，或者等待我们继续补齐歌单。";
     return;
   }
-  $("#audio-status").textContent = "先根据记忆选择月份和课间；提交后会显示外链播放器。";
+  const audio = $("#audio-player");
+  audio.src = state.current.audio;
+  $("#audio-status").textContent = "先听一段，再根据记忆选择月份和课间。";
 }
 
 function renderChoices() {
