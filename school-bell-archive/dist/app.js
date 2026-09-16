@@ -497,6 +497,10 @@ $("#enrollment-year").addEventListener("change", applyEnrollmentPreset);
 $("#enrollment-confirm").addEventListener("click", () => {
   $(".enrollment-drawer").open = false;
 });
+$("#range-confirm").addEventListener("click", () => {
+  $(".range-settings").open = false;
+  $(".enrollment-drawer").open = false;
+});
 $("#range-start").addEventListener("change", () => {
   $("#enrollment-year").value = "custom";
   updateRange("start");

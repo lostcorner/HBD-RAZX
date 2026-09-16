@@ -21,17 +21,22 @@
           <summary><span>我的届别</span><strong id="enrollment-summary">2014 年入学 · 2014.07—2017.06</strong></summary>
           <div class="enrollment-drawer-content">
             <div class="enrollment-settings-grid">
-              <label for="enrollment-year">入学年份
+            <label for="enrollment-year">入学年份
                 <select id="enrollment-year">
                   <option value="2012">2012 年入学</option><option value="2013">2013 年入学</option><option value="2014" selected>2014 年入学</option><option value="2015">2015 年入学</option><option value="2016">2016 年入学</option><option value="2017">2017 年入学</option><option value="custom">自定义时间</option>
                 </select>
               </label>
-              <div class="range-grid" aria-label="我的在校时间">
-                <label>从<input id="range-start" type="month" value="2014-07" /></label><span aria-hidden="true">—</span><label>到<input id="range-end" type="month" value="2017-06" /></label>
-              </div>
+              <button id="enrollment-confirm" class="primary-button" type="button">确认届别</button>
             </div>
-            <p>确认后，三个页面都会使用这段瑞中时间。</p>
-            <button id="enrollment-confirm" class="primary-button" type="button">确认时间</button>
+            <details class="range-settings">
+              <summary>少数情况下：调整时间范围</summary>
+              <div class="range-settings-content">
+                <div class="range-grid" aria-label="我的在校时间">
+                  <label>从<input id="range-start" type="month" value="2014-07" /></label><span aria-hidden="true">—</span><label>到<input id="range-end" type="month" value="2017-06" /></label>
+                </div>
+                <button id="range-confirm" class="secondary-button" type="button">确认时间范围</button>
+              </div>
+            </details>
           </div>
         </details>
         <nav class="nav-tabs" aria-label="主导航">
@@ -108,6 +113,10 @@
               <p class="eyebrow range-panel-title" id="memory-range-label">我的瑞中时间 · 2014.07—2017.06</p>
               <h1 id="memory-heading">循声<br /><em>回忆</em></h1>
               <p class="intro">不用猜。让一首铃声随机响起，明牌告诉你它来自哪段校园时光，再看看它会唤回什么。</p>
+              <div class="school-motto">
+                <span aria-hidden="true">✦</span>
+                <p><strong>百卅瑞中 · 甄综致远</strong><small>甄综术艺，以应时需</small></p>
+              </div>
             </aside>
 
             <div class="tab-module">
@@ -157,6 +166,10 @@
               <p class="eyebrow range-panel-title" id="archive-range-label">我的瑞中时间 · 2014.07—2017.06</p>
               <h1 id="archive-heading">循声<br /><em>档案</em></h1>
               <p class="intro">按时间展开校园铃声档案，看看每一首歌曾经在哪个课间响起。</p>
+              <div class="school-motto">
+                <span aria-hidden="true">✦</span>
+                <p><strong>百卅瑞中 · 甄综致远</strong><small>甄综术艺，以应时需</small></p>
+              </div>
             </aside>
 
             <div class="tab-module">
