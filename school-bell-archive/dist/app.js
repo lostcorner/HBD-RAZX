@@ -111,6 +111,12 @@ function renderMonthPlaylist(month) {
   return `<a class="month-playlist-link" href="${playlistUrl(playlist)}" target="_blank" rel="noreferrer">${playlist.label}${note} ↗</a>`;
 }
 
+function renderCollectionGuide() {
+  const playlist = collectionPlaylists[0];
+  if (!playlist) return "";
+  return `<p class="collection-guide">可以先从合集里寻找这段时间的铃声：</p><a class="collection-guide-link" href="${playlistUrl(playlist)}" target="_blank" rel="noreferrer">${escapeHtml(playlist.label)} ↗</a>`;
+}
+
 function renderCollectionPlaylists() {
   const container = $("#playlist-collections");
   const links = $("#playlist-collection-links");
@@ -182,6 +188,15 @@ function periodLabel(period) {
     "第八、九节": "第八、九节课", "第九节": "第九节课", "晚自习第一节": "第九节课",
     "第十节": "第十节课", "晚自习第二节": "第十节课", "第十一节": "第十一节课", "就寝": "就寝"
   }[period] || period;
+}
+
+function monthsInRange(start, end) {
+  const months = [];
+  for (let serial = monthSerial(start); serial <= monthSerial(end); serial += 1) {
+    const year = Math.floor(serial / 12);
+    months.push(`${year}-${String(serial % 12 + 1).padStart(2, "0")}`);
+  }
+  return months;
 }
 
 function searchableLinks(record) {
@@ -261,12 +276,7 @@ function chooseMemoryTrack() {
 
 function renderChoices() {
   const { start, end } = activeRange();
-  const months = [];
-  for (let serial = monthSerial(start); serial <= monthSerial(end); serial += 1) {
-    const year = Math.floor(serial / 12);
-    const month = String(serial % 12 + 1).padStart(2, "0");
-    months.push(`${year}-${month}`);
-  }
+  const months = monthsInRange(start, end);
   const years = [...new Set(months.map((month) => month.slice(0, 4)))];
   $("#month-options").innerHTML = `
     <label class="answer-select-label">年份
@@ -394,8 +404,10 @@ function revealResult(month, period) {
 function renderArchive() {
   const showAll = $("#archive-show-all").checked;
   const shown = (showAll ? records : eligibleRecords()).slice().sort((a, b) => a.month.localeCompare(b.month));
-  const linkedMonths = Object.keys(monthPlaylists).filter((month) => showAll || inActiveRange(month));
-  const visibleMonths = [...new Set([...shown.map((record) => record.month), ...linkedMonths])].sort();
+  const allArchiveMonths = [...new Set([...records.map((record) => record.month), ...Object.keys(monthPlaylists)])].sort();
+  const visibleMonths = showAll
+    ? monthsInRange(allArchiveMonths[0], allArchiveMonths.at(-1))
+    : monthsInRange(activeRange().start, activeRange().end);
   const years = visibleMonths.reduce((result, month) => {
     const year = month.slice(0, 4);
     (result[year] ||= {})[month] = [];
@@ -416,7 +428,7 @@ function renderArchive() {
           <details class="month-group">
             <summary>
               <span>${Number(month.slice(5))} 月</span>
-              <small>${items.length ? `${items.length} 首` : "曲目待整理"}</small>
+              <small>${items.length ? `${items.length} 首` : "缺少统计"}</small>
             </summary>
             <div class="month-content">
               <div class="month-tools">${renderMonthPlaylist(month)}</div>
@@ -429,7 +441,7 @@ function renderArchive() {
                     ${renderPlatformLinks(record, true)}
                     ${renderCorrectionForm(record)}
                   </details>
-                </article>`).join("")}</div>` : `<p class="month-empty">已有网易云来源歌单，曲目与课间信息仍待导入和交叉验证。</p>`}
+                </article>`).join("")}</div>` : `<div class="month-empty"><strong>缺少统计</strong><p>这个月暂时还没有整理好的曲目与课间信息。</p>${renderCollectionGuide()}</div>`}
             </div>
           </details>`).join("")}</div>
       </details>`;
