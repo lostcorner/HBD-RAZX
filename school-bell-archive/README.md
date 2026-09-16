@@ -36,6 +36,22 @@ node scripts/fetch-netmusic-metadata.mjs
 
 结果写入 `resource_netmusic/netease-metadata.json`。它记录抓取时的平台状态，不能覆盖历史截图或贴吧原帖。
 
+两个 resource（贴吧原始索引与网易云歌单）合并后的主数据是 `resource_netmusic/merged-catalog.json`，人工检查用索引是 `resource_netmusic/merged-catalog.md`。其中已有课次记录沿用 `dist/app.js` 的结构化曲库，并以 `bell-catalog-draft.md` 交叉校对。在刷新网易云快照后运行：
+
+```bash
+node scripts/build-merged-catalog.mjs
+```
+
+合并结果保留三种状态：双来源匹配、仅当前网易云、仅贴吧历史记录；歌单简介中能识别出的“早起/第几节/就寝—歌曲”也会进入 `descriptionEntries`，原文同时保留。
+
+如需把这些简介中的课次映射单独导出为待确认候选，运行：
+
+```bash
+node scripts/build-description-candidates.mjs
+```
+
+结果写入 `resource_netmusic/description-candidates.json` 和 `resource_netmusic/description-candidates.md`，当前共 208 条，全部保留原始简介行和对应歌单链接。
+
 ## 当前数据与记忆
 
 - 铃声数据暂时维护在 `dist/app.js` 的 `records` 数组中。
