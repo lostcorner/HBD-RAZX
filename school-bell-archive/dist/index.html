@@ -29,7 +29,7 @@
           </div>
         </details>
         <nav class="nav-tabs" aria-label="主导航">
-          <button class="nav-tab is-active" data-view="quiz">铃声寻迹</button>
+          <button class="nav-tab is-active" data-view="quiz">循声寻迹</button>
           <button class="nav-tab" data-view="memory">铃声回忆</button>
           <button class="nav-tab" data-view="archive">铃声档案</button>
         </nav>
@@ -104,20 +104,17 @@
         <section id="memory-view" class="view" aria-labelledby="memory-heading">
           <div class="tab-layout">
             <aside class="context-panel tab-context-panel">
+              <p class="eyebrow module-eyebrow">RUIAN HIGH SCHOOL · RANDOM PLAYLIST</p>
               <p class="eyebrow range-panel-title" id="memory-range-label">我的瑞中时间 · 2014.07—2017.06</p>
               <div class="range-grid" aria-label="我的在校时间">
                 <label>从<input id="memory-range-start" type="month" value="2014-07" /></label><span aria-hidden="true">—</span><label>到<input id="memory-range-end" type="month" value="2017-06" /></label>
               </div>
               <p class="range-note">时间范围可以调节。</p>
+              <h1 id="memory-heading">循声<br /><em>回忆</em></h1>
+              <p class="intro">不用猜。让一首铃声随机响起，明牌告诉你它来自哪段校园时光，再看看它会唤回什么。</p>
             </aside>
 
             <div class="tab-module">
-              <header class="memory-header">
-                <p class="eyebrow">RUIAN HIGH SCHOOL · RANDOM PLAYLIST</p>
-                <h1 id="memory-heading">循声<br /><em>回忆</em></h1>
-                <p class="memory-intro">不用猜。让一首铃声随机响起，明牌告诉你它来自哪段校园时光，再看看它会唤回什么。</p>
-              </header>
-
               <article class="radio-card memory-radio-card">
             <div class="radio-topline">
               <span class="live-dot"></span>
@@ -160,16 +157,18 @@
         <section id="archive-view" class="view" aria-labelledby="archive-heading">
           <div class="tab-layout">
             <aside class="context-panel tab-context-panel">
+              <p class="eyebrow module-eyebrow">RUIAN HIGH SCHOOL · SOUND ARCHIVE</p>
               <p class="eyebrow range-panel-title" id="archive-range-label">我的瑞中时间 · 2014.07—2017.06</p>
               <div class="range-grid" aria-label="我的在校时间">
                 <label>从<input id="archive-range-start" type="month" value="2014-07" /></label><span aria-hidden="true">—</span><label>到<input id="archive-range-end" type="month" value="2017-06" /></label>
               </div>
               <p class="range-note">时间范围可以调节。</p>
+              <h1 id="archive-heading">循声<br /><em>档案</em></h1>
+              <p class="intro">按时间展开校园铃声档案，看看每一首歌曾经在哪个课间响起。</p>
             </aside>
 
             <div class="tab-module">
               <header class="archive-header">
-                <div><p class="eyebrow">RUIAN HIGH SCHOOL · SOUND ARCHIVE</p><h1 id="archive-heading">铃声档案</h1></div>
                 <label class="archive-scope-toggle"><input id="archive-show-all" type="checkbox" /><span>显示全部年份</span></label>
               </header>
               <details id="playlist-collections" class="playlist-collections" aria-label="网易云合集歌单"><summary>总榜与跨月合集</summary><div id="playlist-collection-links"></div></details>

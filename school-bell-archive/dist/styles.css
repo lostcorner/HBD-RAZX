@@ -60,6 +60,8 @@ main { padding: clamp(28px, 5vw, 64px) clamp(20px, 5vw, 72px) 72px; }
 .quiz-layout, .tab-layout { display: grid; grid-template-columns: minmax(240px, .72fr) minmax(560px, 1.6fr); gap: clamp(24px, 5vw, 72px); align-items: start; }
 .tab-module { min-width: 0; }
 .range-panel-title { margin-top: 20px; color: var(--blue-deep); font-size: .92rem; letter-spacing: .02em; text-transform: none; }
+.tab-context-panel h1 { margin-top: 28px; }
+.tab-context-panel .intro { margin-bottom: 0; }
 .context-panel { padding-top: 20px; position: relative; }
 .context-panel::before { content: "1896"; position: absolute; z-index: 0; top: -28px; right: 0; color: rgba(8,113,189,.06); font: 700 clamp(5rem, 11vw, 9rem)/1 Georgia, serif; pointer-events: none; }
 .context-panel > * { position: relative; z-index: 1; }
