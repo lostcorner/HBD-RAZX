@@ -81,9 +81,7 @@ const records = [
   ["2018-07-11","2018-07","第十一节","Closer (80s Remix)","TRONICBOX / The Chainsmokers / Halsey","closer-80s-remix"]
 ].map(([id, month, period, title, artist, audioSlug]) => ({
   id, month, period, title, artist, audioSlug,
-  audio: window.NETEASE_TRACK_AUDIO?.[id]
-    ? `https://music.163.com/outchain/player?type=2&id=${window.NETEASE_TRACK_AUDIO[id]}&auto=0&height=66`
-    : "",
+  audio: window.APPLE_PREVIEWS?.[id] || "",
   source: {
     "2013-12": "https://tieba.baidu.com/p/2253394145",
     "2015-06": "https://tieba.baidu.com/p/3323924877",
@@ -195,12 +193,21 @@ function chooseQuestion() {
   $("#answer-form").reset();
   if (!state.current) {
     const audio = $("#audio-player");
+    audio.pause();
     audio.removeAttribute("src");
+    $("#audio-toggle").disabled = true;
+    $("#audio-progress").value = 0;
+    $("#audio-current").textContent = "0:00";
     $("#audio-status").textContent = "可以扩大上面的时间范围，或者等待我们继续补齐歌单。";
     return;
   }
   const audio = $("#audio-player");
+  audio.pause();
   audio.src = state.current.audio;
+  audio.load();
+  $("#audio-toggle").disabled = false;
+  $("#audio-progress").value = 0;
+  $("#audio-current").textContent = "0:00";
   $("#audio-status").textContent = "先听一段，再根据记忆选择月份和课间。";
 }
 
@@ -278,6 +285,7 @@ function escapeHtml(value) {
 
 function revealResult(month, period) {
   const record = state.current;
+  $("#audio-player").pause();
   const correct = record.month === month && periodKey(record.period) === period;
   state.answered = true;
   $("#mystery-title").textContent = record.title;
@@ -419,3 +427,41 @@ $("#range-end").addEventListener("change", () => {
 $("#archive-show-all").addEventListener("change", renderArchive);
 $$(".nav-tab").forEach((tab) => tab.addEventListener("click", () => setView(tab.dataset.view)));
 if (location.hash === "#archive") setView("archive");
+
+function formatTime(seconds) {
+  if (!Number.isFinite(seconds)) return "0:00";
+  return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
+}
+
+const audioPlayer = $("#audio-player");
+const audioToggle = $("#audio-toggle");
+const audioProgress = $("#audio-progress");
+audioToggle.addEventListener("click", () => {
+  if (!state.current) return;
+  if (audioPlayer.paused) audioPlayer.play().catch(() => {
+    $("#audio-status").textContent = "预览暂时无法播放，可以先继续作答。";
+  });
+  else audioPlayer.pause();
+});
+audioPlayer.addEventListener("play", () => {
+  audioToggle.setAttribute("aria-label", "暂停未知铃声");
+  $("#audio-status").textContent = "正在播放 30 秒预览。";
+});
+audioPlayer.addEventListener("pause", () => {
+  audioToggle.setAttribute("aria-label", "播放未知铃声");
+});
+audioPlayer.addEventListener("loadedmetadata", () => {
+  audioProgress.max = audioPlayer.duration || 30;
+  $("#audio-duration").textContent = formatTime(audioPlayer.duration || 30);
+});
+audioPlayer.addEventListener("timeupdate", () => {
+  audioProgress.value = audioPlayer.currentTime;
+  $("#audio-current").textContent = formatTime(audioPlayer.currentTime);
+});
+audioPlayer.addEventListener("ended", () => {
+  audioToggle.setAttribute("aria-label", "重播未知铃声");
+  $("#audio-status").textContent = "预览结束，可以重新播放或直接作答。";
+});
+audioProgress.addEventListener("input", () => {
+  audioPlayer.currentTime = Number(audioProgress.value);
+});
