@@ -128,10 +128,10 @@ const state = { current: null, answered: false };
 const memoryState = { current: null };
 
 const periodGroups = [
-  { label: "早起", options: [["early", "早起"]] },
+  { label: "起床铃", options: [["early", "起床铃"]] },
   { label: "上午", options: [["morning-1", "第一节课"], ["morning-2", "第二节课"], ["morning-3", "第三节课"], ["morning-4", "第四节课"]] },
   { label: "下午", options: [["afternoon-1", "第五节课"], ["afternoon-2", "第六节课"], ["afternoon-3", "第七节课"], ["afternoon-4", "第八节课"], ["joint-8-9", "第八、九节课"]] },
-  { label: "晚间", options: [["evening-1", "第九节课"], ["evening-2", "第十节课"], ["evening-3", "第十一节课"], ["sleep", "就寝"]] }
+  { label: "晚上", options: [["evening-1", "第九节课"], ["evening-2", "第十节课"], ["evening-3", "第十一节课"], ["sleep", "就寝"]] }
 ];
 
 const $ = (selector) => document.querySelector(selector);
@@ -249,7 +249,13 @@ function chooseMemoryTrack() {
 }
 
 function renderChoices() {
-  const months = [...new Set(eligibleRecords().map((record) => record.month))].sort();
+  const { start, end } = activeRange();
+  const months = [];
+  for (let serial = monthSerial(start); serial <= monthSerial(end); serial += 1) {
+    const year = Math.floor(serial / 12);
+    const month = String(serial % 12 + 1).padStart(2, "0");
+    months.push(`${year}-${month}`);
+  }
   const years = [...new Set(months.map((month) => month.slice(0, 4)))];
   $("#month-options").innerHTML = `
     <label class="answer-select-label">年份
@@ -273,11 +279,15 @@ function renderChoices() {
       : `<option value="">先选择年份</option>`;
   });
 
-  $("#period-options").innerHTML = `<div class="period-choice-row">${periodGroups.flatMap((group) => group.options).map(([value, label]) => `
+  $("#period-options").innerHTML = periodGroups.map((group) => `
+    <section class="period-group">
+      <h3>${group.label}</h3>
+      <div class="period-choice-row">${group.options.map(([value, label]) => `
         <label class="period-choice">
           <input type="radio" name="period" value="${value}" ${value === "early" ? "required" : ""} />
           <span>${label}</span>
-        </label>`).join("")}</div>`;
+        </label>`).join("")}</div>
+    </section>`).join("");
 }
 
 function memoryKey(recordId) { return `bell-memories:${recordId}`; }
