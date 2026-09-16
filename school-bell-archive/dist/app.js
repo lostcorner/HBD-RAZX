@@ -113,23 +113,24 @@ function renderMonthPlaylist(month) {
 
 function renderCollectionPlaylists() {
   const container = $("#playlist-collections");
+  const links = $("#playlist-collection-links");
   if (!collectionPlaylists.length) {
     container.hidden = true;
     return;
   }
-  container.innerHTML = `<strong>总榜与跨月合集</strong><div>${collectionPlaylists.map((playlist) =>
+  links.innerHTML = collectionPlaylists.map((playlist) =>
     `<a href="${playlistUrl(playlist)}" target="_blank" rel="noreferrer">${escapeHtml(playlist.label)} ↗</a>`
-  ).join("")}</div>`;
+  ).join("");
 }
 
 const periods = [...new Set(records.map((record) => record.period))];
-const state = { current: null, answered: false, question: 1 };
+const state = { current: null, answered: false };
 
 const periodGroups = [
   { label: "早起", options: [["early", "早起"]] },
-  { label: "上午四节", options: [["morning-1", "第一节"], ["morning-2", "第二节"], ["morning-3", "第三节"], ["morning-4", "第四节"]] },
-  { label: "下午四节", options: [["afternoon-1", "第五节"], ["afternoon-2", "第六节"], ["afternoon-3", "第七节"], ["afternoon-4", "第八节"], ["joint-8-9", "八、九节合播"]] },
-  { label: "晚上三节", options: [["evening-1", "第九节 / 晚一"], ["evening-2", "第十节 / 晚二"], ["evening-3", "第十一节 / 晚三"], ["sleep", "就寝"]] }
+  { label: "上午", options: [["morning-1", "第一个课间"], ["morning-2", "第二个课间"], ["morning-3", "第三个课间"], ["morning-4", "第四个课间"]] },
+  { label: "下午", options: [["afternoon-1", "第一个课间"], ["afternoon-2", "第二个课间"], ["afternoon-3", "第三个课间"], ["afternoon-4", "第四个课间"], ["joint-8-9", "连续课间"]] },
+  { label: "晚间", options: [["evening-1", "第一个课间"], ["evening-2", "第二个课间"], ["evening-3", "第三个课间"], ["sleep", "就寝"]] }
 ];
 
 const $ = (selector) => document.querySelector(selector);
@@ -161,6 +162,16 @@ function periodKey(period) {
   }[period];
 }
 
+function periodLabel(period) {
+  return {
+    "早起": "早起",
+    "第一节": "上午 · 第一个课间", "第二节": "上午 · 第二个课间", "第三节": "上午 · 第三个课间", "第四节": "上午 · 第四个课间",
+    "第五节": "下午 · 第一个课间", "第六节": "下午 · 第二个课间", "第七节": "下午 · 第三个课间", "第八节": "下午 · 第四个课间",
+    "第八、九节": "下午 · 连续课间", "第九节": "晚间 · 第一个课间", "晚自习第一节": "晚间 · 第一个课间",
+    "第十节": "晚间 · 第二个课间", "晚自习第二节": "晚间 · 第二个课间", "第十一节": "晚间 · 第三个课间", "就寝": "就寝"
+  }[period] || period;
+}
+
 function searchableLinks(record) {
   const query = encodeURIComponent(`${record.title} ${record.artist}`);
   return [
@@ -186,7 +197,6 @@ function chooseQuestion() {
   renderChoices();
   state.current = pool[Math.floor(Math.random() * pool.length)] || null;
   state.answered = false;
-  $("#question-progress").textContent = `第 ${state.question} 题`;
   $("#mystery-title").textContent = state.current ? "未知铃声" : "这段时间还没有档案";
   $("#result-panel").hidden = true;
   $("#answer-form").hidden = !state.current;
@@ -213,11 +223,28 @@ function chooseQuestion() {
 
 function renderChoices() {
   const months = [...new Set(eligibleRecords().map((record) => record.month))].sort();
-  $("#month-options").innerHTML = months.map((month, index) => `
-    <label class="month-choice">
-      <input type="radio" name="month" value="${month}" ${index === 0 ? "required" : ""} />
-      <span>${monthLabel(month)}</span>
-    </label>`).join("");
+  const years = [...new Set(months.map((month) => month.slice(0, 4)))];
+  $("#month-options").innerHTML = `
+    <label class="answer-select-label">年份
+      <select id="answer-year" name="year">
+        <option value="">选择年份</option>
+        ${years.map((year) => `<option value="${year}">${year} 年</option>`).join("")}
+      </select>
+    </label>
+    <label class="answer-select-label">月份
+      <select id="answer-month" name="month" disabled>
+        <option value="">先选择年份</option>
+      </select>
+    </label>`;
+  $("#answer-year").addEventListener("change", (event) => {
+    const year = event.target.value;
+    const monthSelect = $("#answer-month");
+    const available = months.filter((month) => month.startsWith(`${year}-`));
+    monthSelect.disabled = !year;
+    monthSelect.innerHTML = year
+      ? `<option value="">选择月份</option>${available.map((month) => `<option value="${month.slice(5)}">${Number(month.slice(5))} 月</option>`).join("")}`
+      : `<option value="">先选择年份</option>`;
+  });
 
   $("#period-options").innerHTML = periodGroups.map((group) => `
     <section class="period-group">
@@ -261,17 +288,17 @@ function renderCorrectionSummary(record) {
   const corrections = getCorrections(record.id);
   if (!corrections.length) return "尚无本机校对";
   const latest = corrections.at(-1);
-  return `${corrections.length} 次本机标记 · 最近：${latest.month.replace("-", " 年 ")} 月 / ${latest.period}`;
+  return `${corrections.length} 次本机标记 · 最近：${latest.month.replace("-", " 年 ")} 月 / ${periodLabel(latest.period)}`;
 }
 function renderCorrectionForm(record) {
   return `
     <details class="correction-box">
-      <summary>确认或纠正年月、课次</summary>
+      <summary>确认或纠正年月、课间</summary>
       <p class="correction-summary">${renderCorrectionSummary(record)}</p>
       <form class="correction-form" data-record-id="${record.id}">
         <label>年月<input name="month" type="month" value="${record.month}" required /></label>
-        <label>课次<select name="period" required>${periods.map((period) => `<option${period === record.period ? " selected" : ""}>${period}</option>`).join("")}</select></label>
-        <label class="correction-note">说明（可选）<input name="note" maxlength="120" placeholder="例如：记得这是晚自习第二节" /></label>
+        <label>课间<select name="period" required>${periods.map((period) => `<option value="${period}"${period === record.period ? " selected" : ""}>${periodLabel(period)}</option>`).join("")}</select></label>
+        <label class="correction-note">说明（可选）<input name="note" maxlength="120" placeholder="例如：记得这是晚间的课间" /></label>
         <button type="submit" class="secondary-button">提交本机校对</button>
       </form>
       <small>当前原型仅保存在这台设备；联网版再汇总为公开票数。</small>
@@ -286,7 +313,7 @@ function escapeHtml(value) {
 function revealResult(month, period) {
   const record = state.current;
   $("#audio-player").pause();
-  const correct = record.month === month && periodKey(record.period) === period;
+  const correct = Boolean(month) && record.month === month && periodKey(record.period) === period;
   state.answered = true;
   $("#mystery-title").textContent = record.title;
   $("#answer-form").hidden = true;
@@ -296,7 +323,7 @@ function revealResult(month, period) {
     <div class="result-card">
       <span class="result-badge ${correct ? "correct" : ""}">${correct ? "答对了" : "再听一次，也许就想起来了"}</span>
       <h3>${record.title}</h3>
-      <p class="answer-line">${record.artist} · ${record.month.replace("-", " 年 ")} 月 · ${record.period}</p>
+      <p class="answer-line">${record.artist} · ${record.month.replace("-", " 年 ")} 月 · ${periodLabel(record.period)}</p>
       ${renderPlatformLinks(record)}
       <div class="memory-box">
         <h4>关于这首铃声，你想起了什么？</h4>
@@ -309,7 +336,7 @@ function revealResult(month, period) {
       </div>
     </div>`;
 
-  $("#next-question").addEventListener("click", () => { state.question += 1; chooseQuestion(); });
+  $("#next-question").addEventListener("click", chooseQuestion);
   $("#save-memory").addEventListener("click", () => {
     const input = $("#memory-input");
     const content = input.value.trim();
@@ -336,10 +363,10 @@ function renderArchive() {
     (yearGroup[record.month] ||= []).push(record);
   });
 
-  $("#archive-list").innerHTML = Object.entries(years).map(([year, monthGroups], yearIndex) => {
+  $("#archive-list").innerHTML = Object.entries(years).map(([year, monthGroups]) => {
     const yearRecords = Object.values(monthGroups).flat();
     return `
-      <details class="year-group" ${yearIndex === 0 ? "open" : ""}>
+      <details class="year-group">
         <summary><span>${year} 年</span><small>${Object.keys(monthGroups).length} 个月 · ${yearRecords.length} 首</small></summary>
         <div class="year-months">${Object.entries(monthGroups).map(([month, items]) => `
           <details class="month-group">
@@ -351,14 +378,14 @@ function renderArchive() {
               <div class="month-tools">${renderMonthPlaylist(month)}</div>
               ${items.length ? `<div class="archive-rows">${items.map((record) => `
                 <article class="archive-row">
-                  <span class="archive-period">${record.period}</span>
+                  <span class="archive-period">${periodLabel(record.period)}</span>
                   <div class="archive-song"><h3>${record.title}</h3><p>${record.artist}</p></div>
                   <details class="archive-actions">
                     <summary>收听与校对</summary>
                     ${renderPlatformLinks(record, true)}
                     ${renderCorrectionForm(record)}
                   </details>
-                </article>`).join("")}</div>` : `<p class="month-empty">已有网易云来源歌单，曲目与课次仍待导入和交叉验证。</p>`}
+                </article>`).join("")}</div>` : `<p class="month-empty">已有网易云来源歌单，曲目与课间信息仍待导入和交叉验证。</p>`}
             </div>
           </details>`).join("")}</div>
       </details>`;
@@ -385,9 +412,7 @@ function updateRange(changedInput) {
   }
 
   const label = `${compactMonth(start)}—${compactMonth(end)}`;
-  $("#range-stat").textContent = label;
   $("#archive-range-label").textContent = `我的瑞中时间 · ${label}`;
-  $("#record-count").textContent = `${eligibleRecords().length} 条`;
   renderArchive();
   chooseQuestion();
 }
@@ -410,10 +435,19 @@ function setView(view) {
 updateRange();
 renderCollectionPlaylists();
 
+$("#forget-month").addEventListener("click", () => {
+  $("#answer-year").value = "";
+  $("#answer-month").disabled = true;
+  $("#answer-month").innerHTML = `<option value="">先选择年份</option>`;
+});
+
 $("#answer-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const form = new FormData(event.currentTarget);
-  revealResult(form.get("month"), form.get("period"));
+  const year = form.get("year");
+  const month = form.get("month");
+  const answerMonth = year && month ? `${year}-${String(month).padStart(2, "0")}` : "";
+  revealResult(answerMonth, form.get("period"));
 });
 $("#enrollment-year").addEventListener("change", applyEnrollmentPreset);
 $("#range-start").addEventListener("change", () => {

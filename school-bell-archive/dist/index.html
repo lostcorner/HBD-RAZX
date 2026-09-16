@@ -52,20 +52,13 @@
                 <span aria-hidden="true">—</span>
                 <label>到<input id="range-end" type="month" value="2017-06" /></label>
               </div>
-              <p id="range-note" class="range-note">默认按 2014.07—2017.06；实验班或转学经历可直接修改。</p>
-
-              <dl class="dataset-stats">
-                <div><dt>当前档案</dt><dd id="record-count">40 条</dd></div>
-                <div><dt>当前范围</dt><dd id="range-stat">2014.07—2017.06</dd></div>
-                <div><dt>来源</dt><dd>百度贴吧</dd></div>
-              </dl>
+              <p id="range-note" class="range-note">时间范围可以调节。</p>
             </aside>
 
             <article class="radio-card">
               <div class="radio-topline">
                 <span class="live-dot"></span>
                 <span>瑞中校园广播 · 随机回忆</span>
-                <span id="question-progress">第 1 题</span>
               </div>
 
               <div class="player-stage">
@@ -88,11 +81,12 @@
 
               <form id="answer-form" class="answer-form">
                 <fieldset>
-                  <legend>这段回忆属于哪个月份？</legend>
+                  <legend>你记得是哪一年哪一月？</legend>
                   <div id="month-options" class="choice-grid"></div>
+                  <button id="forget-month" class="secondary-button forget-month" type="button">忘记了</button>
                 </fieldset>
                 <fieldset>
-                  <legend>它在一天里的哪个课间响起？</legend>
+                  <legend>它是哪个课间？</legend>
                   <div id="period-options" class="period-groups"></div>
                 </fieldset>
                 <button class="primary-button" type="submit">唤醒这段回忆</button>
@@ -114,7 +108,10 @@
               <span>显示全部年份</span>
             </label>
           </header>
-          <aside id="playlist-collections" class="playlist-collections" aria-label="网易云合集歌单"></aside>
+          <details id="playlist-collections" class="playlist-collections" aria-label="网易云合集歌单">
+            <summary>总榜与跨月合集</summary>
+            <div id="playlist-collection-links"></div>
+          </details>
           <div id="archive-list" class="archive-list"></div>
         </section>
       </main>
