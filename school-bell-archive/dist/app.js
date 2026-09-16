@@ -158,11 +158,6 @@ function syncRangePanels() {
     const element = $(selector);
     if (element) element.value = value;
   });
-  const enrollment = $("#enrollment-year").value;
-  ["#memory-enrollment-year", "#archive-enrollment-year"].forEach((selector) => {
-    const element = $(selector);
-    if (element) element.value = enrollment;
-  });
 }
 
 function inActiveRange(month) {
@@ -509,11 +504,7 @@ $("#range-end").addEventListener("change", () => {
   $("#enrollment-year").value = "custom";
   updateRange("end");
 });
-[["memory", "memory-range-start", "memory-range-end", "memory-enrollment-year"], ["archive", "archive-range-start", "archive-range-end", "archive-enrollment-year"]].forEach(([, startId, endId, enrollmentId]) => {
-  $(`#${enrollmentId}`).addEventListener("change", (event) => {
-    $("#enrollment-year").value = event.target.value;
-    applyEnrollmentPreset();
-  });
+[["memory-range-start", "memory-range-end"], ["archive-range-start", "archive-range-end"]].forEach(([startId, endId]) => {
   $(`#${startId}`).addEventListener("change", (event) => {
     $("#range-start").value = event.target.value;
     $("#enrollment-year").value = "custom";
