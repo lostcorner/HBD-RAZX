@@ -191,23 +191,11 @@ function chooseQuestion() {
   $("#result-panel").hidden = true;
   $("#answer-form").hidden = !state.current;
   $("#answer-form").reset();
-
-  const audio = $("#audio-player");
   if (!state.current) {
-    audio.removeAttribute("src");
-    audio.load();
     $("#audio-status").textContent = "可以扩大上面的时间范围，或者等待我们继续补齐歌单。";
     return;
   }
-  audio.src = state.current.audio;
-  audio.load();
-  $("#audio-status").textContent = "正在检查本地试听片段…";
-  audio.addEventListener("loadedmetadata", () => {
-    $("#audio-status").textContent = "音频已就绪。歌名会在提交答案后揭晓。";
-  }, { once: true });
-  audio.addEventListener("error", () => {
-    $("#audio-status").textContent = `暂缺试听文件：audio/${state.current.audioSlug}.mp3。可以先测试答题和档案功能。`;
-  }, { once: true });
+  $("#audio-status").textContent = "先根据记忆选择月份和课间；提交后会显示外链播放器。";
 }
 
 function renderChoices() {
