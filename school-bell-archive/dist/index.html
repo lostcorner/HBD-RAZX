@@ -18,7 +18,8 @@
           <strong>130</strong><span>1896—2026<br />百卅瑞中</span>
         </div>
         <nav class="nav-tabs" aria-label="主导航">
-          <button class="nav-tab is-active" data-view="quiz">铃声回忆</button>
+          <button class="nav-tab is-active" data-view="quiz">铃声寻迹</button>
+          <button class="nav-tab" data-view="memory">铃声回忆</button>
           <button class="nav-tab" data-view="archive">铃声档案</button>
         </nav>
       </header>
@@ -28,7 +29,7 @@
           <div class="quiz-layout">
             <aside class="context-panel">
               <p class="eyebrow">RUIAN HIGH SCHOOL · SOUND ARCHIVE</p>
-              <h1 id="quiz-heading">循声<br /><em>忆起</em></h1>
+              <h1 id="quiz-heading">循声<br /><em>寻迹</em></h1>
               <p class="intro">一首歌是一枚时间坐标。圈出你在瑞中的日子，再从某一个课间开始。</p>
 
               <div class="school-motto">
@@ -95,6 +96,50 @@
               <section id="result-panel" class="result-panel" hidden aria-live="polite"></section>
             </article>
           </div>
+        </section>
+
+        <section id="memory-view" class="view" aria-labelledby="memory-heading">
+          <header class="memory-header">
+            <p class="eyebrow">RUIAN HIGH SCHOOL · RANDOM PLAYLIST</p>
+            <h1 id="memory-heading">循声<br /><em>回忆</em></h1>
+            <p class="memory-intro">不用猜。让一首铃声随机响起，明牌告诉你它来自哪段校园时光，再看看它会唤回什么。</p>
+          </header>
+
+          <article class="radio-card memory-radio-card">
+            <div class="radio-topline">
+              <span class="live-dot"></span>
+              <span>瑞中校园广播 · 随机播放</span>
+            </div>
+            <div class="player-stage">
+              <button class="record-visual" id="memory-audio-toggle" type="button" aria-label="播放铃声">
+                <span class="star-orbit"></span>
+                <span class="record-label">✦</span>
+              </button>
+              <div class="player-copy">
+                <p class="eyebrow">MEMORY SIGNAL · 明牌播放</p>
+                <h2 id="memory-song-title">随机铃声</h2>
+                <p id="memory-song-artist" class="memory-song-artist">正在准备一首铃声</p>
+                <div class="audio-controls">
+                  <span id="memory-audio-current">0:00</span>
+                  <input id="memory-audio-progress" type="range" min="0" max="30" value="0" step="0.1" aria-label="试听进度" />
+                  <span id="memory-audio-duration">0:30</span>
+                </div>
+                <audio id="memory-audio-player" preload="metadata"></audio>
+                <p id="memory-audio-status" class="audio-status" role="status">点击左侧星球播放。</p>
+              </div>
+            </div>
+            <section class="memory-now-playing">
+              <p id="memory-song-meta" class="memory-song-meta">—</p>
+              <div id="memory-platform-links"></div>
+              <h3>这首铃声让你想起了什么？</h3>
+              <textarea id="memory-note-input" maxlength="500" placeholder="走廊、教室、同桌，或者那一天发生的小事……"></textarea>
+              <div class="memory-actions">
+                <button type="button" class="secondary-button" id="memory-next">下一首</button>
+                <button type="button" class="primary-button memory-save-button" id="memory-save">留下回忆</button>
+              </div>
+              <div class="memories" id="memory-list"></div>
+            </section>
+          </article>
         </section>
 
         <section id="archive-view" class="view" aria-labelledby="archive-heading">

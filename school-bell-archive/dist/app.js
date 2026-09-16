@@ -125,6 +125,7 @@ function renderCollectionPlaylists() {
 
 const periods = [...new Set(records.map((record) => record.period))];
 const state = { current: null, answered: false };
+const memoryState = { current: null };
 
 const periodGroups = [
   { label: "早起", options: [["early", "早起"]] },
@@ -221,6 +222,30 @@ function chooseQuestion() {
   $("#audio-progress").value = 0;
   $("#audio-current").textContent = "0:00";
   $("#audio-status").textContent = "先听一段，再根据记忆选择月份和课间。";
+}
+
+function chooseMemoryTrack() {
+  const pool = records.filter((record) => record.audio);
+  const previous = memoryState.current;
+  const choices = pool.length > 1 ? pool.filter((record) => record.id !== previous?.id) : pool;
+  const record = choices[Math.floor(Math.random() * choices.length)] || null;
+  const audio = $("#memory-audio-player");
+  memoryState.current = record;
+  $("#memory-song-title").textContent = record?.title || "暂时没有可播放铃声";
+  $("#memory-song-artist").textContent = record?.artist || "";
+  $("#memory-song-meta").textContent = record ? `${record.month.replace("-", " 年 ")} 月 · ${periodLabel(record.period)}` : "—";
+  $("#memory-platform-links").innerHTML = record ? renderPlatformLinks(record) : "";
+  $("#memory-list").innerHTML = record ? renderMemories(record.id) : "";
+  $("#memory-note-input").value = "";
+  audio.pause();
+  audio.removeAttribute("src");
+  if (!record) return;
+  audio.src = record.audio;
+  audio.load();
+  $("#memory-audio-toggle").disabled = false;
+  $("#memory-audio-progress").value = 0;
+  $("#memory-audio-current").textContent = "0:00";
+  $("#memory-audio-status").textContent = "点击左侧星球播放。";
 }
 
 function renderChoices() {
@@ -431,6 +456,7 @@ function setView(view) {
 
 updateRange();
 renderCollectionPlaylists();
+chooseMemoryTrack();
 
 $("#forget-month").addEventListener("click", () => {
   $("#answer-year").value = "";
@@ -458,6 +484,7 @@ $("#range-end").addEventListener("change", () => {
 $("#archive-show-all").addEventListener("change", renderArchive);
 $$(".nav-tab").forEach((tab) => tab.addEventListener("click", () => setView(tab.dataset.view)));
 if (location.hash === "#archive") setView("archive");
+if (location.hash === "#memory") setView("memory");
 
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) return "0:00";
@@ -498,4 +525,55 @@ audioPlayer.addEventListener("ended", () => {
 });
 audioProgress.addEventListener("input", () => {
   audioPlayer.currentTime = Number(audioProgress.value);
+});
+
+const memoryAudio = $("#memory-audio-player");
+const memoryAudioToggle = $("#memory-audio-toggle");
+const memoryAudioProgress = $("#memory-audio-progress");
+memoryAudioToggle.addEventListener("click", () => {
+  if (!memoryState.current) return;
+  if (memoryAudio.paused) memoryAudio.play().catch(() => {
+    $("#memory-audio-status").textContent = "预览暂时无法播放。";
+  });
+  else memoryAudio.pause();
+});
+memoryAudio.addEventListener("play", () => {
+  memoryAudioToggle.classList.add("is-playing");
+  memoryAudioToggle.setAttribute("aria-label", "暂停铃声");
+  $("#memory-audio-status").textContent = "正在播放 30 秒预览。";
+});
+memoryAudio.addEventListener("pause", () => {
+  memoryAudioToggle.classList.remove("is-playing");
+  memoryAudioToggle.setAttribute("aria-label", "播放铃声");
+});
+memoryAudio.addEventListener("loadedmetadata", () => {
+  memoryAudioProgress.max = memoryAudio.duration || 30;
+  $("#memory-audio-duration").textContent = formatTime(memoryAudio.duration || 30);
+});
+memoryAudio.addEventListener("timeupdate", () => {
+  memoryAudioProgress.value = memoryAudio.currentTime;
+  $("#memory-audio-current").textContent = formatTime(memoryAudio.currentTime);
+});
+memoryAudio.addEventListener("ended", () => {
+  memoryAudioToggle.classList.remove("is-playing");
+  memoryAudioToggle.setAttribute("aria-label", "重播铃声");
+  $("#memory-audio-status").textContent = "预览结束，可以重新播放。";
+});
+memoryAudioProgress.addEventListener("input", () => {
+  memoryAudio.currentTime = Number(memoryAudioProgress.value);
+});
+$("#memory-next").addEventListener("click", () => {
+  const wasPlaying = !memoryAudio.paused;
+  chooseMemoryTrack();
+  if (wasPlaying) memoryAudio.play().catch(() => {
+    $("#memory-audio-status").textContent = "预览暂时无法播放。";
+  });
+});
+$("#memory-save").addEventListener("click", () => {
+  const input = $("#memory-note-input");
+  const content = input.value.trim();
+  if (!content || !memoryState.current) { input.focus(); return; }
+  saveMemory(memoryState.current.id, content);
+  input.value = "";
+  $("#memory-list").innerHTML = renderMemories(memoryState.current.id);
 });
