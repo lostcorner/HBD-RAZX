@@ -1,84 +1,84 @@
 const records = [
-  ["2013-12-early","2013-12","早起","Better Than I Know Myself","Adam Lambert","better-than-i-know-myself"],
-  ["2013-12-01","2013-12","第一节","Applause","Lady Gaga","applause"],
-  ["2013-12-03","2013-12","第三节","Beauty and a Beat","Justin Bieber","beauty-and-a-beat"],
-  ["2013-12-04","2013-12","第四节","Red","Taylor Swift","red"],
-  ["2013-12-05","2013-12","第五节","International Smile","Katy Perry","international-smile"],
-  ["2013-12-06","2013-12","第六节","Let Her Go","Passenger","let-her-go"],
-  ["2013-12-07","2013-12","第七节","Plan B","Kylee","plan-b"],
-  ["2013-12-08","2013-12","第八节","Here's to Never Growing Up","Avril Lavigne","heres-to-never-growing-up"],
-  ["2013-12-night-01","2013-12","晚自习第一节","We Can't Stop","Miley Cyrus","we-cant-stop"],
-  ["2013-12-night-02","2013-12","晚自习第二节","Good Time","Owl City","good-time"],
-  ["2013-12-sleep","2013-12","就寝","Chasing Pavements","Adele","chasing-pavements"],
-  ["2015-06-early","2015-06","早起","Can We Dance","The Vamps","can-we-dance"],
-  ["2015-06-01","2015-06","第一节","Bad Blood","Taylor Swift","bad-blood"],
-  ["2015-06-03","2015-06","第三节","Go Hard or Go Home","Wiz Khalifa & Iggy Azalea","go-hard-or-go-home"],
-  ["2015-06-04","2015-06","第四节","Big Girls Cry","Sia","big-girls-cry"],
-  ["2015-06-05","2015-06","第五节","Get Low","Dillon Francis & DJ Snake","get-low"],
-  ["2015-06-06","2015-06","第六节","Wear Me Out","Skylar Grey","wear-me-out"],
-  ["2015-06-07","2015-06","第七节","Poison","Rita Ora","poison"],
-  ["2015-06-08-09","2015-06","第八、九节","Shut Up and Dance","Walk the Moon","shut-up-and-dance"],
-  ["2015-06-10","2015-06","第十节","Evil in the Night","Adam Lambert","evil-in-the-night"],
-  ["2015-06-11","2015-06","第十一节","This Summer's Gonna Hurt","Maroon 5","this-summers-gonna-hurt"],
-  ["2015-09-early","2015-09","早起","Go Big Or Go Home","American Authors","go-big-or-go-home"],
-  ["2015-09-01","2015-09","第一节","Blank Space","Taylor Swift","blank-space"],
-  ["2015-09-03","2015-09","第三节","Drag Me Down","One Direction","drag-me-down"],
-  ["2015-09-04","2015-09","第四节","One Last Time","Ariana Grande","one-last-time"],
-  ["2015-09-05","2015-09","第五节","Uma Thurman","Fall Out Boy","uma-thurman"],
-  ["2015-09-06","2015-09","第六节","Wings (Acoustic)","Birdy","wings-acoustic"],
-  ["2015-09-07","2015-09","第七节","Cheerleader","OMI","cheerleader"],
-  ["2015-09-08-09","2015-09","第八、九节","Honey, I'm Good","Andy Grammer","honey-im-good"],
-  ["2015-09-10","2015-09","第十节","Rumors","Adam Lambert feat. Tove Lo","rumors"],
-  ["2015-09-11","2015-09","第十一节","Lean On","Major Lazer, DJ Snake & MØ","lean-on"],
-  ["2015-10-early","2015-10","早起","Invincible","Kelly Clarkson","invincible"],
-  ["2015-10-01","2015-10","第一节","Today's The Day","P!nk","todays-the-day"],
-  ["2015-10-03","2015-10","第三节","Stitches","Shawn Mendes","stitches"],
-  ["2015-10-04","2015-10","第四节","Somebody","Natalie La Rose feat. Jeremih","somebody"],
-  ["2015-10-05","2015-10","第五节","Friend Zone","Danielle Bradbery","friend-zone"],
-  ["2015-10-06","2015-10","第六节","One Call Away","Charlie Puth","one-call-away"],
-  ["2015-10-07","2015-10","第七节","Style","Taylor Swift","style"],
-  ["2015-10-09","2015-10","第九节","Cannonball","Skylar Grey feat. X Ambassadors","cannonball"],
-  ["2015-10-11","2015-10","第十一节","What Do You Mean?","Justin Bieber","what-do-you-mean"],
-  ["2015-11-early","2015-11","早起","I Don't Want to Go to Bed","Simple Plan feat. Nelly","i-dont-want-to-go-to-bed"],
-  ["2015-11-01","2015-11","第一节","Turnin'","Young Rising Sons","turnin"],
-  ["2015-11-03","2015-11","第三节","Something In the Way You Move","Ellie Goulding","something-in-the-way-you-move"],
-  ["2015-11-04","2015-11","第四节","Perfect","One Direction","perfect"],
-  ["2015-11-05","2015-11","第五节","Confident","Demi Lovato","confident"],
-  ["2015-11-06","2015-11","第六节","Hello","Adele","hello"],
-  ["2015-11-07","2015-11","第七节","Lay It All On Me","Rudimental feat. Ed Sheeran","lay-it-all-on-me"],
-  ["2015-11-09","2015-11","第九节","Bang My Head","David Guetta feat. Sia & Fetty Wap","bang-my-head"],
-  ["2015-11-10","2015-11","第十节","Fire N Gold","Bea Miller","fire-n-gold"],
-  ["2015-11-11","2015-11","第十一节","How Deep Is Your Love","Calvin Harris & Disciples","how-deep-is-your-love"],
-  ["2015-12-early","2015-12","早起","Get Over Me","Nick Carter feat. Avril Lavigne","get-over-me"],
-  ["2015-12-01","2015-12","第一节","Stand By You","Rachel Platten","stand-by-you"],
-  ["2015-12-03","2015-12","第三节","Hoping For Snow","The Vamps","hoping-for-snow"],
-  ["2015-12-04","2015-12","第四节","Wildest Dreams","Taylor Swift","wildest-dreams"],
-  ["2015-12-05","2015-12","第五节","Wolves","Rag'n'Bone Man","wolves"],
-  ["2015-12-06","2015-12","第六节","WILD","Troye Sivan","wild"],
-  ["2015-12-07","2015-12","第七节","Boys Like You","Who Is Fancy feat. Meghan Trainor & Ariana Grande","boys-like-you"],
-  ["2015-12-09","2015-12","第九节","A Head Full of Dreams","Coldplay","a-head-full-of-dreams"],
-  ["2015-12-10","2015-12","第十节","I Know What You Did Last Summer","Shawn Mendes & Camila Cabello","i-know-what-you-did-last-summer"],
-  ["2015-12-11","2015-12","第十一节","Roses","The Chainsmokers feat. ROZES","roses"],
-  ["2017-08-early","2017-08","早起","Numb","Linkin Park","numb"],
-  ["2017-08-01","2017-08","第一节","Summer Vibe","Walk off the Earth","summer-vibe"],
-  ["2017-08-03","2017-08","第三节","There for You","Martin Garrix & Troye Sivan","there-for-you"],
-  ["2017-08-04","2017-08","第四节","You Don't Know About Me","Ella Vos","you-dont-know-about-me"],
-  ["2017-08-05","2017-08","第五节","Mr. Blue Sky","Electric Light Orchestra","mr-blue-sky"],
-  ["2017-08-06","2017-08","第六节","Just Another Day","Lady Gaga","just-another-day"],
-  ["2017-08-07","2017-08","第七节","Didn't Stand a Chance","Travis Garland","didnt-stand-a-chance"],
-  ["2017-08-09","2017-08","第九节","So Stop the World","Emma Stevens","so-stop-the-world"],
-  ["2017-08-10","2017-08","第十节","Strip That Down","Liam Payne feat. Quavo","strip-that-down"],
-  ["2017-08-11","2017-08","第十一节","Mind over Matter (Acoustic)","PVRIS","mind-over-matter-acoustic"],
-  ["2018-07-early","2018-07","早起","Don't You","Wonderful Humans","dont-you"],
-  ["2018-07-01","2018-07","第一节","You Give Me Life","iLY","you-give-me-life"],
-  ["2018-07-03","2018-07","第三节","Lights Out","Virginia to Vegas","lights-out"],
-  ["2018-07-04","2018-07","第四节","Tokyo","Truitt & Light House","tokyo"],
-  ["2018-07-05","2018-07","第五节","Oops","Little Mix feat. Charlie Puth","oops"],
-  ["2018-07-06","2018-07","第六节","Loving You Tonight","Andrew Allen","loving-you-tonight"],
-  ["2018-07-07","2018-07","第七节","Girl with a Suntan","Jai Waetford","girl-with-a-suntan"],
-  ["2018-07-08","2018-07","第八节","That's So Us","Allie X","thats-so-us"],
-  ["2018-07-10","2018-07","第十节","We Don't Have To","Jai Waetford","we-dont-have-to"],
-  ["2018-07-11","2018-07","第十一节","Closer (80s Remix)","TRONICBOX / The Chainsmokers / Halsey","closer-80s-remix"]
+  ["2013-12-early", "2013-12", "早起", "Better Than I Know Myself", "Adam Lambert", "better-than-i-know-myself"],
+  ["2013-12-01", "2013-12", "第一节", "Applause", "Lady Gaga", "applause"],
+  ["2013-12-03", "2013-12", "第三节", "Beauty and a Beat", "Justin Bieber", "beauty-and-a-beat"],
+  ["2013-12-04", "2013-12", "第四节", "Red", "Taylor Swift", "red"],
+  ["2013-12-05", "2013-12", "第五节", "International Smile", "Katy Perry", "international-smile"],
+  ["2013-12-06", "2013-12", "第六节", "Let Her Go", "Passenger", "let-her-go"],
+  ["2013-12-07", "2013-12", "第七节", "Plan B", "Kylee", "plan-b"],
+  ["2013-12-08", "2013-12", "第八节", "Here's to Never Growing Up", "Avril Lavigne", "heres-to-never-growing-up"],
+  ["2013-12-night-01", "2013-12", "晚自习第一节", "We Can't Stop", "Miley Cyrus", "we-cant-stop"],
+  ["2013-12-night-02", "2013-12", "晚自习第二节", "Good Time", "Owl City", "good-time"],
+  ["2013-12-sleep", "2013-12", "就寝", "Chasing Pavements", "Adele", "chasing-pavements"],
+  ["2015-06-early", "2015-06", "早起", "Can We Dance", "The Vamps", "can-we-dance"],
+  ["2015-06-01", "2015-06", "第一节", "Bad Blood", "Taylor Swift", "bad-blood"],
+  ["2015-06-03", "2015-06", "第三节", "Go Hard or Go Home", "Wiz Khalifa & Iggy Azalea", "go-hard-or-go-home"],
+  ["2015-06-04", "2015-06", "第四节", "Big Girls Cry", "Sia", "big-girls-cry"],
+  ["2015-06-05", "2015-06", "第五节", "Get Low", "Dillon Francis & DJ Snake", "get-low"],
+  ["2015-06-06", "2015-06", "第六节", "Wear Me Out", "Skylar Grey", "wear-me-out"],
+  ["2015-06-07", "2015-06", "第七节", "Poison", "Rita Ora", "poison"],
+  ["2015-06-08-09", "2015-06", "第八、九节", "Shut Up and Dance", "Walk the Moon", "shut-up-and-dance"],
+  ["2015-06-10", "2015-06", "第十节", "Evil in the Night", "Adam Lambert", "evil-in-the-night"],
+  ["2015-06-11", "2015-06", "第十一节", "This Summer's Gonna Hurt", "Maroon 5", "this-summers-gonna-hurt"],
+  ["2015-09-early", "2015-09", "早起", "Go Big Or Go Home", "American Authors", "go-big-or-go-home"],
+  ["2015-09-01", "2015-09", "第一节", "Blank Space", "Taylor Swift", "blank-space"],
+  ["2015-09-03", "2015-09", "第三节", "Drag Me Down", "One Direction", "drag-me-down"],
+  ["2015-09-04", "2015-09", "第四节", "One Last Time", "Ariana Grande", "one-last-time"],
+  ["2015-09-05", "2015-09", "第五节", "Uma Thurman", "Fall Out Boy", "uma-thurman"],
+  ["2015-09-06", "2015-09", "第六节", "Wings (Acoustic)", "Birdy", "wings-acoustic"],
+  ["2015-09-07", "2015-09", "第七节", "Cheerleader", "OMI", "cheerleader"],
+  ["2015-09-08-09", "2015-09", "第八、九节", "Honey, I'm Good", "Andy Grammer", "honey-im-good"],
+  ["2015-09-10", "2015-09", "第十节", "Rumors", "Adam Lambert feat. Tove Lo", "rumors"],
+  ["2015-09-11", "2015-09", "第十一节", "Lean On", "Major Lazer, DJ Snake & MØ", "lean-on"],
+  ["2015-10-early", "2015-10", "早起", "Invincible", "Kelly Clarkson", "invincible"],
+  ["2015-10-01", "2015-10", "第一节", "Today's The Day", "P!nk", "todays-the-day"],
+  ["2015-10-03", "2015-10", "第三节", "Stitches", "Shawn Mendes", "stitches"],
+  ["2015-10-04", "2015-10", "第四节", "Somebody", "Natalie La Rose feat. Jeremih", "somebody"],
+  ["2015-10-05", "2015-10", "第五节", "Friend Zone", "Danielle Bradbery", "friend-zone"],
+  ["2015-10-06", "2015-10", "第六节", "One Call Away", "Charlie Puth", "one-call-away"],
+  ["2015-10-07", "2015-10", "第七节", "Style", "Taylor Swift", "style"],
+  ["2015-10-09", "2015-10", "第九节", "Cannonball", "Skylar Grey feat. X Ambassadors", "cannonball"],
+  ["2015-10-11", "2015-10", "第十一节", "What Do You Mean?", "Justin Bieber", "what-do-you-mean"],
+  ["2015-11-early", "2015-11", "早起", "I Don't Want to Go to Bed", "Simple Plan feat. Nelly", "i-dont-want-to-go-to-bed"],
+  ["2015-11-01", "2015-11", "第一节", "Turnin'", "Young Rising Sons", "turnin"],
+  ["2015-11-03", "2015-11", "第三节", "Something In the Way You Move", "Ellie Goulding", "something-in-the-way-you-move"],
+  ["2015-11-04", "2015-11", "第四节", "Perfect", "One Direction", "perfect"],
+  ["2015-11-05", "2015-11", "第五节", "Confident", "Demi Lovato", "confident"],
+  ["2015-11-06", "2015-11", "第六节", "Hello", "Adele", "hello"],
+  ["2015-11-07", "2015-11", "第七节", "Lay It All On Me", "Rudimental feat. Ed Sheeran", "lay-it-all-on-me"],
+  ["2015-11-09", "2015-11", "第九节", "Bang My Head", "David Guetta feat. Sia & Fetty Wap", "bang-my-head"],
+  ["2015-11-10", "2015-11", "第十节", "Fire N Gold", "Bea Miller", "fire-n-gold"],
+  ["2015-11-11", "2015-11", "第十一节", "How Deep Is Your Love", "Calvin Harris & Disciples", "how-deep-is-your-love"],
+  ["2015-12-early", "2015-12", "早起", "Get Over Me", "Nick Carter feat. Avril Lavigne", "get-over-me"],
+  ["2015-12-01", "2015-12", "第一节", "Stand By You", "Rachel Platten", "stand-by-you"],
+  ["2015-12-03", "2015-12", "第三节", "Hoping For Snow", "The Vamps", "hoping-for-snow"],
+  ["2015-12-04", "2015-12", "第四节", "Wildest Dreams", "Taylor Swift", "wildest-dreams"],
+  ["2015-12-05", "2015-12", "第五节", "Wolves", "Rag'n'Bone Man", "wolves"],
+  ["2015-12-06", "2015-12", "第六节", "WILD", "Troye Sivan", "wild"],
+  ["2015-12-07", "2015-12", "第七节", "Boys Like You", "Who Is Fancy feat. Meghan Trainor & Ariana Grande", "boys-like-you"],
+  ["2015-12-09", "2015-12", "第九节", "A Head Full of Dreams", "Coldplay", "a-head-full-of-dreams"],
+  ["2015-12-10", "2015-12", "第十节", "I Know What You Did Last Summer", "Shawn Mendes & Camila Cabello", "i-know-what-you-did-last-summer"],
+  ["2015-12-11", "2015-12", "第十一节", "Roses", "The Chainsmokers feat. ROZES", "roses"],
+  ["2017-08-early", "2017-08", "早起", "Numb", "Linkin Park", "numb"],
+  ["2017-08-01", "2017-08", "第一节", "Summer Vibe", "Walk off the Earth", "summer-vibe"],
+  ["2017-08-03", "2017-08", "第三节", "There for You", "Martin Garrix & Troye Sivan", "there-for-you"],
+  ["2017-08-04", "2017-08", "第四节", "You Don't Know About Me", "Ella Vos", "you-dont-know-about-me"],
+  ["2017-08-05", "2017-08", "第五节", "Mr. Blue Sky", "Electric Light Orchestra", "mr-blue-sky"],
+  ["2017-08-06", "2017-08", "第六节", "Just Another Day", "Lady Gaga", "just-another-day"],
+  ["2017-08-07", "2017-08", "第七节", "Didn't Stand a Chance", "Travis Garland", "didnt-stand-a-chance"],
+  ["2017-08-09", "2017-08", "第九节", "So Stop the World", "Emma Stevens", "so-stop-the-world"],
+  ["2017-08-10", "2017-08", "第十节", "Strip That Down", "Liam Payne feat. Quavo", "strip-that-down"],
+  ["2017-08-11", "2017-08", "第十一节", "Mind over Matter (Acoustic)", "PVRIS", "mind-over-matter-acoustic"],
+  ["2018-07-early", "2018-07", "早起", "Don't You", "Wonderful Humans", "dont-you"],
+  ["2018-07-01", "2018-07", "第一节", "You Give Me Life", "iLY", "you-give-me-life"],
+  ["2018-07-03", "2018-07", "第三节", "Lights Out", "Virginia to Vegas", "lights-out"],
+  ["2018-07-04", "2018-07", "第四节", "Tokyo", "Truitt & Light House", "tokyo"],
+  ["2018-07-05", "2018-07", "第五节", "Oops", "Little Mix feat. Charlie Puth", "oops"],
+  ["2018-07-06", "2018-07", "第六节", "Loving You Tonight", "Andrew Allen", "loving-you-tonight"],
+  ["2018-07-07", "2018-07", "第七节", "Girl with a Suntan", "Jai Waetford", "girl-with-a-suntan"],
+  ["2018-07-08", "2018-07", "第八节", "That's So Us", "Allie X", "thats-so-us"],
+  ["2018-07-10", "2018-07", "第十节", "We Don't Have To", "Jai Waetford", "we-dont-have-to"],
+  ["2018-07-11", "2018-07", "第十一节", "Closer (80s Remix)", "TRONICBOX / The Chainsmokers / Halsey", "closer-80s-remix"]
 ].map(([id, month, period, title, artist, audioSlug]) => ({
   id, month, period, title, artist, audioSlug,
   audio: window.APPLE_PREVIEWS?.[id] || "",
@@ -136,7 +136,7 @@ const memoryState = { current: null };
 const periodGroups = [
   { label: "起床铃", options: [["early", "起床铃"]] },
   { label: "上午", options: [["morning-1", "第一节课"], ["morning-2", "第二节课"], ["morning-3", "第三节课"], ["morning-4", "第四节课"]] },
-  { label: "下午", options: [["afternoon-1", "第五节课"], ["afternoon-2", "第六节课"], ["afternoon-3", "第七节课"], ["afternoon-4", "第八节课"], ["joint-8-9", "第八、九节课"]] },
+  { label: "下午", options: [["afternoon-1", "第五节课"], ["afternoon-2", "第六节课"], ["afternoon-3", "第七节课"], ["afternoon-4", "第八节课"]] },
   { label: "晚上", options: [["evening-1", "第九节课"], ["evening-2", "第十节课"], ["evening-3", "第十一节课"], ["sleep", "就寝"]] }
 ];
 
@@ -161,7 +161,10 @@ function syncRangePanels() {
     if (element) element.textContent = label;
   });
   const enrollmentSummary = $("#enrollment-summary");
-  if (enrollmentSummary) enrollmentSummary.textContent = `${$("#enrollment-year").selectedOptions[0].textContent} · ${compactMonth(start)}—${compactMonth(end)}`;
+  if (enrollmentSummary) {
+    const selected = $("#enrollment-year").value;
+    enrollmentSummary.textContent = selected === "custom" ? "自定义" : `${selected}级`;
+  }
 }
 
 function inActiveRange(month) {
@@ -190,6 +193,19 @@ function periodLabel(period) {
   }[period] || period;
 }
 
+function periodDetailLabel(period) {
+  const labels = {
+    early: "起床铃 · 早起",
+    "morning-1": "第一节课 · 上午第一节课", "morning-2": "第二节课 · 上午第二节课",
+    "morning-3": "第三节课 · 上午第三节课", "morning-4": "第四节课 · 上午第四节课",
+    "afternoon-1": "第五节课 · 下午第一节课", "afternoon-2": "第六节课 · 下午第二节课",
+    "afternoon-3": "第七节课 · 下午第三节课", "afternoon-4": "第八节课 · 下午第四节课",
+    "joint-8-9": "第八、九节课 · 下午连堂课", "evening-1": "第九节课 · 晚上第一节课",
+    "evening-2": "第十节课 · 晚上第二节课", "evening-3": "第十一节课 · 晚上第三节课", sleep: "就寝 · 晚间"
+  };
+  return labels[periodKey(period)] || labels[period] || periodLabel(period);
+}
+
 function monthsInRange(start, end) {
   const months = [];
   for (let serial = monthSerial(start); serial <= monthSerial(end); serial += 1) {
@@ -210,10 +226,16 @@ function searchableLinks(record) {
 }
 
 function renderPlatformLinks(record, compact = false) {
-  const icons = { "Apple Music": "", "网易云音乐": "云", "QQ 音乐": "Q", Spotify: "●" };
+  const icons = {
+    "Apple Music": '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.7 12.7c0-2 1.7-3 1.8-3.1-1-.1-2.2 1.1-2.6 1.1-.6 0-1.5-1.1-2.8-1.1-1.4 0-2.6.8-3.3 2.1-1.4 2.5-.4 6.1 1 8 .7.9 1.5 1.9 2.6 1.8 1-.1 1.4-.9 2.7-.9 1.3 0 1.7.9 2.8.9 1.1 0 1.8-1 2.4-1.9.8-1.1 1.1-2.3 1.1-2.4-.1 0-2.1-.8-2.1-3.5zM14.9 8.4c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>',
+    "网易云音乐": '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.2 18.2a3.2 3.2 0 1 1 2.3-5.5V6.5l8.1-1.8v9.7a3.2 3.2 0 1 1-2.1-3V7.3l-6 1.3v6.3a3.2 3.2 0 0 1-2.3 3.3z"/></svg>',
+    "QQ 音乐": '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 18.3a3.1 3.1 0 1 1 2.2-5.3V6.2l7.3-1.7v9.1a3.1 3.1 0 1 1-2.1-2.9V7.1l-5.2 1.2v6.2A3.1 3.1 0 0 1 9 18.3z"/></svg>',
+    Spotify: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.2 9.2a1 1 0 0 1 .9-1.8c4.1-1.2 8.8-.7 11.9.9a1 1 0 1 1-.9 1.8c-2.6-1.3-6.7-1.8-10.9-.6a1 1 0 0 1-1-.3zm1 4a.9.9 0 0 1 .8-1.7c3.4-1 7.4-.6 10.1.8a.9.9 0 1 1-.8 1.6c-2.3-1.2-5.8-1.5-9-.7a.9.9 0 0 1-1.1 0zm1.1 3.7a.8.8 0 0 1 .7-1.5c2.8-.7 5.7-.4 7.9.7a.8.8 0 1 1-.7 1.4c-1.8-.9-4.3-1.1-6.7-.5a.8.8 0 0 1-1.2-.1z"/></svg>'
+  };
   const classes = { "Apple Music": "apple", "网易云音乐": "netease", "QQ 音乐": "qq", Spotify: "spotify" };
+  const iconFiles = { "Apple Music": "apple-music.jpg", "网易云音乐": "netease-cloud-music.jpg", "QQ 音乐": "qq-music.jpg", Spotify: "spotify.jpg" };
   return `<div class="platform-links">${searchableLinks(record).map(([name, url]) =>
-    `<a class="platform-link platform-${classes[name]}" href="${url}" target="_blank" rel="noreferrer" title="在${name}中搜索${record.title}"><span class="platform-icon" aria-hidden="true">${icons[name]}</span>${compact ? name.replace("音乐", "") : name} ↗</a>`
+    `<a class="platform-link platform-${classes[name]}" href="${url}" target="_blank" rel="noreferrer" title="在${name}中搜索${record.title}"><span class="platform-icon" aria-hidden="true"><img src="./assets/platform-icons/${iconFiles[name]}" alt="" /></span>${compact ? name.replace("音乐", "") : name} ↗</a>`
   ).join("")}</div>`;
 }
 
@@ -247,7 +269,7 @@ function chooseQuestion() {
   $("#audio-toggle").disabled = false;
   $("#audio-progress").value = 0;
   $("#audio-current").textContent = "0:00";
-  $("#audio-status").textContent = "先听一段，再根据记忆选择月份和课间。";
+  $("#audio-status").textContent = "点击图标，先听一段，再根据记忆选择月份和课间。";
 }
 
 function chooseMemoryTrack() {
@@ -379,7 +401,7 @@ function revealResult(month, period) {
     <div class="result-card">
       <span class="result-badge ${correct ? "correct" : ""}">${correct ? "答对了" : "再听一次，也许就想起来了"}</span>
       <div class="result-heading"><h3>${record.title}</h3><span class="result-artist">${record.artist}</span></div>
-      <p class="answer-line"><strong>${record.month.replace("-", " 年 ")} 月</strong><span>·</span><strong>${periodLabel(record.period)}</strong></p>
+      <p class="answer-line"><strong>${record.month.replace("-", " 年 ")} 月</strong><span>·</span><strong>${periodDetailLabel(record.period)}</strong></p>
       ${renderPlatformLinks(record)}
       <div class="memory-box">
         <h4>关于这首铃声，你想起了什么？</h4>
@@ -481,6 +503,7 @@ function applyEnrollmentPreset() {
   $("#range-start").value = `${year}-07`;
   $("#range-end").value = `${year + 3}-06`;
   updateRange();
+  $(".enrollment-drawer").open = false;
 }
 
 function setView(view) {
@@ -511,12 +534,17 @@ $("#answer-form").addEventListener("submit", (event) => {
   revealResult(answerMonth, form.get("period"));
 });
 $("#enrollment-year").addEventListener("change", applyEnrollmentPreset);
-$("#enrollment-confirm").addEventListener("click", () => {
-  $(".enrollment-drawer").open = false;
+document.addEventListener("click", (event) => {
+  const drawer = $(".enrollment-drawer");
+  if (drawer?.open && !event.target.closest(".enrollment-drawer")) drawer.open = false;
 });
-$("#range-confirm").addEventListener("click", () => {
-  $(".range-settings").open = false;
-  $(".enrollment-drawer").open = false;
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  const drawer = $(".enrollment-drawer");
+  if (drawer?.open) {
+    drawer.open = false;
+    drawer.querySelector("summary")?.focus();
+  }
 });
 $("#range-start").addEventListener("change", () => {
   $("#enrollment-year").value = "custom";
