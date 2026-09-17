@@ -1,99 +1,19 @@
-const records = [
-  ["2013-12-early", "2013-12", "早起", "Better Than I Know Myself", "Adam Lambert", "better-than-i-know-myself"],
-  ["2013-12-01", "2013-12", "第一节", "Applause", "Lady Gaga", "applause"],
-  ["2013-12-03", "2013-12", "第三节", "Beauty and a Beat", "Justin Bieber", "beauty-and-a-beat"],
-  ["2013-12-04", "2013-12", "第四节", "Red", "Taylor Swift", "red"],
-  ["2013-12-05", "2013-12", "第五节", "International Smile", "Katy Perry", "international-smile"],
-  ["2013-12-06", "2013-12", "第六节", "Let Her Go", "Passenger", "let-her-go"],
-  ["2013-12-07", "2013-12", "第七节", "Plan B", "Kylee", "plan-b"],
-  ["2013-12-08", "2013-12", "第八节", "Here's to Never Growing Up", "Avril Lavigne", "heres-to-never-growing-up"],
-  ["2013-12-night-01", "2013-12", "晚自习第一节", "We Can't Stop", "Miley Cyrus", "we-cant-stop"],
-  ["2013-12-night-02", "2013-12", "晚自习第二节", "Good Time", "Owl City", "good-time"],
-  ["2013-12-sleep", "2013-12", "就寝", "Chasing Pavements", "Adele", "chasing-pavements"],
-  ["2015-06-early", "2015-06", "早起", "Can We Dance", "The Vamps", "can-we-dance"],
-  ["2015-06-01", "2015-06", "第一节", "Bad Blood", "Taylor Swift", "bad-blood"],
-  ["2015-06-03", "2015-06", "第三节", "Go Hard or Go Home", "Wiz Khalifa & Iggy Azalea", "go-hard-or-go-home"],
-  ["2015-06-04", "2015-06", "第四节", "Big Girls Cry", "Sia", "big-girls-cry"],
-  ["2015-06-05", "2015-06", "第五节", "Get Low", "Dillon Francis & DJ Snake", "get-low"],
-  ["2015-06-06", "2015-06", "第六节", "Wear Me Out", "Skylar Grey", "wear-me-out"],
-  ["2015-06-07", "2015-06", "第七节", "Poison", "Rita Ora", "poison"],
-  ["2015-06-08-09", "2015-06", "第八、九节", "Shut Up and Dance", "Walk the Moon", "shut-up-and-dance"],
-  ["2015-06-10", "2015-06", "第十节", "Evil in the Night", "Adam Lambert", "evil-in-the-night"],
-  ["2015-06-11", "2015-06", "第十一节", "This Summer's Gonna Hurt", "Maroon 5", "this-summers-gonna-hurt"],
-  ["2015-09-early", "2015-09", "早起", "Go Big Or Go Home", "American Authors", "go-big-or-go-home"],
-  ["2015-09-01", "2015-09", "第一节", "Blank Space", "Taylor Swift", "blank-space"],
-  ["2015-09-03", "2015-09", "第三节", "Drag Me Down", "One Direction", "drag-me-down"],
-  ["2015-09-04", "2015-09", "第四节", "One Last Time", "Ariana Grande", "one-last-time"],
-  ["2015-09-05", "2015-09", "第五节", "Uma Thurman", "Fall Out Boy", "uma-thurman"],
-  ["2015-09-06", "2015-09", "第六节", "Wings (Acoustic)", "Birdy", "wings-acoustic"],
-  ["2015-09-07", "2015-09", "第七节", "Cheerleader", "OMI", "cheerleader"],
-  ["2015-09-08-09", "2015-09", "第八、九节", "Honey, I'm Good", "Andy Grammer", "honey-im-good"],
-  ["2015-09-10", "2015-09", "第十节", "Rumors", "Adam Lambert feat. Tove Lo", "rumors"],
-  ["2015-09-11", "2015-09", "第十一节", "Lean On", "Major Lazer, DJ Snake & MØ", "lean-on"],
-  ["2015-10-early", "2015-10", "早起", "Invincible", "Kelly Clarkson", "invincible"],
-  ["2015-10-01", "2015-10", "第一节", "Today's The Day", "P!nk", "todays-the-day"],
-  ["2015-10-03", "2015-10", "第三节", "Stitches", "Shawn Mendes", "stitches"],
-  ["2015-10-04", "2015-10", "第四节", "Somebody", "Natalie La Rose feat. Jeremih", "somebody"],
-  ["2015-10-05", "2015-10", "第五节", "Friend Zone", "Danielle Bradbery", "friend-zone"],
-  ["2015-10-06", "2015-10", "第六节", "One Call Away", "Charlie Puth", "one-call-away"],
-  ["2015-10-07", "2015-10", "第七节", "Style", "Taylor Swift", "style"],
-  ["2015-10-09", "2015-10", "第九节", "Cannonball", "Skylar Grey feat. X Ambassadors", "cannonball"],
-  ["2015-10-11", "2015-10", "第十一节", "What Do You Mean?", "Justin Bieber", "what-do-you-mean"],
-  ["2015-11-early", "2015-11", "早起", "I Don't Want to Go to Bed", "Simple Plan feat. Nelly", "i-dont-want-to-go-to-bed"],
-  ["2015-11-01", "2015-11", "第一节", "Turnin'", "Young Rising Sons", "turnin"],
-  ["2015-11-03", "2015-11", "第三节", "Something In the Way You Move", "Ellie Goulding", "something-in-the-way-you-move"],
-  ["2015-11-04", "2015-11", "第四节", "Perfect", "One Direction", "perfect"],
-  ["2015-11-05", "2015-11", "第五节", "Confident", "Demi Lovato", "confident"],
-  ["2015-11-06", "2015-11", "第六节", "Hello", "Adele", "hello"],
-  ["2015-11-07", "2015-11", "第七节", "Lay It All On Me", "Rudimental feat. Ed Sheeran", "lay-it-all-on-me"],
-  ["2015-11-09", "2015-11", "第九节", "Bang My Head", "David Guetta feat. Sia & Fetty Wap", "bang-my-head"],
-  ["2015-11-10", "2015-11", "第十节", "Fire N Gold", "Bea Miller", "fire-n-gold"],
-  ["2015-11-11", "2015-11", "第十一节", "How Deep Is Your Love", "Calvin Harris & Disciples", "how-deep-is-your-love"],
-  ["2015-12-early", "2015-12", "早起", "Get Over Me", "Nick Carter feat. Avril Lavigne", "get-over-me"],
-  ["2015-12-01", "2015-12", "第一节", "Stand By You", "Rachel Platten", "stand-by-you"],
-  ["2015-12-03", "2015-12", "第三节", "Hoping For Snow", "The Vamps", "hoping-for-snow"],
-  ["2015-12-04", "2015-12", "第四节", "Wildest Dreams", "Taylor Swift", "wildest-dreams"],
-  ["2015-12-05", "2015-12", "第五节", "Wolves", "Rag'n'Bone Man", "wolves"],
-  ["2015-12-06", "2015-12", "第六节", "WILD", "Troye Sivan", "wild"],
-  ["2015-12-07", "2015-12", "第七节", "Boys Like You", "Who Is Fancy feat. Meghan Trainor & Ariana Grande", "boys-like-you"],
-  ["2015-12-09", "2015-12", "第九节", "A Head Full of Dreams", "Coldplay", "a-head-full-of-dreams"],
-  ["2015-12-10", "2015-12", "第十节", "I Know What You Did Last Summer", "Shawn Mendes & Camila Cabello", "i-know-what-you-did-last-summer"],
-  ["2015-12-11", "2015-12", "第十一节", "Roses", "The Chainsmokers feat. ROZES", "roses"],
-  ["2017-08-early", "2017-08", "早起", "Numb", "Linkin Park", "numb"],
-  ["2017-08-01", "2017-08", "第一节", "Summer Vibe", "Walk off the Earth", "summer-vibe"],
-  ["2017-08-03", "2017-08", "第三节", "There for You", "Martin Garrix & Troye Sivan", "there-for-you"],
-  ["2017-08-04", "2017-08", "第四节", "You Don't Know About Me", "Ella Vos", "you-dont-know-about-me"],
-  ["2017-08-05", "2017-08", "第五节", "Mr. Blue Sky", "Electric Light Orchestra", "mr-blue-sky"],
-  ["2017-08-06", "2017-08", "第六节", "Just Another Day", "Lady Gaga", "just-another-day"],
-  ["2017-08-07", "2017-08", "第七节", "Didn't Stand a Chance", "Travis Garland", "didnt-stand-a-chance"],
-  ["2017-08-09", "2017-08", "第九节", "So Stop the World", "Emma Stevens", "so-stop-the-world"],
-  ["2017-08-10", "2017-08", "第十节", "Strip That Down", "Liam Payne feat. Quavo", "strip-that-down"],
-  ["2017-08-11", "2017-08", "第十一节", "Mind over Matter (Acoustic)", "PVRIS", "mind-over-matter-acoustic"],
-  ["2018-07-early", "2018-07", "早起", "Don't You", "Wonderful Humans", "dont-you"],
-  ["2018-07-01", "2018-07", "第一节", "You Give Me Life", "iLY", "you-give-me-life"],
-  ["2018-07-03", "2018-07", "第三节", "Lights Out", "Virginia to Vegas", "lights-out"],
-  ["2018-07-04", "2018-07", "第四节", "Tokyo", "Truitt & Light House", "tokyo"],
-  ["2018-07-05", "2018-07", "第五节", "Oops", "Little Mix feat. Charlie Puth", "oops"],
-  ["2018-07-06", "2018-07", "第六节", "Loving You Tonight", "Andrew Allen", "loving-you-tonight"],
-  ["2018-07-07", "2018-07", "第七节", "Girl with a Suntan", "Jai Waetford", "girl-with-a-suntan"],
-  ["2018-07-08", "2018-07", "第八节", "That's So Us", "Allie X", "thats-so-us"],
-  ["2018-07-10", "2018-07", "第十节", "We Don't Have To", "Jai Waetford", "we-dont-have-to"],
-  ["2018-07-11", "2018-07", "第十一节", "Closer (80s Remix)", "TRONICBOX / The Chainsmokers / Halsey", "closer-80s-remix"]
-].map(([id, month, period, title, artist, audioSlug]) => ({
-  id, month, period, title, artist, audioSlug,
-  audio: window.APPLE_PREVIEWS?.[id] || "",
-  source: {
-    "2013-12": "https://tieba.baidu.com/p/2253394145",
-    "2015-06": "https://tieba.baidu.com/p/3323924877",
-    "2015-09": "https://tieba.baidu.com/p/4020077190",
-    "2015-10": "https://tieba.baidu.com/p/4020077190",
-    "2015-11": "https://tieba.baidu.com/p/4020077190",
-    "2015-12": "https://tieba.baidu.com/p/4020077190",
-    "2017-08": "https://tieba.baidu.com/p/4020077190",
-    "2018-07": "https://tieba.baidu.com/"
-  }[month],
-  confidence: "原帖记录"
-}));
+// 曲库由 scripts/build-site-catalog.mjs 生成到 dist/catalog.js。
+// 课次明确的记录进 records；只有歌单曲目、课次待确认的进 unconfirmedTracks。
+const catalog = window.BELL_CATALOG || { months: {}, stats: {} };
+const monthCatalog = catalog.months || {};
+const catalogMonths = Object.keys(monthCatalog).sort();
+
+const records = Object.values(monthCatalog).flatMap((month) => month.records.map((record) => ({
+  ...record,
+  source: month.playlist?.url || "",
+  confidence: month.confidenceLabel
+})));
+
+const monthSlotSource = (month) => monthCatalog[month]?.source || "";
+const monthConfidenceLabel = (month) => monthCatalog[month]?.confidenceLabel || "";
+const monthIsVerified = (month) => Boolean(monthCatalog[month]?.verified);
+const unconfirmedTracks = (month) => monthCatalog[month]?.unconfirmedTracks || [];
 
 // 月度歌单是“这个月有哪些歌”的来源之一，不等同于单曲的精确播放链接。
 // 历史简介可能比当前曲目更完整（歌曲可能因版权等原因从歌单中消失）。
@@ -137,6 +57,7 @@ const periodGroups = [
   { label: "起床铃", options: [["early", "起床铃"]] },
   { label: "上午", options: [["morning-1", "第一节课"], ["morning-2", "第二节课"], ["morning-3", "第三节课"], ["morning-4", "第四节课"]] },
   { label: "下午", options: [["afternoon-1", "第五节课"], ["afternoon-2", "第六节课"], ["afternoon-3", "第七节课"], ["afternoon-4", "第八节课"]] },
+  { label: "连堂", options: [["joint-8-9", "第八、九节课"]] },
   { label: "晚上", options: [["evening-1", "第九节课"], ["evening-2", "第十节课"], ["evening-3", "第十一节课"], ["sleep", "就寝"]] }
 ];
 
@@ -217,11 +138,18 @@ function monthsInRange(start, end) {
 
 function searchableLinks(record) {
   const query = encodeURIComponent(`${record.title} ${record.artist}`);
+  // 有精确链接时直接用，避免同名、remix、多版本选错曲目；没有才退回搜索。
+  const apple = record.appleUrl
+    ? [record.appleUrl, "打开曲目页"]
+    : [`https://music.apple.com/cn/search?term=${query}`, "搜索"];
+  const netease = record.neteaseUrl
+    ? [record.neteaseUrl, "打开单曲页"]
+    : [`https://music.163.com/#/search/m/?s=${query}&type=1`, "搜索"];
   return [
-    ["Apple Music", `https://music.apple.com/cn/search?term=${query}`],
-    ["网易云音乐", `https://music.163.com/#/search/m/?s=${query}&type=1`],
-    ["QQ 音乐", `https://y.qq.com/n/ryqq/search?w=${query}`],
-    ["Spotify", `https://open.spotify.com/search/${query}`]
+    ["Apple Music", apple[0], apple[1]],
+    ["网易云音乐", netease[0], netease[1]],
+    ["QQ 音乐", `https://y.qq.com/n/ryqq/search?w=${query}`, "搜索"],
+    ["Spotify", `https://open.spotify.com/search/${query}`, "搜索"]
   ];
 }
 
@@ -234,13 +162,13 @@ function renderPlatformLinks(record, compact = false) {
   };
   const classes = { "Apple Music": "apple", "网易云音乐": "netease", "QQ 音乐": "qq", Spotify: "spotify" };
   const iconFiles = { "Apple Music": "apple-music.jpg", "网易云音乐": "netease-cloud-music.jpg", "QQ 音乐": "qq-music.jpg", Spotify: "spotify.jpg" };
-  return `<div class="platform-links">${searchableLinks(record).map(([name, url]) =>
-    `<a class="platform-link platform-${classes[name]}" href="${url}" target="_blank" rel="noreferrer" title="在${name}中搜索${record.title}"><span class="platform-icon" aria-hidden="true"><img src="./assets/platform-icons/${iconFiles[name]}" alt="" /></span>${compact ? name.replace("音乐", "") : name} ↗</a>`
+  return `<div class="platform-links">${searchableLinks(record).map(([name, url, action]) =>
+    `<a class="platform-link platform-${classes[name]}" href="${url}" target="_blank" rel="noreferrer" title="在${name}中${action}${escapeHtml(record.title)}"><span class="platform-icon" aria-hidden="true"><img src="./assets/platform-icons/${iconFiles[name]}" alt="" /></span>${compact ? name.replace("音乐", "") : name} ↗</a>`
   ).join("")}</div>`;
 }
 
 function eligibleRecords() {
-  return records.filter((record) => record.audio && inActiveRange(record.month));
+  return records.filter((record) => record.audio && record.quizEligible && inActiveRange(record.month));
 }
 
 function chooseQuestion() {
@@ -400,8 +328,10 @@ function revealResult(month, period) {
   panel.innerHTML = `
     <div class="result-card">
       <span class="result-badge ${correct ? "correct" : ""}">${correct ? "答对了" : "再听一次，也许就想起来了"}</span>
-      <div class="result-heading"><h3>${record.title}</h3><span class="result-artist">${record.artist}</span></div>
+      <div class="result-heading"><h3>${escapeHtml(record.title)}</h3><span class="result-artist">${escapeHtml(record.artist)}</span></div>
       <p class="answer-line"><strong>${record.month.replace("-", " 年 ")} 月</strong><span>·</span><strong>${periodDetailLabel(record.period)}</strong></p>
+      <p class="answer-source">课次来源：${escapeHtml(record.confidence)}${record.note ? ` · ${escapeHtml(record.note)}` : ""}</p>
+      ${record.sourceRef?.url ? `<a class="answer-source-link" href="${record.sourceRef.url}" target="_blank" rel="noreferrer">核对${escapeHtml(record.sourceRef.kind)}${record.sourceRef.floor ? `（第 ${record.sourceRef.floor} 楼）` : ""} ↗</a>` : ""}
       ${renderPlatformLinks(record)}
       <div class="memory-box">
         <h4>关于这首铃声，你想起了什么？</h4>
@@ -423,49 +353,97 @@ function revealResult(month, period) {
   });
 }
 
+function renderMonthSource(month) {
+  const entry = monthCatalog[month];
+  const source = monthSlotSource(month);
+  if (!source) return `<span class="month-source">课次来源：暂无</span>`;
+  const detail = entry?.sourceDetail || null;
+  const confidence = entry?.confidenceLabel || "";
+  const verified = monthIsVerified(month) ? "已与贴吧原帖交叉校对" : "待校友确认";
+  const parts = [`课次来源：${escapeHtml(source)}`, escapeHtml(confidence), escapeHtml(verified)];
+  const url = entry?.sourceDetail?.url || entry?.playlist?.url || "";
+  const link = url
+    ? `<a class="month-source-link" href="${url}" target="_blank" rel="noreferrer">查看${detail?.kind === "贴吧原帖" ? `原帖${detail.floor ? `第 ${detail.floor} 楼` : ""}` : "歌单简介"} ↗</a>`
+    : "";
+  const raw = detail?.raw
+    ? `<details class="month-source-raw"><summary>原文</summary><p>${escapeHtml(detail.raw)}</p>${detail.openQuestion ? `<p class="month-source-question">待确认：${escapeHtml(detail.openQuestion)}</p>` : ""}</details>`
+    : "";
+  return `<span class="month-source">${parts.join(" · ")}</span>${link}${raw}`;
+}
+
+function renderUnconfirmedTracks(month, hasRecords = false) {
+  const tracks = unconfirmedTracks(month);
+  if (!tracks.length) return "";
+  const note = hasRecords
+    ? `另外还有 ${tracks.length} 首出现在这个月的网易云歌单里，但还没确认对应哪个课间，所以暂不参与猜题。`
+    : "这个月只找到了网易云歌单的曲目列表，还没有人确认每首歌对应哪个课间，因此暂不参与猜题。";
+  return `
+    <div class="month-unconfirmed">
+      <p class="month-unconfirmed-note">${escapeHtml(note)}</p>
+      <ol class="unconfirmed-list">${tracks.map((track) => `
+        <li>
+          <div class="unconfirmed-song"><strong>${escapeHtml(track.title)}</strong><span>${escapeHtml(track.artist)}</span></div>
+          <div class="unconfirmed-links">${renderPlatformLinks(track, true)}</div>
+        </li>`).join("")}</ol>
+    </div>`;
+}
+
 function renderArchive() {
   const showAll = $("#archive-show-all").checked;
   const shown = (showAll ? records : eligibleRecords()).slice().sort((a, b) => a.month.localeCompare(b.month));
-  const allArchiveMonths = [...new Set([...records.map((record) => record.month), ...Object.keys(monthPlaylists)])].sort();
+  const shownByMonth = shown.reduce((map, record) => {
+    (map[record.month] ||= []).push(record);
+    return map;
+  }, {});
+  const allArchiveMonths = catalogMonths.length
+    ? catalogMonths
+    : [...new Set(records.map((record) => record.month))].sort();
   const visibleMonths = showAll
     ? monthsInRange(allArchiveMonths[0], allArchiveMonths.at(-1))
     : monthsInRange(activeRange().start, activeRange().end);
-  const years = visibleMonths.reduce((result, month) => {
+  const years = {};
+  for (const month of visibleMonths) {
     const year = month.slice(0, 4);
-    (result[year] ||= {})[month] = [];
-    return result;
-  }, {});
-  shown.forEach((record) => {
-    const year = record.month.slice(0, 4);
-    const yearGroup = years[year] ||= {};
-    (yearGroup[record.month] ||= []).push(record);
-  });
+    (years[year] ||= {})[month] = shownByMonth[month] || [];
+  }
 
   $("#archive-list").innerHTML = Object.entries(years).map(([year, monthGroups]) => {
     const yearRecords = Object.values(monthGroups).flat();
+    const yearUnconfirmed = Object.keys(monthGroups).reduce((sum, month) => sum + unconfirmedTracks(month).length, 0);
+    const yearSummary = yearRecords.length
+      ? `${Object.keys(monthGroups).length} 个月 · ${yearRecords.length} 首${yearUnconfirmed ? ` · 待确认 ${yearUnconfirmed} 首` : ""}`
+      : `${Object.keys(monthGroups).length} 个月 · 课次待确认 ${yearUnconfirmed} 首`;
     return `
       <details class="year-group">
-        <summary><span>${year} 年</span><small>${Object.keys(monthGroups).length} 个月 · ${yearRecords.length} 首</small></summary>
-        <div class="year-months">${Object.entries(monthGroups).map(([month, items]) => `
+        <summary><span>${year} 年</span><small>${yearSummary}</small></summary>
+        <div class="year-months">${Object.entries(monthGroups).map(([month, items]) => {
+          const pending = unconfirmedTracks(month);
+          const monthSummary = items.length
+            ? `${items.length} 首`
+            : pending.length ? `课次待确认 ${pending.length} 首` : "缺少统计";
+          return `
           <details class="month-group">
             <summary>
               <span>${Number(month.slice(5))} 月</span>
-              <small>${items.length ? `${items.length} 首` : "缺少统计"}</small>
+              <small>${monthSummary}</small>
             </summary>
             <div class="month-content">
-              <div class="month-tools">${renderMonthPlaylist(month)}</div>
+              <div class="month-tools">${renderMonthPlaylist(month)}${renderMonthSource(month)}</div>
               ${items.length ? `<div class="archive-rows">${items.map((record) => `
                 <article class="archive-row">
-                  <span class="archive-period">${periodLabel(record.period)}</span>
-                  <div class="archive-song"><h3>${record.title}</h3><p>${record.artist}</p></div>
+                  <span class="archive-period">${periodLabel(record.period)}${record.playStatus === "played" ? "" : '<em class="archive-flag">计划未播</em>'}</span>
+                  <div class="archive-song"><h3>${escapeHtml(record.title)}</h3><p>${escapeHtml(record.artist)}${record.note ? ` · ${escapeHtml(record.note)}` : ""}</p></div>
                   <details class="archive-actions">
                     <summary>收听与校对</summary>
                     ${renderPlatformLinks(record, true)}
                     ${renderCorrectionForm(record)}
                   </details>
-                </article>`).join("")}</div>` : `<div class="month-empty"><strong>缺少统计</strong><p>这个月暂时还没有整理好的曲目与课间信息。</p>${renderCollectionGuide()}</div>`}
+                </article>`).join("")}</div>` : ""}
+              ${items.length ? "" : pending.length ? renderUnconfirmedTracks(month) : `<div class="month-empty"><strong>缺少统计</strong><p>这个月暂时还没有整理好的曲目与课间信息。</p>${renderCollectionGuide()}</div>`}
+              ${items.length && pending.length ? renderUnconfirmedTracks(month, true) : ""}
             </div>
-          </details>`).join("")}</div>
+          </details>`;
+        }).join("")}</div>
       </details>`;
   }).join("") || `<div class="archive-empty"><h2>这段时间的档案还在路上</h2><p>返回“铃声回忆”调整起止月份，或勾选“显示全部年份”。</p></div>`;
 
