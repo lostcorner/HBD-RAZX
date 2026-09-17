@@ -1,6 +1,6 @@
 // 由 scripts/build-site-catalog.mjs 生成，请勿手改。
 window.BELL_CATALOG = {
-  "generatedAt": "2026-09-17T02:18:17.878Z",
+  "generatedAt": "2026-09-17T16:17:16.488Z",
   "schemaVersion": 1,
   "rules": {
     "quizPool": "课次来源明确、当月记录不少于 4 条、且该课次在猜题库选项中存在，才进入猜题池；30 秒预览缺失时不参与播放题。",
