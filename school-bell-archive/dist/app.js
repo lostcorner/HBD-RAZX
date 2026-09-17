@@ -55,10 +55,10 @@ const memoryState = { current: null };
 
 const periodGroups = [
   { label: "起床铃", options: [["early", "起床铃"]] },
-  { label: "上午", options: [["morning-1", "第一节课"], ["morning-2", "第二节课"], ["morning-3", "第三节课"], ["morning-4", "第四节课"]] },
-  { label: "下午", options: [["afternoon-1", "第五节课"], ["afternoon-2", "第六节课"], ["afternoon-3", "第七节课"], ["afternoon-4", "第八节课"]] },
-  { label: "连堂", options: [["joint-8-9", "第八、九节课"]] },
-  { label: "晚上", options: [["evening-1", "第九节课"], ["evening-2", "第十节课"], ["evening-3", "第十一节课"], ["sleep", "就寝"]] }
+  { label: "上午", options: [["morning-1", "第一节"], ["morning-2", "第二节"], ["morning-3", "第三节"], ["morning-4", "第四节"]] },
+  { label: "下午", options: [["afternoon-1", "第五节"], ["afternoon-2", "第六节"], ["afternoon-3", "第七节"], ["afternoon-4", "第八节"]] },
+  { label: "连堂", options: [["joint-8-9", "第八、九节"]] },
+  { label: "晚上", options: [["evening-1", "第九节"], ["evening-2", "第十节"], ["evening-3", "第十一节"], ["sleep", "就寝"]] }
 ];
 
 const $ = (selector) => document.querySelector(selector);
@@ -105,24 +105,24 @@ function periodKey(period) {
 }
 
 function periodLabel(period) {
+  // 课次统一显示成「第 N 节」；晚自习的两节与第九、第十节是同一时段，归并显示。
   return {
-    "早起": "早起",
-    "第一节": "第一节课", "第二节": "第二节课", "第三节": "第三节课", "第四节": "第四节课",
-    "第五节": "第五节课", "第六节": "第六节课", "第七节": "第七节课", "第八节": "第八节课",
-    "第八、九节": "第八、九节课", "第九节": "第九节课", "晚自习第一节": "第九节课",
-    "第十节": "第十节课", "晚自习第二节": "第十节课", "第十一节": "第十一节课", "就寝": "就寝"
+    "第一节": "第一节", "第二节": "第二节", "第三节": "第三节", "第四节": "第四节",
+    "第五节": "第五节", "第六节": "第六节", "第七节": "第七节", "第八节": "第八节",
+    "第八、九节": "第八、九节", "第九节": "第九节", "晚自习第一节": "第九节",
+    "第十节": "第十节", "晚自习第二节": "第十节", "第十一节": "第十一节", "就寝": "就寝"
   }[period] || period;
 }
 
 function periodDetailLabel(period) {
   const labels = {
     early: "起床铃 · 早起",
-    "morning-1": "第一节课 · 上午第一节课", "morning-2": "第二节课 · 上午第二节课",
-    "morning-3": "第三节课 · 上午第三节课", "morning-4": "第四节课 · 上午第四节课",
-    "afternoon-1": "第五节课 · 下午第一节课", "afternoon-2": "第六节课 · 下午第二节课",
-    "afternoon-3": "第七节课 · 下午第三节课", "afternoon-4": "第八节课 · 下午第四节课",
-    "joint-8-9": "第八、九节课 · 下午连堂课", "evening-1": "第九节课 · 晚上第一节课",
-    "evening-2": "第十节课 · 晚上第二节课", "evening-3": "第十一节课 · 晚上第三节课", sleep: "就寝 · 晚间"
+    "morning-1": "第一节 · 上午第一节", "morning-2": "第二节 · 上午第二节",
+    "morning-3": "第三节 · 上午第三节", "morning-4": "第四节 · 上午第四节",
+    "afternoon-1": "第五节 · 下午第一节", "afternoon-2": "第六节 · 下午第二节",
+    "afternoon-3": "第七节 · 下午第三节", "afternoon-4": "第八节 · 下午第四节",
+    "joint-8-9": "第八、九节 · 下午连堂课", "evening-1": "第九节 · 晚上第一节",
+    "evening-2": "第十节 · 晚上第二节", "evening-3": "第十一节 · 晚上第三节", sleep: "就寝 · 晚间"
   };
   return labels[periodKey(period)] || labels[period] || periodLabel(period);
 }
@@ -162,9 +162,13 @@ function renderPlatformLinks(record, compact = false) {
   };
   const classes = { "Apple Music": "apple", "网易云音乐": "netease", "QQ 音乐": "qq", Spotify: "spotify" };
   const iconFiles = { "Apple Music": "apple-music.jpg", "网易云音乐": "netease-cloud-music.jpg", "QQ 音乐": "qq-music.jpg", Spotify: "spotify.jpg" };
-  return `<div class="platform-links">${searchableLinks(record).map(([name, url, action]) =>
-    `<a class="platform-link platform-${classes[name]}" href="${url}" target="_blank" rel="noreferrer" title="在${name}中${action}${escapeHtml(record.title)}"><span class="platform-icon" aria-hidden="true"><img src="./assets/platform-icons/${iconFiles[name]}" alt="" /></span>${compact ? name.replace("音乐", "") : name} ↗</a>`
-  ).join("")}</div>`;
+  return `<div class="platform-links">${searchableLinks(record).map(([name, url, action]) => {
+    const label = compact ? name.replace(/\s*音乐\s*$/, "").trim() : name;
+    const hint = `在${name}中${action}${record.title}`;
+    // 文字单独包一层 span：手机端只留图标时把它隐藏即可。
+    // 隐藏后链接会失去可读名称，所以补 aria-label 顶替。
+    return `<a class="platform-link platform-${classes[name]}" href="${url}" target="_blank" rel="noreferrer" aria-label="${escapeAttr(hint)}" title="${escapeAttr(hint)}"><span class="platform-icon" aria-hidden="true"><img src="./assets/platform-icons/${iconFiles[name]}" alt="" /></span><span class="platform-label">${label} ↗</span></a>`;
+  }).join("")}</div>`;
 }
 
 function eligibleRecords() {
@@ -275,10 +279,11 @@ function saveMemory(recordId, content) {
   localStorage.setItem(memoryKey(recordId), JSON.stringify(memories));
 }
 function renderMemories(recordId) {
+  // 没有回忆时不显示任何占位文案，列表留空即可（.memories:empty 会一起收掉外边距）。
   const memories = getMemories(recordId);
-  return memories.length
-    ? memories.map((memory) => `<article class="memory-item"><p>${escapeHtml(memory.content)}</p><small>本机记录 · ${memory.date}</small></article>`).join("")
-    : `<p class="audio-status">这台设备上还没有与这首铃声有关的回忆。</p>`;
+  return memories
+    .map((memory) => `<article class="memory-item"><p>${escapeHtml(memory.content)}</p><small>本机记录 · ${memory.date}</small></article>`)
+    .join("");
 }
 
 function correctionKey(recordId) { return `bell-corrections:${recordId}`; }
@@ -316,6 +321,10 @@ function escapeHtml(value) {
   div.textContent = value;
   return div.innerHTML;
 }
+// escapeHtml 走 textContent 只转义 & < >，放进 HTML 属性还得把引号也处理掉。
+function escapeAttr(value) {
+  return escapeHtml(value).replace(/"/g, "&quot;");
+}
 
 function revealResult(month, period) {
   const record = state.current;
@@ -330,7 +339,6 @@ function revealResult(month, period) {
       <span class="result-badge ${correct ? "correct" : ""}">${correct ? "答对了" : "再听一次，也许就想起来了"}</span>
       <div class="result-heading"><h3>${escapeHtml(record.title)}</h3><span class="result-artist">${escapeHtml(record.artist)}</span></div>
       <p class="answer-line"><strong>${record.month.replace("-", " 年 ")} 月</strong><span>·</span><strong>${periodDetailLabel(record.period)}</strong></p>
-      <p class="answer-source">课次来源：${escapeHtml(record.confidence)}${record.note ? ` · ${escapeHtml(record.note)}` : ""}</p>
       ${record.sourceRef?.url ? `<a class="answer-source-link" href="${record.sourceRef.url}" target="_blank" rel="noreferrer">核对${escapeHtml(record.sourceRef.kind)}${record.sourceRef.floor ? `（第 ${record.sourceRef.floor} 楼）` : ""} ↗</a>` : ""}
       ${renderPlatformLinks(record)}
       <div class="memory-box">
