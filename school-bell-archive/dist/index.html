@@ -12,7 +12,11 @@
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="#quiz" aria-label="瑞安中学铃声档案首页">
-          <img src="./razx-logo.jpg" alt="浙江省瑞安中学" />
+          <!-- 窄屏只显示校徽（另裁的 assets/razx-emblem.jpg），宽屏保留「校徽 + 校名」整幅 -->
+          <picture>
+            <source media="(max-width: 820px)" srcset="./assets/razx-emblem.jpg" />
+            <img src="./razx-logo.jpg" alt="浙江省瑞安中学" />
+          </picture>
         </a>
         <div class="anniversary-mark" aria-label="瑞安中学建校130周年">
           <strong>130</strong><span>1896—2026<br />百卅瑞中</span>
@@ -37,7 +41,8 @@
             </details>
           </div>
         </details>
-        <nav class="nav-tabs" aria-label="主导航">
+        <!-- 窄屏下只显示当前栏目，点它再展开另外两项（见 styles.css 的 data-open 规则） -->
+        <nav class="nav-tabs" aria-label="主导航" data-open="false">
           <button class="nav-tab is-active" data-view="quiz">循声寻迹</button>
           <button class="nav-tab" data-view="memory">循声回忆</button>
           <button class="nav-tab" data-view="archive">循声档案</button>
@@ -92,7 +97,7 @@
                   </div>
                 </fieldset>
                 <fieldset>
-                  <legend>它是哪个课间？</legend>
+                  <legend>它是哪个课间？<small class="legend-note">上午第二节是大课间，从不放铃</small></legend>
                   <div id="period-options" class="period-groups"></div>
                 </fieldset>
                 <button class="primary-button" type="submit">唤醒这段回忆</button>

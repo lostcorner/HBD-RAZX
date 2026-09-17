@@ -49,16 +49,24 @@ function renderCollectionPlaylists() {
   ).join("");
 }
 
-const periods = [...new Set(records.map((record) => record.period))];
+// 校对表单的课次下拉：按一天的顺序排，晚自习的两节与第十、十一节是同一时段，只留一个。
+const periodOptions = [
+  "早起", "第一节", "第三节", "第四节", "第五节",
+  "第六节", "第七节", "第八节", "第八、九节", "第九节",
+  "第十节", "第十一节", "就寝"
+];
 const state = { current: null, answered: false };
 const memoryState = { current: null };
 
+// 课次分组按学校实际作息排：
+//   起床铃 1 首；上午五节，其中第二节是大课间、从来不放铃，所以上午只有四首；
+//   下午从第六节起共四节，第八、九节有时候连堂只放一首；晚上两节，之后是就寝。
+// 每个选项的键就是课次序号，方便和 periodKey 对照。
 const periodGroups = [
   { label: "起床铃", options: [["early", "起床铃"]] },
-  { label: "上午", options: [["morning-1", "第一节"], ["morning-2", "第二节"], ["morning-3", "第三节"], ["morning-4", "第四节"]] },
-  { label: "下午", options: [["afternoon-1", "第五节"], ["afternoon-2", "第六节"], ["afternoon-3", "第七节"], ["afternoon-4", "第八节"]] },
-  { label: "连堂", options: [["joint-8-9", "第八、九节"]] },
-  { label: "晚上", options: [["evening-1", "第九节"], ["evening-2", "第十节"], ["evening-3", "第十一节"], ["sleep", "就寝"]] }
+  { label: "上午", options: [["morning-1", "第一节"], ["morning-3", "第三节"], ["morning-4", "第四节"], ["morning-5", "第五节"]] },
+  { label: "下午", options: [["afternoon-1", "第六节"], ["afternoon-2", "第七节"], ["afternoon-3", "第八节"], ["afternoon-4", "第九节"], ["joint-8-9", "第八、九节"]] },
+  { label: "晚上", options: [["evening-1", "第十节"], ["evening-2", "第十一节"], ["sleep", "就寝"]] }
 ];
 
 const $ = (selector) => document.querySelector(selector);
@@ -94,35 +102,40 @@ function inActiveRange(month) {
 }
 
 function periodKey(period) {
+  // 晚自习第一／二节就是全天第十、十一节，归到同一个槽位。
   return {
-    "早起": "early", "第一节": "morning-1", "第二节": "morning-2",
-    "第三节": "morning-3", "第四节": "morning-4", "第五节": "afternoon-1",
-    "第六节": "afternoon-2", "第七节": "afternoon-3", "第八节": "afternoon-4",
-    "第八、九节": "joint-8-9", "第九节": "evening-1", "晚自习第一节": "evening-1",
-    "第十节": "evening-2", "晚自习第二节": "evening-2", "第十一节": "evening-3",
+    "早起": "early", "起床铃": "early",
+    "第一节": "morning-1", "第二节": "morning-2", "第三节": "morning-3",
+    "第四节": "morning-4", "第五节": "morning-5",
+    "第六节": "afternoon-1", "第七节": "afternoon-2",
+    "第八节": "afternoon-3", "第九节": "afternoon-4", "第八、九节": "joint-8-9",
+    "第十节": "evening-1", "晚自习第一节": "evening-1",
+    "第十一节": "evening-2", "晚自习第二节": "evening-2",
     "就寝": "sleep"
   }[period];
 }
 
 function periodLabel(period) {
-  // 课次统一显示成「第 N 节」；晚自习的两节与第九、第十节是同一时段，归并显示。
+  // 课次统一显示成「第 N 节」；晚自习的两节与第十、十一节是同一时段，归并显示。
   return {
-    "第一节": "第一节", "第二节": "第二节", "第三节": "第三节", "第四节": "第四节",
-    "第五节": "第五节", "第六节": "第六节", "第七节": "第七节", "第八节": "第八节",
-    "第八、九节": "第八、九节", "第九节": "第九节", "晚自习第一节": "第九节",
-    "第十节": "第十节", "晚自习第二节": "第十节", "第十一节": "第十一节", "就寝": "就寝"
+    "早起": "起床铃",
+    "第一节": "第一节", "第二节": "第二节", "第三节": "第三节", "第四节": "第四节", "第五节": "第五节",
+    "第六节": "第六节", "第七节": "第七节", "第八节": "第八节", "第八、九节": "第八、九节", "第九节": "第九节",
+    "第十节": "第十节", "晚自习第一节": "第十节",
+    "第十一节": "第十一节", "晚自习第二节": "第十一节", "就寝": "就寝"
   }[period] || period;
 }
 
 function periodDetailLabel(period) {
   const labels = {
     early: "起床铃 · 早起",
-    "morning-1": "第一节 · 上午第一节", "morning-2": "第二节 · 上午第二节",
-    "morning-3": "第三节 · 上午第三节", "morning-4": "第四节 · 上午第四节",
-    "afternoon-1": "第五节 · 下午第一节", "afternoon-2": "第六节 · 下午第二节",
-    "afternoon-3": "第七节 · 下午第三节", "afternoon-4": "第八节 · 下午第四节",
-    "joint-8-9": "第八、九节 · 下午连堂课", "evening-1": "第九节 · 晚上第一节",
-    "evening-2": "第十节 · 晚上第二节", "evening-3": "第十一节 · 晚上第三节", sleep: "就寝 · 晚间"
+    "morning-1": "第一节 · 上午第一节", "morning-3": "第三节 · 上午第三节",
+    "morning-4": "第四节 · 上午第四节", "morning-5": "第五节 · 上午第五节",
+    "afternoon-1": "第六节 · 下午第一节", "afternoon-2": "第七节 · 下午第二节",
+    "afternoon-3": "第八节 · 下午第三节", "afternoon-4": "第九节 · 下午第四节",
+    "joint-8-9": "第八、九节 · 下午连堂",
+    "evening-1": "第十节 · 晚上第一节", "evening-2": "第十一节 · 晚上第二节",
+    sleep: "就寝 · 晚间"
   };
   return labels[periodKey(period)] || labels[period] || periodLabel(period);
 }
@@ -309,7 +322,7 @@ function renderCorrectionForm(record) {
       <p class="correction-summary">${renderCorrectionSummary(record)}</p>
       <form class="correction-form" data-record-id="${record.id}">
         <label>年月<input name="month" type="month" value="${record.month}" required /></label>
-        <label>课间<select name="period" required>${periods.map((period) => `<option value="${period}"${period === record.period ? " selected" : ""}>${periodLabel(period)}</option>`).join("")}</select></label>
+        <label>课间<select name="period" required>${periodOptions.map((period) => `<option value="${period}"${periodKey(period) === periodKey(record.period) ? " selected" : ""}>${periodLabel(period)}</option>`).join("")}</select></label>
         <label class="correction-note">说明（可选）<input name="note" maxlength="120" placeholder="例如：记得这是晚间的课间" /></label>
         <button type="submit" class="secondary-button">提交本机校对</button>
       </form>
@@ -492,10 +505,38 @@ function applyEnrollmentPreset() {
   $(".enrollment-drawer").open = false;
 }
 
+const navTabs = $(".nav-tabs");
+// 窄屏导航平时只留当前栏目那一个胶囊，点它才把另外两项展开。
+// 展开的那两项是绝对定位的，位置靠 --menu-index 推开，所以每次切视图都要重排一次。
+function syncNavMenu() {
+  let index = 0;
+  $$(".nav-tab").forEach((tab) => {
+    if (tab.classList.contains("is-active")) return;
+    tab.style.setProperty("--menu-index", index);
+    index += 1;
+  });
+  const active = $(".nav-tab.is-active");
+  if (active) active.setAttribute("aria-expanded", String(navTabs.dataset.open === "true"));
+}
+function closeNavMenu() {
+  if (navTabs.dataset.open === "false") return;
+  navTabs.dataset.open = "false";
+  syncNavMenu();
+}
+function toggleNavMenu() {
+  navTabs.dataset.open = navTabs.dataset.open === "true" ? "false" : "true";
+  syncNavMenu();
+}
+// 只有窄屏才有折叠导航，宽屏点当前栏目保持原样（什么都不做）。
+const navCollapsed = () => window.matchMedia("(max-width: 820px)").matches;
+
 function setView(view) {
   $$(".view").forEach((item) => item.classList.toggle("is-active", item.id === `${view}-view`));
   $$(".nav-tab").forEach((tab) => tab.classList.toggle("is-active", tab.dataset.view === view));
   history.replaceState(null, "", `#${view}`);
+  // 切完视图当前栏目变了，展开菜单要收起来并把新的两项重新编号
+  navTabs.dataset.open = "false";
+  syncNavMenu();
 }
 
 updateRange();
@@ -523,9 +564,11 @@ $("#enrollment-year").addEventListener("change", applyEnrollmentPreset);
 document.addEventListener("click", (event) => {
   const drawer = $(".enrollment-drawer");
   if (drawer?.open && !event.target.closest(".enrollment-drawer")) drawer.open = false;
+  if (navTabs.dataset.open === "true" && !event.target.closest(".nav-tabs")) closeNavMenu();
 });
 document.addEventListener("keydown", (event) => {
   if (event.key !== "Escape") return;
+  closeNavMenu();
   const drawer = $(".enrollment-drawer");
   if (drawer?.open) {
     drawer.open = false;
@@ -541,9 +584,22 @@ $("#range-end").addEventListener("change", () => {
   updateRange("end");
 });
 $("#archive-show-all").addEventListener("change", renderArchive);
-$$(".nav-tab").forEach((tab) => tab.addEventListener("click", () => setView(tab.dataset.view)));
+$$(".nav-tab").forEach((tab) => tab.addEventListener("click", () => {
+  // 窄屏点当前栏目 = 展开/收起其余栏目，而不是重新切一次视图
+  if (tab.classList.contains("is-active")) {
+    if (navCollapsed()) toggleNavMenu();
+    return;
+  }
+  setView(tab.dataset.view);
+}));
+// 点校徽回到循声寻迹（原来只改 hash，视图不会跟着切）
+$(".brand").addEventListener("click", (event) => {
+  event.preventDefault();
+  setView("quiz");
+});
 if (location.hash === "#archive") setView("archive");
 if (location.hash === "#memory") setView("memory");
+syncNavMenu();
 
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) return "0:00";
