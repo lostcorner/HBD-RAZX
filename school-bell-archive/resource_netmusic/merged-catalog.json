@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T15:26:35.818Z",
+  "generatedAt": "2026-09-17T02:18:17.364Z",
   "sources": {
     "tiebaRaw": {
       "file": "resource/resource.md",
@@ -11,7 +11,7 @@
       ]
     },
     "tiebaStructured": {
-      "file": "dist/app.js",
+      "file": "data/tieba-slot-records.json",
       "crossCheck": "bell-catalog-draft.md"
     },
     "netease": {
@@ -27,8 +27,8 @@
   "stats": {
     "months": 103,
     "monthsWithNetease": 101,
-    "monthsWithTieba": 8,
-    "tiebaRecords": 80,
+    "monthsWithTieba": 9,
+    "tiebaRecords": 91,
     "neteaseCurrentTracks": 984
   },
   "collections": [
@@ -1424,7 +1424,7 @@
       },
       "tiebaRecords": [
         {
-          "id": "2013-12-early",
+          "id": "2013-12-01",
           "period": "早起",
           "title": "Better Than I Know Myself",
           "artist": "Adam Lambert",
@@ -1432,7 +1432,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2013-12-01",
+          "id": "2013-12-02",
           "period": "第一节",
           "title": "Applause",
           "artist": "Lady Gaga",
@@ -1488,7 +1488,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2013-12-night-01",
+          "id": "2013-12-09",
           "period": "晚自习第一节",
           "title": "We Can't Stop",
           "artist": "Miley Cyrus",
@@ -1496,7 +1496,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2013-12-night-02",
+          "id": "2013-12-10",
           "period": "晚自习第二节",
           "title": "Good Time",
           "artist": "Owl City",
@@ -1504,7 +1504,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2013-12-sleep",
+          "id": "2013-12-11",
           "period": "就寝",
           "title": "Chasing Pavements",
           "artist": "Adele",
@@ -1609,7 +1609,7 @@
             "order": 1
           },
           "tieba": {
-            "recordId": "2013-12-early",
+            "recordId": "2013-12-01",
             "source": "https://tieba.baidu.com/p/2253394145",
             "confidence": "原帖记录"
           }
@@ -1626,7 +1626,7 @@
             "order": 2
           },
           "tieba": {
-            "recordId": "2013-12-01",
+            "recordId": "2013-12-02",
             "source": "https://tieba.baidu.com/p/2253394145",
             "confidence": "原帖记录"
           }
@@ -1745,7 +1745,7 @@
             "order": 9
           },
           "tieba": {
-            "recordId": "2013-12-night-01",
+            "recordId": "2013-12-09",
             "source": "https://tieba.baidu.com/p/2253394145",
             "confidence": "原帖记录"
           }
@@ -1762,7 +1762,7 @@
             "order": 10
           },
           "tieba": {
-            "recordId": "2013-12-night-02",
+            "recordId": "2013-12-10",
             "source": "https://tieba.baidu.com/p/2253394145",
             "confidence": "原帖记录"
           }
@@ -1774,7 +1774,7 @@
           "period": "就寝",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2013-12-sleep",
+            "recordId": "2013-12-11",
             "source": "https://tieba.baidu.com/p/2253394145",
             "confidence": "原帖记录"
           }
@@ -2928,7 +2928,88 @@
         "commentCount": 0,
         "playCount": 74
       },
-      "tiebaRecords": [],
+      "tiebaRecords": [
+        {
+          "id": "2014-06-01",
+          "period": "早起",
+          "title": "You Raise Me Up",
+          "artist": "Westlife",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-02",
+          "period": "第一节",
+          "title": "Love You So",
+          "artist": "Natalie",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-03",
+          "period": "第三节",
+          "title": "Mad",
+          "artist": "Ne-Yo",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-04",
+          "period": "第四节",
+          "title": "I Believe",
+          "artist": "Agnes Carlsson",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-05",
+          "period": "第五节",
+          "title": "Where Is the Love?",
+          "artist": "The Black Eyed Peas",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-06",
+          "period": "第六节",
+          "title": "Lucky",
+          "artist": "Jason Mraz",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-07",
+          "period": "第七节",
+          "title": "Farewell",
+          "artist": "Rihanna",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-08",
+          "period": "第八节",
+          "title": "Burn It Down",
+          "artist": "Linkin Park",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-09",
+          "period": "晚自习第一节",
+          "title": "Hush Hush",
+          "artist": "The Pussycat Dolls",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        },
+        {
+          "id": "2014-06-10",
+          "period": "晚自习第二节",
+          "title": "Nothin' on You",
+          "artist": "B.o.B",
+          "source": "https://tieba.baidu.com/p/2253394145",
+          "confidence": "原帖记录·课次待确认"
+        }
+      ],
       "currentNeteaseTracks": [
         {
           "order": 1,
@@ -3019,96 +3100,136 @@
           "order": 1,
           "title": "You Raise Me Up",
           "artist": "Westlife",
-          "period": null,
-          "status": "netease-current-only",
+          "period": "早起",
+          "status": "both-sources",
           "netease": {
             "playlistId": "447115262",
             "songId": "20707713",
             "order": 1
+          },
+          "tieba": {
+            "recordId": "2014-06-01",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
           }
         },
         {
           "order": 2,
           "title": "Love You So",
           "artist": "Natalie",
-          "period": null,
-          "status": "netease-current-only",
+          "period": "第一节",
+          "status": "both-sources",
           "netease": {
             "playlistId": "447115262",
             "songId": "17537481",
             "order": 2
+          },
+          "tieba": {
+            "recordId": "2014-06-02",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
           }
         },
         {
           "order": 3,
           "title": "Mad",
           "artist": "Ne-Yo",
-          "period": null,
-          "status": "netease-current-only",
+          "period": "第三节",
+          "status": "both-sources",
           "netease": {
             "playlistId": "447115262",
             "songId": "1786895",
             "order": 3
+          },
+          "tieba": {
+            "recordId": "2014-06-03",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
           }
         },
         {
           "order": 4,
           "title": "I Believe",
-          "artist": "Agnes",
-          "period": null,
-          "status": "netease-current-only",
+          "artist": "Agnes Carlsson",
+          "period": "第四节",
+          "status": "both-sources",
           "netease": {
             "playlistId": "447115262",
             "songId": "16436462",
             "order": 4
+          },
+          "tieba": {
+            "recordId": "2014-06-04",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
           }
         },
         {
           "order": 5,
-          "title": "Where Is The Love?",
-          "artist": "Black Eyed Peas & Justin Timberlake",
-          "period": null,
-          "status": "netease-current-only",
+          "title": "Where Is the Love?",
+          "artist": "The Black Eyed Peas",
+          "period": "第五节",
+          "status": "both-sources",
           "netease": {
             "playlistId": "447115262",
             "songId": "16808807",
             "order": 5
+          },
+          "tieba": {
+            "recordId": "2014-06-05",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
           }
         },
         {
           "order": 6,
           "title": "Lucky",
-          "artist": "Jason Mraz & Colbie Caillat",
-          "period": null,
-          "status": "netease-current-only",
+          "artist": "Jason Mraz",
+          "period": "第六节",
+          "status": "both-sources",
           "netease": {
             "playlistId": "447115262",
             "songId": "26797847",
             "order": 6
+          },
+          "tieba": {
+            "recordId": "2014-06-06",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
           }
         },
         {
           "order": 7,
           "title": "Farewell",
           "artist": "Rihanna",
-          "period": null,
-          "status": "netease-current-only",
+          "period": "第七节",
+          "status": "both-sources",
           "netease": {
             "playlistId": "447115262",
             "songId": "21562979",
             "order": 7
+          },
+          "tieba": {
+            "recordId": "2014-06-07",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
           }
         },
         {
           "order": 8,
           "title": "Burn It Down",
           "artist": "Linkin Park",
-          "period": null,
-          "status": "netease-current-only",
+          "period": "第八节",
+          "status": "both-sources",
           "netease": {
             "playlistId": "447115262",
             "songId": "4151845",
             "order": 8
+          },
+          "tieba": {
+            "recordId": "2014-06-08",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
           }
         },
         {
@@ -3134,9 +3255,34 @@
             "songId": "5100769",
             "order": 10
           }
+        },
+        {
+          "order": null,
+          "title": "Hush Hush",
+          "artist": "The Pussycat Dolls",
+          "period": "晚自习第一节",
+          "status": "tieba-historical-only",
+          "tieba": {
+            "recordId": "2014-06-09",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
+          }
+        },
+        {
+          "order": null,
+          "title": "Nothin' on You",
+          "artist": "B.o.B",
+          "period": "晚自习第二节",
+          "status": "tieba-historical-only",
+          "tieba": {
+            "recordId": "2014-06-10",
+            "source": "https://tieba.baidu.com/p/2253394145",
+            "confidence": "原帖记录·课次待确认"
+          }
         }
       ],
       "reviewFlags": [
+        "贴吧历史记录未在当前网易云曲目中匹配",
         "保留歌单简介原文"
       ]
     },
@@ -5053,7 +5199,7 @@
       },
       "tiebaRecords": [
         {
-          "id": "2015-06-early",
+          "id": "2015-06-01",
           "period": "早起",
           "title": "Can We Dance",
           "artist": "The Vamps",
@@ -5061,7 +5207,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-06-01",
+          "id": "2015-06-02",
           "period": "第一节",
           "title": "Bad Blood",
           "artist": "Taylor Swift",
@@ -5109,7 +5255,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-06-08-09",
+          "id": "2015-06-08",
           "period": "第八、九节",
           "title": "Shut Up and Dance",
           "artist": "Walk the Moon",
@@ -5117,7 +5263,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-06-10",
+          "id": "2015-06-09",
           "period": "第十节",
           "title": "Evil in the Night",
           "artist": "Adam Lambert",
@@ -5125,7 +5271,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-06-11",
+          "id": "2015-06-10",
           "period": "第十一节",
           "title": "This Summer's Gonna Hurt",
           "artist": "Maroon 5",
@@ -5230,7 +5376,7 @@
             "order": 1
           },
           "tieba": {
-            "recordId": "2015-06-early",
+            "recordId": "2015-06-01",
             "source": "https://tieba.baidu.com/p/3323924877",
             "confidence": "原帖记录"
           }
@@ -5247,7 +5393,7 @@
             "order": 2
           },
           "tieba": {
-            "recordId": "2015-06-01",
+            "recordId": "2015-06-02",
             "source": "https://tieba.baidu.com/p/3323924877",
             "confidence": "原帖记录"
           }
@@ -5349,7 +5495,7 @@
             "order": 8
           },
           "tieba": {
-            "recordId": "2015-06-08-09",
+            "recordId": "2015-06-08",
             "source": "https://tieba.baidu.com/p/3323924877",
             "confidence": "原帖记录"
           }
@@ -5366,7 +5512,7 @@
             "order": 9
           },
           "tieba": {
-            "recordId": "2015-06-10",
+            "recordId": "2015-06-09",
             "source": "https://tieba.baidu.com/p/3323924877",
             "confidence": "原帖记录"
           }
@@ -5390,7 +5536,7 @@
           "period": "第十一节",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2015-06-11",
+            "recordId": "2015-06-10",
             "source": "https://tieba.baidu.com/p/3323924877",
             "confidence": "原帖记录"
           }
@@ -5482,7 +5628,7 @@
       },
       "tiebaRecords": [
         {
-          "id": "2015-09-early",
+          "id": "2015-09-01",
           "period": "早起",
           "title": "Go Big Or Go Home",
           "artist": "American Authors",
@@ -5490,7 +5636,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-09-01",
+          "id": "2015-09-02",
           "period": "第一节",
           "title": "Blank Space",
           "artist": "Taylor Swift",
@@ -5538,7 +5684,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-09-08-09",
+          "id": "2015-09-08",
           "period": "第八、九节",
           "title": "Honey, I'm Good",
           "artist": "Andy Grammer",
@@ -5546,7 +5692,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-09-10",
+          "id": "2015-09-09",
           "period": "第十节",
           "title": "Rumors",
           "artist": "Adam Lambert feat. Tove Lo",
@@ -5554,7 +5700,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-09-11",
+          "id": "2015-09-10",
           "period": "第十一节",
           "title": "Lean On",
           "artist": "Major Lazer, DJ Snake & MØ",
@@ -5672,7 +5818,7 @@
             "order": 2
           },
           "tieba": {
-            "recordId": "2015-09-01",
+            "recordId": "2015-09-02",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -5774,7 +5920,7 @@
             "order": 8
           },
           "tieba": {
-            "recordId": "2015-09-08-09",
+            "recordId": "2015-09-08",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -5791,7 +5937,7 @@
             "order": 9
           },
           "tieba": {
-            "recordId": "2015-09-10",
+            "recordId": "2015-09-09",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -5808,7 +5954,7 @@
             "order": 10
           },
           "tieba": {
-            "recordId": "2015-09-11",
+            "recordId": "2015-09-10",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -5820,7 +5966,7 @@
           "period": "早起",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2015-09-early",
+            "recordId": "2015-09-01",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -5912,7 +6058,7 @@
       },
       "tiebaRecords": [
         {
-          "id": "2015-10-early",
+          "id": "2015-10-01",
           "period": "早起",
           "title": "Invincible",
           "artist": "Kelly Clarkson",
@@ -5920,9 +6066,9 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-10-01",
+          "id": "2015-10-02",
           "period": "第一节",
-          "title": "Today's The Day",
+          "title": "Today's the Day",
           "artist": "P!nk",
           "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
@@ -5968,7 +6114,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-10-09",
+          "id": "2015-10-08",
           "period": "第九节",
           "title": "Cannonball",
           "artist": "Skylar Grey feat. X Ambassadors",
@@ -5976,7 +6122,15 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-10-11",
+          "id": "2015-10-09",
+          "period": "第十节",
+          "title": "Fire N Gold",
+          "artist": "Bea Miller",
+          "source": "https://tieba.baidu.com/p/4020077190",
+          "confidence": "原帖记录"
+        },
+        {
+          "id": "2015-10-10",
           "period": "第十一节",
           "title": "What Do You Mean?",
           "artist": "Justin Bieber",
@@ -6081,14 +6235,14 @@
             "order": 1
           },
           "tieba": {
-            "recordId": "2015-10-early",
+            "recordId": "2015-10-01",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
         {
           "order": 2,
-          "title": "Today's The Day",
+          "title": "Today's the Day",
           "artist": "P!nk",
           "period": "第一节",
           "status": "both-sources",
@@ -6098,7 +6252,7 @@
             "order": 2
           },
           "tieba": {
-            "recordId": "2015-10-01",
+            "recordId": "2015-10-02",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -6200,7 +6354,7 @@
             "order": 8
           },
           "tieba": {
-            "recordId": "2015-10-09",
+            "recordId": "2015-10-08",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -6209,12 +6363,17 @@
           "order": 9,
           "title": "Fire N Gold",
           "artist": "Bea Miller",
-          "period": null,
-          "status": "netease-current-only",
+          "period": "第十节",
+          "status": "both-sources",
           "netease": {
             "playlistId": "449121404",
             "songId": "28461887",
             "order": 9
+          },
+          "tieba": {
+            "recordId": "2015-10-09",
+            "source": "https://tieba.baidu.com/p/4020077190",
+            "confidence": "原帖记录"
           }
         },
         {
@@ -6229,7 +6388,7 @@
             "order": 10
           },
           "tieba": {
-            "recordId": "2015-10-11",
+            "recordId": "2015-10-10",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -6320,7 +6479,7 @@
       },
       "tiebaRecords": [
         {
-          "id": "2015-11-early",
+          "id": "2015-11-01",
           "period": "早起",
           "title": "I Don't Want to Go to Bed",
           "artist": "Simple Plan feat. Nelly",
@@ -6328,7 +6487,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-11-01",
+          "id": "2015-11-02",
           "period": "第一节",
           "title": "Turnin'",
           "artist": "Young Rising Sons",
@@ -6338,7 +6497,7 @@
         {
           "id": "2015-11-03",
           "period": "第三节",
-          "title": "Something In the Way You Move",
+          "title": "Something in the Way You Move",
           "artist": "Ellie Goulding",
           "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
@@ -6370,13 +6529,13 @@
         {
           "id": "2015-11-07",
           "period": "第七节",
-          "title": "Lay It All On Me",
+          "title": "Lay It All on Me",
           "artist": "Rudimental feat. Ed Sheeran",
           "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-11-09",
+          "id": "2015-11-08",
           "period": "第九节",
           "title": "Bang My Head",
           "artist": "David Guetta feat. Sia & Fetty Wap",
@@ -6384,7 +6543,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-11-10",
+          "id": "2015-11-09",
           "period": "第十节",
           "title": "Fire N Gold",
           "artist": "Bea Miller",
@@ -6392,7 +6551,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-11-11",
+          "id": "2015-11-10",
           "period": "第十一节",
           "title": "How Deep Is Your Love",
           "artist": "Calvin Harris & Disciples",
@@ -6501,7 +6660,7 @@
             "order": 1
           },
           "tieba": {
-            "recordId": "2015-11-early",
+            "recordId": "2015-11-01",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -6518,14 +6677,14 @@
             "order": 2
           },
           "tieba": {
-            "recordId": "2015-11-01",
+            "recordId": "2015-11-02",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
         {
           "order": 3,
-          "title": "Something In the Way You Move",
+          "title": "Something in the Way You Move",
           "artist": "Ellie Goulding",
           "period": "第三节",
           "status": "both-sources",
@@ -6615,7 +6774,7 @@
             "order": 8
           },
           "tieba": {
-            "recordId": "2015-11-09",
+            "recordId": "2015-11-08",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -6632,7 +6791,7 @@
             "order": 9
           },
           "tieba": {
-            "recordId": "2015-11-10",
+            "recordId": "2015-11-09",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -6649,14 +6808,14 @@
             "order": 10
           },
           "tieba": {
-            "recordId": "2015-11-11",
+            "recordId": "2015-11-10",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
         {
           "order": null,
-          "title": "Lay It All On Me",
+          "title": "Lay It All on Me",
           "artist": "Rudimental feat. Ed Sheeran",
           "period": "第七节",
           "status": "tieba-historical-only",
@@ -6753,7 +6912,7 @@
       },
       "tiebaRecords": [
         {
-          "id": "2015-12-early",
+          "id": "2015-12-01",
           "period": "早起",
           "title": "Get Over Me",
           "artist": "Nick Carter feat. Avril Lavigne",
@@ -6761,9 +6920,9 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-12-01",
+          "id": "2015-12-02",
           "period": "第一节",
-          "title": "Stand By You",
+          "title": "Stand by You",
           "artist": "Rachel Platten",
           "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
@@ -6771,7 +6930,7 @@
         {
           "id": "2015-12-03",
           "period": "第三节",
-          "title": "Hoping For Snow",
+          "title": "Hoping for Snow",
           "artist": "The Vamps",
           "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
@@ -6809,7 +6968,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-12-09",
+          "id": "2015-12-08",
           "period": "第九节",
           "title": "A Head Full of Dreams",
           "artist": "Coldplay",
@@ -6817,7 +6976,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-12-10",
+          "id": "2015-12-09",
           "period": "第十节",
           "title": "I Know What You Did Last Summer",
           "artist": "Shawn Mendes & Camila Cabello",
@@ -6825,7 +6984,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2015-12-11",
+          "id": "2015-12-10",
           "period": "第十一节",
           "title": "Roses",
           "artist": "The Chainsmokers feat. ROZES",
@@ -6933,14 +7092,14 @@
             "order": 1
           },
           "tieba": {
-            "recordId": "2015-12-early",
+            "recordId": "2015-12-01",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
         {
           "order": 2,
-          "title": "Stand By You",
+          "title": "Stand by You",
           "artist": "Rachel Platten",
           "period": "第一节",
           "status": "both-sources",
@@ -6950,14 +7109,14 @@
             "order": 2
           },
           "tieba": {
-            "recordId": "2015-12-01",
+            "recordId": "2015-12-02",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
         {
           "order": 3,
-          "title": "Hoping For Snow",
+          "title": "Hoping for Snow",
           "artist": "The Vamps",
           "period": "第三节",
           "status": "both-sources",
@@ -7052,7 +7211,7 @@
             "order": 8
           },
           "tieba": {
-            "recordId": "2015-12-09",
+            "recordId": "2015-12-08",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -7069,7 +7228,7 @@
             "order": 9
           },
           "tieba": {
-            "recordId": "2015-12-10",
+            "recordId": "2015-12-09",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -7086,7 +7245,7 @@
             "order": 10
           },
           "tieba": {
-            "recordId": "2015-12-11",
+            "recordId": "2015-12-10",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -9086,7 +9245,7 @@
       "playlist": null,
       "tiebaRecords": [
         {
-          "id": "2017-08-early",
+          "id": "2017-08-01",
           "period": "早起",
           "title": "Numb",
           "artist": "Linkin Park",
@@ -9094,7 +9253,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2017-08-01",
+          "id": "2017-08-02",
           "period": "第一节",
           "title": "Summer Vibe",
           "artist": "Walk off the Earth",
@@ -9142,7 +9301,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2017-08-09",
+          "id": "2017-08-08",
           "period": "第九节",
           "title": "So Stop the World",
           "artist": "Emma Stevens",
@@ -9150,7 +9309,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2017-08-10",
+          "id": "2017-08-09",
           "period": "第十节",
           "title": "Strip That Down",
           "artist": "Liam Payne feat. Quavo",
@@ -9158,7 +9317,7 @@
           "confidence": "原帖记录"
         },
         {
-          "id": "2017-08-11",
+          "id": "2017-08-10",
           "period": "第十一节",
           "title": "Mind over Matter (Acoustic)",
           "artist": "PVRIS",
@@ -9175,7 +9334,7 @@
           "period": "早起",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2017-08-early",
+            "recordId": "2017-08-01",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -9187,7 +9346,7 @@
           "period": "第一节",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2017-08-01",
+            "recordId": "2017-08-02",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -9259,7 +9418,7 @@
           "period": "第九节",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2017-08-09",
+            "recordId": "2017-08-08",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -9271,7 +9430,7 @@
           "period": "第十节",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2017-08-10",
+            "recordId": "2017-08-09",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -9283,7 +9442,7 @@
           "period": "第十一节",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2017-08-11",
+            "recordId": "2017-08-10",
             "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
@@ -9298,19 +9457,19 @@
       "playlist": null,
       "tiebaRecords": [
         {
-          "id": "2018-07-early",
+          "id": "2018-07-01",
           "period": "早起",
           "title": "Don't You",
           "artist": "Wonderful Humans",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
-          "id": "2018-07-01",
+          "id": "2018-07-02",
           "period": "第一节",
           "title": "You Give Me Life",
           "artist": "iLY",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
@@ -9318,7 +9477,7 @@
           "period": "第三节",
           "title": "Lights Out",
           "artist": "Virginia to Vegas",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
@@ -9326,7 +9485,7 @@
           "period": "第四节",
           "title": "Tokyo",
           "artist": "Truitt & Light House",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
@@ -9334,7 +9493,7 @@
           "period": "第五节",
           "title": "Oops",
           "artist": "Little Mix feat. Charlie Puth",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
@@ -9342,7 +9501,7 @@
           "period": "第六节",
           "title": "Loving You Tonight",
           "artist": "Andrew Allen",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
@@ -9350,7 +9509,7 @@
           "period": "第七节",
           "title": "Girl with a Suntan",
           "artist": "Jai Waetford",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
@@ -9358,23 +9517,23 @@
           "period": "第八节",
           "title": "That's So Us",
           "artist": "Allie X",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
+          "confidence": "原帖记录"
+        },
+        {
+          "id": "2018-07-09",
+          "period": "第十节",
+          "title": "We Don't Have To",
+          "artist": "Jai Waetford",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         },
         {
           "id": "2018-07-10",
-          "period": "第十节",
-          "title": "We Don't Have To",
-          "artist": "Jai Waetford",
-          "source": "https://tieba.baidu.com/",
-          "confidence": "原帖记录"
-        },
-        {
-          "id": "2018-07-11",
           "period": "第十一节",
           "title": "Closer (80s Remix)",
           "artist": "TRONICBOX / The Chainsmokers / Halsey",
-          "source": "https://tieba.baidu.com/",
+          "source": "https://tieba.baidu.com/p/4020077190",
           "confidence": "原帖记录"
         }
       ],
@@ -9387,8 +9546,8 @@
           "period": "早起",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2018-07-early",
-            "source": "https://tieba.baidu.com/",
+            "recordId": "2018-07-01",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9399,8 +9558,8 @@
           "period": "第一节",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2018-07-01",
-            "source": "https://tieba.baidu.com/",
+            "recordId": "2018-07-02",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9412,7 +9571,7 @@
           "status": "tieba-historical-only",
           "tieba": {
             "recordId": "2018-07-03",
-            "source": "https://tieba.baidu.com/",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9424,7 +9583,7 @@
           "status": "tieba-historical-only",
           "tieba": {
             "recordId": "2018-07-04",
-            "source": "https://tieba.baidu.com/",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9436,7 +9595,7 @@
           "status": "tieba-historical-only",
           "tieba": {
             "recordId": "2018-07-05",
-            "source": "https://tieba.baidu.com/",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9448,7 +9607,7 @@
           "status": "tieba-historical-only",
           "tieba": {
             "recordId": "2018-07-06",
-            "source": "https://tieba.baidu.com/",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9460,7 +9619,7 @@
           "status": "tieba-historical-only",
           "tieba": {
             "recordId": "2018-07-07",
-            "source": "https://tieba.baidu.com/",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9472,7 +9631,7 @@
           "status": "tieba-historical-only",
           "tieba": {
             "recordId": "2018-07-08",
-            "source": "https://tieba.baidu.com/",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9483,8 +9642,8 @@
           "period": "第十节",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2018-07-10",
-            "source": "https://tieba.baidu.com/",
+            "recordId": "2018-07-09",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         },
@@ -9495,8 +9654,8 @@
           "period": "第十一节",
           "status": "tieba-historical-only",
           "tieba": {
-            "recordId": "2018-07-11",
-            "source": "https://tieba.baidu.com/",
+            "recordId": "2018-07-10",
+            "source": "https://tieba.baidu.com/p/4020077190",
             "confidence": "原帖记录"
           }
         }

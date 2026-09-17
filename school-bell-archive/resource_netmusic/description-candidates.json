@@ -1,15 +1,29 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-09-16T15:26:48.900Z",
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-17T02:18:17.573Z",
   "source": "resource_netmusic/merged-catalog.json",
   "rules": {
     "candidate": "歌单简介明确写出时段，但尚未与贴吧、截图或校友记忆交叉确认",
-    "promoted": "只有经过人工审核或投票达到门槛后，才进入正式猜歌题库"
+    "promoted": "与贴吧原帖交叉一致，或经人工审核／投票达到门槛后，才进入正式猜歌题库",
+    "sessionRestart": "同一课时名重复出现时，按上午／下午／晚自习分段编号还原为全天连续课时"
   },
+  "warnings": [
+    {
+      "month": "2021-04",
+      "reason": "简介解析出的曲目少于 4 条，可能是补充说明而非正式歌单",
+      "parsed": 1
+    }
+  ],
   "stats": {
-    "candidates": 208,
-    "withCanonicalPeriod": 208,
-    "months": 22
+    "candidates": 298,
+    "withCanonicalPeriod": 298,
+    "months": 29,
+    "restartMonths": [
+      "2014-03",
+      "2014-05",
+      "2014-06",
+      "2014-09"
+    ]
   },
   "candidates": [
     {
@@ -17,8 +31,11 @@
       "month": "2013-04",
       "period": "早起",
       "periodLabel": "早起床",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Firework",
       "artist": "Katy Perry",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -36,8 +53,11 @@
       "month": "2013-04",
       "period": "第一节",
       "periodLabel": "第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Because You Live",
       "artist": "Jesse Mccartney",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -55,8 +75,11 @@
       "month": "2013-04",
       "period": "第三节",
       "periodLabel": "第三节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "What Makes You Beautiful",
       "artist": "One Direction",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -74,8 +97,11 @@
       "month": "2013-04",
       "period": "第四节",
       "periodLabel": "第四节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Work of Art",
       "artist": "Demi Lovato",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -93,8 +119,11 @@
       "month": "2013-04",
       "period": "第五节",
       "periodLabel": "第五节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Start Of Something New",
       "artist": "歌舞青春主题曲",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -112,8 +141,11 @@
       "month": "2013-04",
       "period": "第六节",
       "periodLabel": "第六节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "I Stay In Love",
       "artist": "Mariah Carey",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -131,8 +163,11 @@
       "month": "2013-04",
       "period": "第七节",
       "periodLabel": "第七节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "The Climb",
       "artist": "Miley Cyrus",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -150,8 +185,11 @@
       "month": "2013-04",
       "period": "第八节",
       "periodLabel": "第八节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "apologize",
       "artist": "Timbaland",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -169,8 +207,11 @@
       "month": "2013-04",
       "period": "晚自习第一节",
       "periodLabel": "晚第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Mad World",
       "artist": "Adam Lambert",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -188,8 +229,11 @@
       "month": "2013-04",
       "period": "晚自习第二节",
       "periodLabel": "晚第二节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Trouble Is A Friend",
       "artist": "Lenka",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -207,8 +251,11 @@
       "month": "2013-04",
       "period": "就寝",
       "periodLabel": "晚睡觉",
-      "title": "Leona Lewis",
-      "artist": "Better In Time",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Better In Time",
+      "artist": "Leona Lewis",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -226,8 +273,11 @@
       "month": "2013-08",
       "period": "早起",
       "periodLabel": "早起床",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Russian Roulette",
       "artist": "Rihanna",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -245,8 +295,11 @@
       "month": "2013-08",
       "period": "第一节",
       "periodLabel": "第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Domino",
       "artist": "Jessie J",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -264,8 +317,11 @@
       "month": "2013-08",
       "period": "第三节",
       "periodLabel": "第三节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Love is a lie",
       "artist": "Simple Plan",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -283,8 +339,11 @@
       "month": "2013-08",
       "period": "第四节",
       "periodLabel": "第四节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Almost Lover",
       "artist": "A Fine Frenzy",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -302,8 +361,11 @@
       "month": "2013-08",
       "period": "第五节",
       "periodLabel": "第五节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Free Loop",
       "artist": "Daniel Powter",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -321,8 +383,11 @@
       "month": "2013-08",
       "period": "第六节",
       "periodLabel": "第六节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Goodbye Alice in Wonderland",
       "artist": "Jewel",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -340,8 +405,11 @@
       "month": "2013-08",
       "period": "第七节",
       "periodLabel": "第七节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Better that I know myself",
       "artist": "Adam Lambert （？）",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -359,8 +427,11 @@
       "month": "2013-08",
       "period": "第八节",
       "periodLabel": "第八节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "No promises",
       "artist": "Shayne Ward",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -378,8 +449,11 @@
       "month": "2013-08",
       "period": "晚自习第一节",
       "periodLabel": "晚第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Second Time Around",
       "artist": "Lady Gaga",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -397,8 +471,11 @@
       "month": "2013-08",
       "period": "晚自习第二节",
       "periodLabel": "晚第二节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "All the Lovers",
       "artist": "Kylie Minogue",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -416,8 +493,11 @@
       "month": "2013-08",
       "period": "就寝",
       "periodLabel": "晚睡觉",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "If you want me",
       "artist": "Glen Hansard Marketa Irglova",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -435,8 +515,11 @@
       "month": "2013-09",
       "period": "早起",
       "periodLabel": "早起床",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "No Boundaries",
       "artist": "Adam Lambert",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -454,8 +537,11 @@
       "month": "2013-09",
       "period": "第一节",
       "periodLabel": "第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Crazy Kids",
-      "artist": "Ke$ha 后改成 Blow- Ke$ha",
+      "artist": "Ke$ha",
+      "note": "后改成 Blow- Ke$ha",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -473,8 +559,11 @@
       "month": "2013-09",
       "period": "第三节",
       "periodLabel": "第三节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Never Know",
       "artist": "Jack Johnson",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -492,8 +581,11 @@
       "month": "2013-09",
       "period": "第四节",
       "periodLabel": "第四节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Stand",
       "artist": "Jewel",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -511,8 +603,11 @@
       "month": "2013-09",
       "period": "第五节",
       "periodLabel": "第五节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Call You Tonight",
       "artist": "Johnta Austin",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -530,8 +625,11 @@
       "month": "2013-09",
       "period": "第六节",
       "periodLabel": "第六节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Safe & Sound",
       "artist": "Taylor Swift",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -549,8 +647,11 @@
       "month": "2013-09",
       "period": "第七节",
       "periodLabel": "第七节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Somebody That I Used To Know",
       "artist": "Gotye",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -568,8 +669,11 @@
       "month": "2013-09",
       "period": "第八节",
       "periodLabel": "第八节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Burning In The Skies",
       "artist": "Linkin Park",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -587,8 +691,11 @@
       "month": "2013-09",
       "period": "晚自习第一节",
       "periodLabel": "晚第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Roar",
       "artist": "Katy perry",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -606,8 +713,11 @@
       "month": "2013-09",
       "period": "晚自习第二节",
       "periodLabel": "晚第二节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "We Are Young",
       "artist": "Fun.",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -625,8 +735,11 @@
       "month": "2013-09",
       "period": "就寝",
       "periodLabel": "晚睡觉",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "The Sound Of Silence",
       "artist": "Ania",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -644,8 +757,11 @@
       "month": "2013-12",
       "period": "早起",
       "periodLabel": "早起床",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Better Than I Know Myself",
       "artist": "Adam Lambert",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -663,8 +779,11 @@
       "month": "2013-12",
       "period": "第一节",
       "periodLabel": "第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Applause",
       "artist": "Lady Gaga",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -682,8 +801,11 @@
       "month": "2013-12",
       "period": "第三节",
       "periodLabel": "第三节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Beauty And A Beat",
       "artist": "Justin Bieber",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -701,8 +823,11 @@
       "month": "2013-12",
       "period": "第四节",
       "periodLabel": "第四节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Red",
       "artist": "Taylor Swift",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -720,8 +845,11 @@
       "month": "2013-12",
       "period": "第五节",
       "periodLabel": "第五节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "International Smile",
       "artist": "Katy Perry",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -739,8 +867,11 @@
       "month": "2013-12",
       "period": "第六节",
       "periodLabel": "第六节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Let Her Go",
       "artist": "Passenger",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -758,8 +889,11 @@
       "month": "2013-12",
       "period": "第七节",
       "periodLabel": "第七节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Plan B",
       "artist": "Kylee",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -777,8 +911,11 @@
       "month": "2013-12",
       "period": "第八节",
       "periodLabel": "第八节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Here’s To Never Growing Up",
       "artist": "Avril Lavigne",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -796,8 +933,11 @@
       "month": "2013-12",
       "period": "晚自习第一节",
       "periodLabel": "晚第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "We Can’t Stop",
       "artist": "Miley Cyrus",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -815,8 +955,11 @@
       "month": "2013-12",
       "period": "晚自习第二节",
       "periodLabel": "晚第二节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Good Time",
       "artist": "Owl City",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -834,8 +977,11 @@
       "month": "2013-12",
       "period": "就寝",
       "periodLabel": "晚睡觉",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Chasing Pavements",
       "artist": "Adele",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -853,8 +999,11 @@
       "month": "2014-01",
       "period": "早起",
       "periodLabel": "早起床",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Brightest Morning Star",
       "artist": "Britney Spears",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -872,8 +1021,11 @@
       "month": "2014-01",
       "period": "第一节",
       "periodLabel": "第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Burn",
       "artist": "Ellie Goulding",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -891,8 +1043,11 @@
       "month": "2014-01",
       "period": "第三节",
       "periodLabel": "第三节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Counting Stars",
       "artist": "OneRepublic",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -910,8 +1065,11 @@
       "month": "2014-01",
       "period": "第四节",
       "periodLabel": "第四节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Unconditionally",
       "artist": "Katy Perry",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -929,8 +1087,11 @@
       "month": "2014-01",
       "period": "第五节",
       "periodLabel": "第五节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "The Monster",
       "artist": "Rihanna",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -948,8 +1109,11 @@
       "month": "2014-01",
       "period": "第六节",
       "periodLabel": "第六节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Young And Beautiful",
       "artist": "Lana Del Rey",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -967,8 +1131,11 @@
       "month": "2014-01",
       "period": "第七节",
       "periodLabel": "第七节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Stay Here Forever",
       "artist": "Jewel",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -986,8 +1153,11 @@
       "month": "2014-01",
       "period": "第八节",
       "periodLabel": "第八节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Breathless",
       "artist": "Shayne Ward",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1005,8 +1175,11 @@
       "month": "2014-01",
       "period": "晚自习第一节",
       "periodLabel": "晚第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Demons",
       "artist": "Imagine Dragon",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1024,8 +1197,11 @@
       "month": "2014-01",
       "period": "晚自习第二节",
       "periodLabel": "晚第二节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Jet Lag",
       "artist": "Simple Plan",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1043,8 +1219,11 @@
       "month": "2014-01",
       "period": "就寝",
       "periodLabel": "晚睡觉",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Say Something",
       "artist": "A Great Big World(ft. Christina Aguilera)",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1062,8 +1241,11 @@
       "month": "2014-03",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Into The Blue",
       "artist": "Kylie Minoque",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1081,8 +1263,11 @@
       "month": "2014-03",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 0,
       "title": "Can’t Remember To Forget You",
       "artist": "Rihanna&Shakira",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1100,8 +1285,11 @@
       "month": "2014-03",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": "第三节",
+      "sessionBlock": 0,
       "title": "Alien",
       "artist": "Britney Spears",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1119,8 +1307,11 @@
       "month": "2014-03",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": "第四节",
+      "sessionBlock": 0,
       "title": "Radioactive",
       "artist": "Imagine Dragon",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1138,8 +1329,11 @@
       "month": "2014-03",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": "第五节",
+      "sessionBlock": 0,
       "title": "Wild Heart",
       "artist": "The Vamps",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1155,10 +1349,13 @@
     {
       "id": "netease-description-2014-03-06",
       "month": "2014-03",
-      "period": "第一节",
+      "period": "第六节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 1,
       "title": "Stay",
       "artist": "Rihanna",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1174,10 +1371,13 @@
     {
       "id": "netease-description-2014-03-07",
       "month": "2014-03",
-      "period": "第二节",
+      "period": "第七节",
       "periodLabel": "第二节",
+      "originalPeriodLabel": "第二节",
+      "sessionBlock": 1,
       "title": "Diet Mountain Dew",
       "artist": "Lana Del Rey",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1193,10 +1393,13 @@
     {
       "id": "netease-description-2014-03-08",
       "month": "2014-03",
-      "period": "第三节",
+      "period": "第八节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": "第三节",
+      "sessionBlock": 1,
       "title": "Dark Horse",
       "artist": "Katy Perry",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1212,10 +1415,13 @@
     {
       "id": "netease-description-2014-03-09",
       "month": "2014-03",
-      "period": "第一节",
+      "period": "晚自习第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 2,
       "title": "Rather Be(feat.Christina)",
       "artist": "Clean Bandit",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1231,10 +1437,13 @@
     {
       "id": "netease-description-2014-03-10",
       "month": "2014-03",
-      "period": "第二节",
+      "period": "晚自习第二节",
       "periodLabel": "第二节",
+      "originalPeriodLabel": "第二节",
+      "sessionBlock": 2,
       "title": "I Really Want It",
       "artist": "A Great Big World",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1252,8 +1461,11 @@
       "month": "2014-03",
       "period": "就寝",
       "periodLabel": "就寝",
+      "originalPeriodLabel": "就寝",
+      "sessionBlock": 2,
       "title": "You Lost Me",
       "artist": "Christina Aguilera",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1267,12 +1479,455 @@
       }
     },
     {
+      "id": "netease-description-2014-04-01",
+      "month": "2014-04",
+      "period": "早起",
+      "periodLabel": "早起床",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Can we dance",
+      "artist": "The Vamps",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "早 起床 Can we dance——The Vamps"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-02",
+      "month": "2014-04",
+      "period": "第一节",
+      "periodLabel": "第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "第一节下课 Happy——Pharrell Williams"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-03",
+      "month": "2014-04",
+      "period": "第三节",
+      "periodLabel": "第三节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Radioactive",
+      "artist": "Marina & The Diamonds",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "第三节下课 Radioactive——Marina & The Diamonds"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-04",
+      "month": "2014-04",
+      "period": "第四节",
+      "periodLabel": "第四节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Brave",
+      "artist": "Sara Bareilles",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "第四节下课 Brave——Sara Bareilles"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-05",
+      "month": "2014-04",
+      "period": "第五节",
+      "periodLabel": "第五节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Hero",
+      "artist": "Skillet",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "第五节下课 Hero ——Skillet"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-06",
+      "month": "2014-04",
+      "period": "第六节",
+      "periodLabel": "第六节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Let it go",
+      "artist": "Idina Menzel",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "第六节下课 Let it go——Idina Menzel"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-07",
+      "month": "2014-04",
+      "period": "第七节",
+      "periodLabel": "第七节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Team",
+      "artist": "Lorde",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "第七节下课 Team——Lorde"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-08",
+      "month": "2014-04",
+      "period": "第八节",
+      "periodLabel": "第八节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Pompeii",
+      "artist": "Bastille",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "第八节下课 Pompeii——Bastille"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-09",
+      "month": "2014-04",
+      "period": "晚自习第一节",
+      "periodLabel": "晚第一节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Birthday",
+      "artist": "Katy Perry",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "晚 第一节下课 Birthday——Katy Perry"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-10",
+      "month": "2014-04",
+      "period": "晚自习第二节",
+      "periodLabel": "晚第二节下课",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Trespassing",
+      "artist": "Adam Lambert",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "晚 第二节下课 Trespassing——Adam Lambert"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-04-11",
+      "month": "2014-04",
+      "period": "就寝",
+      "periodLabel": "晚睡觉",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "All of me",
+      "artist": "John Legend",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "445703694",
+        "playlistUrl": "https://music.163.com/#/playlist?id=445703694",
+        "descriptionRaw": "晚 睡觉 All of me——John Legend"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
       "id": "netease-description-2014-05-01",
       "month": "2014-05",
-      "period": "第二节",
+      "period": "早起",
+      "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "I will never let you down",
+      "artist": "Rita Ora",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "早起： I will never let you down——Rita Ora"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-02",
+      "month": "2014-05",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 0,
+      "title": "Cry me out",
+      "artist": "Pixie",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第一节：Cry me out——Pixie"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-03",
+      "month": "2014-05",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": "第三节",
+      "sessionBlock": 0,
+      "title": "By the grace of god",
+      "artist": "Katy Perry",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第三节：By the grace of god——Katy Perry"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-04",
+      "month": "2014-05",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "originalPeriodLabel": "第四节",
+      "sessionBlock": 0,
+      "title": "La la la",
+      "artist": "Naughty boy",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第四节：La la la——Naughty boy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-05",
+      "month": "2014-05",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "originalPeriodLabel": "第五节",
+      "sessionBlock": 0,
+      "title": "Kiss it goodbye",
+      "artist": "Miley Cyrus",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第五节：Kiss it goodbye——Miley Cyrus"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-06",
+      "month": "2014-05",
+      "period": "第六节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 1,
+      "title": "Wonderland",
+      "artist": "Ke$ha",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第一节：Wonderland——Ke$ha"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-07",
+      "month": "2014-05",
+      "period": "第七节",
       "periodLabel": "第二节",
-      "title": "Best day of my life——American Authors 后换成 wake me up",
-      "artist": "Avicii",
+      "originalPeriodLabel": "第二节",
+      "sessionBlock": 1,
+      "title": "What Now",
+      "artist": "Rihanna",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第二节： What Now——Rihanna"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-08",
+      "month": "2014-05",
+      "period": "第八节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": "第三节",
+      "sessionBlock": 1,
+      "title": "We Are One (Ole Ola)",
+      "artist": "[The Official 2014 FIFA World Cup Song] Pitbull&Jennifer Lopez",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第三节：We Are One (Ole Ola) ——[The Official 2014 FIFA World Cup Song] Pitbull&Jennifer Lopez"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-09",
+      "month": "2014-05",
+      "period": "晚自习第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 2,
+      "title": "Last night",
+      "artist": "The Vamps",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447085789",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447085789",
+        "descriptionRaw": "第一节：Last night——The Vamps"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-05-10",
+      "month": "2014-05",
+      "period": "晚自习第二节",
+      "periodLabel": "第二节",
+      "originalPeriodLabel": "第二节",
+      "sessionBlock": 2,
+      "title": "Best day of my life",
+      "artist": "American Authors",
+      "note": "后换成 wake me up -Avicii",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1286,12 +1941,15 @@
       }
     },
     {
-      "id": "netease-description-2014-05-02",
+      "id": "netease-description-2014-05-11",
       "month": "2014-05",
       "period": "就寝",
       "periodLabel": "就寝",
-      "title": "月光曲——Achille",
-      "artist": "Claude Debussy",
+      "originalPeriodLabel": "就寝",
+      "sessionBlock": 2,
+      "title": "月光曲",
+      "artist": "Achille-Claude Debussy",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1309,8 +1967,11 @@
       "month": "2014-06",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "You raise me up",
       "artist": "Westlife",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1328,8 +1989,11 @@
       "month": "2014-06",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 0,
       "title": "Love you so",
       "artist": "Natalie",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1347,8 +2011,11 @@
       "month": "2014-06",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": "第三节",
+      "sessionBlock": 0,
       "title": "Mad",
       "artist": "Ne-yo",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1366,8 +2033,11 @@
       "month": "2014-06",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": "第四节",
+      "sessionBlock": 0,
       "title": "I Believe",
       "artist": "Agnes Clarlsson",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1385,8 +2055,11 @@
       "month": "2014-06",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": "第五节",
+      "sessionBlock": 0,
       "title": "Where is the love?",
       "artist": "Black Eyed Peas",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1402,10 +2075,13 @@
     {
       "id": "netease-description-2014-06-06",
       "month": "2014-06",
-      "period": "第一节",
+      "period": "第六节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 1,
       "title": "Lucky",
       "artist": "Jason Marz",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1421,10 +2097,13 @@
     {
       "id": "netease-description-2014-06-07",
       "month": "2014-06",
-      "period": "第二节",
+      "period": "第七节",
       "periodLabel": "第二节",
+      "originalPeriodLabel": "第二节",
+      "sessionBlock": 1,
       "title": "Farewell",
       "artist": "Rihanna",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1440,10 +2119,13 @@
     {
       "id": "netease-description-2014-06-08",
       "month": "2014-06",
-      "period": "第三节",
+      "period": "第八节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": "第三节",
+      "sessionBlock": 1,
       "title": "Burn It Down",
       "artist": "Linkin Park",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1459,10 +2141,13 @@
     {
       "id": "netease-description-2014-06-09",
       "month": "2014-06",
-      "period": "第一节",
+      "period": "晚自习第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 2,
       "title": "Hush Hush",
       "artist": "The Pussycats Dolls",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1478,10 +2163,13 @@
     {
       "id": "netease-description-2014-06-10",
       "month": "2014-06",
-      "period": "第二节",
+      "period": "晚自习第二节",
       "periodLabel": "第二节",
+      "originalPeriodLabel": "第二节",
+      "sessionBlock": 2,
       "title": "Nothing On You",
       "artist": "B.O.B",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1495,12 +2183,1577 @@
       }
     },
     {
+      "id": "netease-description-2014-09-01",
+      "month": "2014-09",
+      "period": "早起",
+      "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Wear me out",
+      "artist": "Skylar Grey",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "早起：Wear me out—Skylar Grey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-02",
+      "month": "2014-09",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 0,
+      "title": "Shake it off",
+      "artist": "Taylor Swift",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第一节：Shake it off—Taylor Swift"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-03",
+      "month": "2014-09",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": "第三节",
+      "sessionBlock": 0,
+      "title": "Love runs out",
+      "artist": "One Republic",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第三节：Love runs out—One Republic"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-04",
+      "month": "2014-09",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "originalPeriodLabel": "第四节",
+      "sessionBlock": 0,
+      "title": "Boom Clap",
+      "artist": "Charli XCX",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第四节：Boom Clap—Charli XCX"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-05",
+      "month": "2014-09",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "originalPeriodLabel": "第五节",
+      "sessionBlock": 0,
+      "title": "Bang Bang",
+      "artist": "Jessie J",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第五节：Bang Bang—Jessie J"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-06",
+      "month": "2014-09",
+      "period": "第六节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 1,
+      "title": "Black Widow",
+      "artist": "Iggy(feat.Rita Ora)",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第一节：Black Widow—Iggy(feat.Rita Ora)"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-07",
+      "month": "2014-09",
+      "period": "第七节",
+      "periodLabel": "第二节",
+      "originalPeriodLabel": "第二节",
+      "sessionBlock": 1,
+      "title": "Break Free",
+      "artist": "Ariana Grande",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第二节：Break Free—Ariana Grande"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-08",
+      "month": "2014-09",
+      "period": "第八节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": "第三节",
+      "sessionBlock": 1,
+      "title": "Somebody to you",
+      "artist": "The Vamps",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第三节：Somebody to you—The Vamps"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-09",
+      "month": "2014-09",
+      "period": "晚自习第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": "第一节",
+      "sessionBlock": 2,
+      "title": "Animals",
+      "artist": "Maroon5",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第一节：Animals—Maroon5"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-10",
+      "month": "2014-09",
+      "period": "晚自习第二节",
+      "periodLabel": "第二节",
+      "originalPeriodLabel": "第二节",
+      "sessionBlock": 2,
+      "title": "Classic",
+      "artist": "MKTO",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "第二节：Classic—MKTO"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-09-11",
+      "month": "2014-09",
+      "period": "就寝",
+      "periodLabel": "就寝",
+      "originalPeriodLabel": "就寝",
+      "sessionBlock": 2,
+      "title": "Flower Dance",
+      "artist": "Dj Okawari",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "447108423",
+        "playlistUrl": "https://music.163.com/#/playlist?id=447108423",
+        "descriptionRaw": "就寝：Flower Dance—Dj Okawari"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-01",
+      "month": "2014-10",
+      "period": "早起",
+      "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Superheroes",
+      "artist": "The Script",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "早起：Superheroes——The Script"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-02",
+      "month": "2014-10",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Maps",
+      "artist": "Maroon5",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第一节：Maps——Maroon5"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-03",
+      "month": "2014-10",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Lullaby",
+      "artist": "Professor Green",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第三节：Lullaby——Professor Green"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-04",
+      "month": "2014-10",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Love Me Harder",
+      "artist": "Ariana Grande",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第四节：Love Me Harder——Ariana Grande"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-05",
+      "month": "2014-10",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Bounce",
+      "artist": "Iggy Azalea",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第五节：Bounce——Iggy Azalea"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-06",
+      "month": "2014-10",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Yellow Flicker Beat",
+      "artist": "Lorde",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第六节：Yellow Flicker Beat——Lorde"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-07",
+      "month": "2014-10",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "All About That Bass",
+      "artist": "Meghan Trainor",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第七节：All About That Bass——Meghan Trainor"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-08",
+      "month": "2014-10",
+      "period": "第八、九节",
+      "periodLabel": "第八、九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Summer",
+      "artist": "Calvin Harrris",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第八、九节：Summer——Calvin Harrris"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-09",
+      "month": "2014-10",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Break The Rules",
+      "artist": "Charli XCX",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第十节：Break The Rules——Charli XCX"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-10-10",
+      "month": "2014-10",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Live While We‘re Young",
+      "artist": "One Direction",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448464257",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448464257",
+        "descriptionRaw": "第十一节：Live While We‘re Young——One Direction"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-01",
+      "month": "2014-11",
+      "period": "早起",
+      "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Leaving California",
+      "artist": "Maroon 5",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "早起：Leaving California——Maroon 5"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-02",
+      "month": "2014-11",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Fire",
+      "artist": "Gavin DeGraw",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第一节：Fire——Gavin DeGraw"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-03",
+      "month": "2014-11",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Live Your Life",
+      "artist": "T.I.(feat.Rihanna)",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第三节：Live Your Life——T.I.(feat.Rihanna)"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-04",
+      "month": "2014-11",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Lips Are Moving",
+      "artist": "Meghan Trainor",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第四节：Lips Are Moving——Meghan Trainor"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-05",
+      "month": "2014-11",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "All Night",
+      "artist": "Icona Pop",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第五节：All Night ——Icona Pop"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-06",
+      "month": "2014-11",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "I Lived",
+      "artist": "OneRepublic",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第六节：I Lived——OneRepublic"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-07",
+      "month": "2014-11",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Cry Baby",
+      "artist": "Pixie Lott",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第七节：Cry Baby——Pixie Lott"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-08",
+      "month": "2014-11",
+      "period": "第八、九节",
+      "periodLabel": "第八、九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Rude",
+      "artist": "Magic!",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第八、九节：Rude——Magic!"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-09",
+      "month": "2014-11",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Froot",
+      "artist": "Marina & The Diamonds",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第十节：Froot——Marina & The Diamonds"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-11-10",
+      "month": "2014-11",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Blame",
+      "artist": "Calvin Harris",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448465403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448465403",
+        "descriptionRaw": "第十一节：Blame——Calvin Harris"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-01",
+      "month": "2014-12",
+      "period": "早起",
+      "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "You're not alone",
+      "artist": "Owl City",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "早起：You're not alone——Owl City"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-02",
+      "month": "2014-12",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Heartbeat",
+      "artist": "Mat Kearney",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第一节：Heartbeat——Mat Kearney"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-03",
+      "month": "2014-12",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Kingdom",
+      "artist": "Charli XCX",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第三节：Kingdom——Charli XCX"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-04",
+      "month": "2014-12",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Night Changes",
+      "artist": "One Direction",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第四节：Night Changes——One Direction"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-05",
+      "month": "2014-12",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Celebrate",
+      "artist": "Pitbull",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第五节：Celebrate——Pitbull"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-06",
+      "month": "2014-12",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Caravan of love",
+      "artist": "Pixie Lott",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第六节：Caravan of love——Pixie Lott"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-07",
+      "month": "2014-12",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "I'll Be Home",
+      "artist": "Meghan Trainor",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第七节：I'll Be Home——Meghan Trainor"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-08",
+      "month": "2014-12",
+      "period": "第八、九节",
+      "periodLabel": "第八、九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "I Bet My Life",
+      "artist": "Imagine Dragon",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第八、九节：I Bet My Life——Imagine Dragon"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-09",
+      "month": "2014-12",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Habits(stay high)",
+      "artist": "Tove Lo",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第十节:Habits(stay high)——Tove Lo"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2014-12-10",
+      "month": "2014-12",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Raise your glass",
+      "artist": "P!nk",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448451862",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448451862",
+        "descriptionRaw": "第十一节:Raise your glass——P!nk"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-01",
+      "month": "2015-01",
+      "period": "早起",
+      "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Me And My Broken Heart",
+      "artist": "Rixton",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "早起：Me And My Broken Heart——Rixton"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-02",
+      "month": "2015-01",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Cool Kids",
+      "artist": "Echosmith",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第一节：Cool Kids——Echosmith"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-03",
+      "month": "2015-01",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Mockingbird",
+      "artist": "Emniem",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第三节：Mockingbird——Emniem"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-04",
+      "month": "2015-01",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Do I Wanna Know",
+      "artist": "Arctic Monkeys",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第四节：Do I Wanna Know——Arctic Monkeys"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-05",
+      "month": "2015-01",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Centuries",
+      "artist": "Fall Out Boy",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第五节：Centuries——Fall Out Boy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-06",
+      "month": "2015-01",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Happy",
+      "artist": "Marina&The Diamonds",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第六节：Happy——Marina&The Diamonds"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-07",
+      "month": "2015-01",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Take Me To Church",
+      "artist": "Hozier",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第七节：Take Me To Church——Hozier"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-08",
+      "month": "2015-01",
+      "period": "第八、九节",
+      "periodLabel": "第八、九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "What Are You Waiting For",
+      "artist": "Nickelback",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第八、九节：What Are You Waiting For——Nickelback"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-09",
+      "month": "2015-01",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "You're Never Fully Dressed Without A Smile",
+      "artist": "Sia",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第十节：You're Never Fully Dressed Without A Smile——Sia"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-01-10",
+      "month": "2015-01",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Real Love",
+      "artist": "Clean Bandit",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448479273",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448479273",
+        "descriptionRaw": "第十一节：Real Love——Clean Bandit"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-01",
+      "month": "2015-03",
+      "period": "早起",
+      "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Love me like you do",
+      "artist": "Ellie Goulding·Fifthy Shades Of Grey",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "早起：Love me like you do——Ellie Goulding·Fifthy Shades Of Grey"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-02",
+      "month": "2015-03",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Chandelier",
+      "artist": "Sia",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第一节：Chandelier——Sia"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-03",
+      "month": "2015-03",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Thinking Out Loud",
+      "artist": "Ed Sheeran",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第三节：Thinking Out Loud——Ed Sheeran"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-04",
+      "month": "2015-03",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "FourFiveSeconds",
+      "artist": "Rihanna",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第四节：FourFiveSeconds——Rihanna"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-05",
+      "month": "2015-03",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第五节：Uptown Funk——Mark Ronson"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-06",
+      "month": "2015-03",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Stay With Me",
+      "artist": "Sam Smith",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第六节：Stay With Me——Sam Smith"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-07",
+      "month": "2015-03",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "I'm A Ruin",
+      "artist": "Marina And The Diamonds",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第七节：I'm A Ruin——Marina And The Diamonds"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-08",
+      "month": "2015-03",
+      "period": "第八、九节",
+      "periodLabel": "第八、九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Warriors",
+      "artist": "Imagine Dragons",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第八、九节：Warriors——Imagine Dragons"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-09",
+      "month": "2015-03",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "17",
+      "artist": "Sky Ferreira",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第十节：17——Sky Ferreira"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-03-10",
+      "month": "2015-03",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Heartbeat Song",
+      "artist": "Kelly Clarkson",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448486403",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448486403",
+        "descriptionRaw": "第十一节：Heartbeat Song——Kelly Clarkson"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-01",
+      "month": "2015-04",
+      "period": "早起",
+      "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Hold My Hand",
+      "artist": "Jess Glynne",
+      "note": "歌曲格式问题后改成superheroes——The Script",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "早起：Hold My Hand——Jess Glynne（歌曲格式问题后改成superheroes——The Script）"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-02",
+      "month": "2015-04",
+      "period": "第一节",
+      "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Sugar",
+      "artist": "Maroon5",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第一节：Sugar——Maroon5"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-03",
+      "month": "2015-04",
+      "period": "第三节",
+      "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Immortal",
+      "artist": "Marina And The Diamonds",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第三节：Immortal——Marina And The Diamonds"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-04",
+      "month": "2015-04",
+      "period": "第四节",
+      "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "See You Again",
+      "artist": "Wiz Khalifa&Charlie Puth",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第四节：See You Again——Wiz Khalifa&Charlie Puth"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-05",
+      "month": "2015-04",
+      "period": "第五节",
+      "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Bo$$",
+      "artist": "Fifth Harmony",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第五节：Bo$$——Fifth Harmony"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-06",
+      "month": "2015-04",
+      "period": "第六节",
+      "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "It Takes A Lot To Know A Man",
+      "artist": "Damien Rice",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第六节：It Takes A Lot To Know A Man——Damien Rice"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-07",
+      "month": "2015-04",
+      "period": "第七节",
+      "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Elastic Heart",
+      "artist": "Sia",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第七节：Elastic Heart——Sia"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-08",
+      "month": "2015-04",
+      "period": "第八、九节",
+      "periodLabel": "第八、九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Immortals",
+      "artist": "Fall Out Boy",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第八、九节：Immortals——Fall Out Boy"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-09",
+      "month": "2015-04",
+      "period": "第十节",
+      "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Towards The Sun",
+      "artist": "Rihanna",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第十节：Towards The Sun——Rihanna"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
+      "id": "netease-description-2015-04-10",
+      "month": "2015-04",
+      "period": "第十一节",
+      "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
+      "title": "Shots",
+      "artist": "Imagine Dragons",
+      "note": "",
+      "status": "candidate",
+      "confidence": "网易云简介",
+      "source": {
+        "playlistId": "448516030",
+        "playlistUrl": "https://music.163.com/#/playlist?id=448516030",
+        "descriptionRaw": "第十一节：Shots——Imagine Dragons"
+      },
+      "review": {
+        "votes": [],
+        "note": "尚未经过校友确认"
+      }
+    },
+    {
       "id": "netease-description-2015-05-01",
       "month": "2015-05",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Fight Song",
       "artist": "Rachel Platten",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1518,8 +3771,11 @@
       "month": "2015-05",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Trouble",
       "artist": "IggyAzalea/Jennifer Hudson",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1537,8 +3793,11 @@
       "month": "2015-05",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Lay Me Down",
       "artist": "Sam Smith",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1556,8 +3815,11 @@
       "month": "2015-05",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "I Will Return",
       "artist": "Skylar Grey",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1575,8 +3837,11 @@
       "month": "2015-05",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "This Love",
       "artist": "BigBang",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1594,8 +3859,11 @@
       "month": "2015-05",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Paper Hearts",
       "artist": "Tory Kelly",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1613,8 +3881,11 @@
       "month": "2015-05",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Ghost Town",
       "artist": "Adam Lambert",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1632,8 +3903,11 @@
       "month": "2015-05",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Walkashame",
       "artist": "Meghan Trainor",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1651,8 +3925,11 @@
       "month": "2015-05",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Get Lucky",
       "artist": "Daft Punk",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1670,8 +3947,11 @@
       "month": "2015-06",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Can We Dance",
       "artist": "The Vamps",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1689,8 +3969,11 @@
       "month": "2015-06",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Bad Blood",
       "artist": "Taylor Swift",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1708,8 +3991,11 @@
       "month": "2015-06",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Go Hard Or Go Home",
       "artist": "Wiz Khalifa&Iggy(Furious7)",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1727,8 +4013,11 @@
       "month": "2015-06",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Big Girls Cry",
       "artist": "Sia",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1746,8 +4035,11 @@
       "month": "2015-06",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Get Low",
       "artist": "Dillon Francis&Dj Snake(Furious7)",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1765,8 +4057,11 @@
       "month": "2015-06",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Wear Me Out",
       "artist": "Skylar Grey",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1784,8 +4079,11 @@
       "month": "2015-06",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Poison",
       "artist": "Rita Ora",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1803,8 +4101,11 @@
       "month": "2015-06",
       "period": "第八、九节",
       "periodLabel": "第八、九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Shut Up And Dance",
       "artist": "Walk The Moon",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1822,8 +4123,11 @@
       "month": "2015-06",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Evil In The Night",
       "artist": "Adam Lambert",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1841,8 +4145,11 @@
       "month": "2015-06",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "This Summer's Gonna Hurt Like A MotherFucker",
       "artist": "Maroon5",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1860,8 +4167,11 @@
       "month": "2015-09",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Go Big Or Go Home",
       "artist": "American Authors",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1879,8 +4189,11 @@
       "month": "2015-09",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Blank Space",
       "artist": "Taylor Swift",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1898,8 +4211,11 @@
       "month": "2015-09",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Drag Me Down",
       "artist": "One Direction",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1917,8 +4233,11 @@
       "month": "2015-09",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "One Last Time",
       "artist": "Ariana Grande",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1936,8 +4255,11 @@
       "month": "2015-09",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Uma Thurman",
       "artist": "Fall Out Boy",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1955,8 +4277,11 @@
       "month": "2015-09",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Wings（Acoustic）",
       "artist": "Birdy",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1974,8 +4299,11 @@
       "month": "2015-09",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Cheerleader",
       "artist": "Omi",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -1993,8 +4321,11 @@
       "month": "2015-09",
       "period": "第八、九节",
       "periodLabel": "第八、九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Honey, I'm Good",
       "artist": "Andy Grammer",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2012,8 +4343,11 @@
       "month": "2015-09",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Rumors",
       "artist": "Adam Lambert（feat.Tove Lo）",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2031,8 +4365,11 @@
       "month": "2015-09",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Lean On",
       "artist": "Major Lazer＆DJ Snake＆MØ",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2050,8 +4387,11 @@
       "month": "2015-10",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Invincible",
       "artist": "Kelly Clarkson",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2069,8 +4409,11 @@
       "month": "2015-10",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Today's The Day",
       "artist": "P!NK",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2088,8 +4431,11 @@
       "month": "2015-10",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Stitches",
       "artist": "Shawn Mendes",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2107,8 +4453,11 @@
       "month": "2015-10",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Somebody",
       "artist": "Natalie La Rose&Jeremih",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2126,8 +4475,11 @@
       "month": "2015-10",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Friend Zone",
       "artist": "Danielle Bradbery",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2145,8 +4497,11 @@
       "month": "2015-10",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "One Call Away",
       "artist": "Charlie Puth",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2164,8 +4519,11 @@
       "month": "2015-10",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Style",
       "artist": "Taylor Swift",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2183,8 +4541,11 @@
       "month": "2015-10",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Cannonball",
       "artist": "Skylar Grey&X Ambassadors",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2202,8 +4563,11 @@
       "month": "2015-10",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Fire N Gold",
       "artist": "Bea Miller",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2221,8 +4585,11 @@
       "month": "2015-10",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "What Do You Mean",
       "artist": "Justin Bieber",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2240,8 +4607,11 @@
       "month": "2015-11",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "I Don't Want to Go to Bed",
       "artist": "Simple Plan&Nelly",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2259,8 +4629,11 @@
       "month": "2015-11",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Turnin'",
       "artist": "Young Rising Sons",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2278,8 +4651,11 @@
       "month": "2015-11",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Something In the Way You Move",
       "artist": "Ellie Goulding",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2297,8 +4673,11 @@
       "month": "2015-11",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Perfect",
       "artist": "One Direction",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2316,8 +4695,11 @@
       "month": "2015-11",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Confident",
       "artist": "Demi Lovato",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2335,8 +4717,11 @@
       "month": "2015-11",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Hello",
       "artist": "Adele",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2354,8 +4739,11 @@
       "month": "2015-11",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Lay It All On Me",
       "artist": "Rudimental&Ed Sheeren",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2373,8 +4761,11 @@
       "month": "2015-11",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Bang my Head",
       "artist": "David Guetta&Sia&Fetty Wap",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2392,8 +4783,11 @@
       "month": "2015-11",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Fire N Gold",
-      "artist": "Bea Miller(这一首歌上个月没有放于是挪到这个月）",
+      "artist": "Bea Miller",
+      "note": "这一首歌上个月没有放于是挪到这个月",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2411,8 +4805,11 @@
       "month": "2015-11",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "How Deep Is Your Love",
       "artist": "Calvin Harris",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2430,8 +4827,11 @@
       "month": "2015-12",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Get Over Me",
       "artist": "Nick Carter&Avril Lavigne",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2449,8 +4849,11 @@
       "month": "2015-12",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Stand By You",
       "artist": "Rachel Platten",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2468,8 +4871,11 @@
       "month": "2015-12",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Hoping For Snow",
       "artist": "The Vamps",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2487,8 +4893,11 @@
       "month": "2015-12",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Wildest Dream",
       "artist": "Taylor Swift",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2506,8 +4915,11 @@
       "month": "2015-12",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Wolves",
       "artist": "Rag'n'bone Man",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2525,8 +4937,11 @@
       "month": "2015-12",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Wild",
       "artist": "Troye Sivan",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2544,8 +4959,11 @@
       "month": "2015-12",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Boys Like You",
       "artist": "Ariana Grande&Meghan Trainor&Who Is Fancy",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2563,8 +4981,11 @@
       "month": "2015-12",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "A Head Full Of Dreams",
       "artist": "Coldplay",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2582,8 +5003,11 @@
       "month": "2015-12",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "I Know What You Did Last SummerS",
       "artist": "Shawn Mendes&Camila Cabello",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2601,8 +5025,11 @@
       "month": "2015-12",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Roses",
       "artist": "The Chainsmokers&Rozes",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2620,8 +5047,11 @@
       "month": "2016-01",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Army",
       "artist": "Ellie Goulding",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2639,8 +5069,11 @@
       "month": "2016-01",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Rule The World",
       "artist": "Walk Off The Earth",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2658,8 +5091,11 @@
       "month": "2016-01",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Marvin Gaye",
       "artist": "Charlie Puth",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2677,8 +5113,11 @@
       "month": "2016-01",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "For Him",
       "artist": "Troye Sivan",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2696,8 +5135,11 @@
       "month": "2016-01",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Runaway",
       "artist": "Andrew Watt",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2715,8 +5157,11 @@
       "month": "2016-01",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "I Love You All The Time",
       "artist": "Imagine Dragon",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2734,8 +5179,11 @@
       "month": "2016-01",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Runnin' (Lose It All)",
       "artist": "Naughty Boy & Beyoncé & Arrow Benjamin",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2753,8 +5201,11 @@
       "month": "2016-01",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Keeping Your Head Up",
       "artist": "Birdy",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2772,8 +5223,11 @@
       "month": "2016-01",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Cheap Thrill",
       "artist": "Sia",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2791,8 +5245,11 @@
       "month": "2016-01",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Stay (feat. Maty Noyes)",
       "artist": "Kygo",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2810,8 +5267,11 @@
       "month": "2016-02",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Something Better",
       "artist": "Audien&Lady Antebellum",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2829,8 +5289,11 @@
       "month": "2016-02",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "History",
       "artist": "One Direction",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2848,8 +5311,11 @@
       "month": "2016-02",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Hide Away",
       "artist": "Daya",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2867,8 +5333,11 @@
       "month": "2016-02",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "House Party",
       "artist": "Sam Hunt",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2886,8 +5355,11 @@
       "month": "2016-02",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Hey Hey Hallelujah",
-      "artist": "Rachel Platten⩓y Grammer",
+      "artist": "Rachel Platten& Andy Grammer",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2905,8 +5377,11 @@
       "month": "2016-02",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Photograph",
       "artist": "Ed Sheeren",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2924,8 +5399,11 @@
       "month": "2016-02",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "We Don't Talk Anymore",
       "artist": "Charlie Puth & Selena Gomez",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2943,8 +5421,11 @@
       "month": "2016-02",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Work",
       "artist": "Rihanna&Drake",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2962,8 +5443,11 @@
       "month": "2016-02",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Ghost (Lost Kings Remix)",
       "artist": "Halsey",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -2981,8 +5465,11 @@
       "month": "2016-02",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Hymn For The Weekend",
       "artist": "Coldplay",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3000,8 +5487,11 @@
       "month": "2016-04",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Try Everything",
       "artist": "Shakira",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3019,8 +5509,11 @@
       "month": "2016-04",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "7 Years",
       "artist": "Lukas Graham",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3038,8 +5531,11 @@
       "month": "2016-04",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "NO",
       "artist": "Meghan Trainor",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3057,8 +5553,11 @@
       "month": "2016-04",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Unstoppable",
       "artist": "Sia",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3076,8 +5575,11 @@
       "month": "2016-04",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Step It Up",
       "artist": "Alexandra Stan",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3095,8 +5597,11 @@
       "month": "2016-04",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Wild Horses",
       "artist": "Birdy",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3114,8 +5619,11 @@
       "month": "2016-04",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Some Kind Of Heaven",
       "artist": "Hurts",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3133,8 +5641,11 @@
       "month": "2016-04",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Can't Go Home",
       "artist": "Steve Aoki&Felix Jaehn&Adam Lambert",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3152,8 +5663,11 @@
       "month": "2016-04",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Never Forget You",
       "artist": "Zara Larsson&MNEK",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3171,8 +5685,11 @@
       "month": "2016-04",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Stole The Show",
       "artist": "Kygo&Parson James",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3190,8 +5707,11 @@
       "month": "2016-05",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Just Like Fire",
       "artist": "P!NK",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3209,8 +5729,11 @@
       "month": "2016-05",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "When You Were Mine",
       "artist": "Night Terrors Of 1927",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3228,8 +5751,11 @@
       "month": "2016-05",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Time Machine",
       "artist": "Ingrid Michaelson",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3247,8 +5773,11 @@
       "month": "2016-05",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Faded",
       "artist": "Conor Maynard/Alan Walker/ANTH",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3266,8 +5795,11 @@
       "month": "2016-05",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Bad Man",
       "artist": "Pitbull/Robin Thicke",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3285,8 +5817,11 @@
       "month": "2016-05",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Four Walls",
       "artist": "Broods",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3304,8 +5839,11 @@
       "month": "2016-05",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "I Wanna Know",
       "artist": "Alesso/Nico＆Vinz",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3323,8 +5861,11 @@
       "month": "2016-05",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "No Money",
       "artist": "Galantis",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3342,8 +5883,11 @@
       "month": "2016-05",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Hair",
       "artist": "Little Mix",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3361,8 +5905,11 @@
       "month": "2016-05",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "This Is What You Came For",
       "artist": "Calvin Harris/Rihanna",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3380,8 +5927,11 @@
       "month": "2016-06",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "New Romantics",
       "artist": "Taylor Swift",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3399,8 +5949,11 @@
       "month": "2016-06",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Treat You Better",
       "artist": "Shawn Mendes",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3418,8 +5971,11 @@
       "month": "2016-06",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Thirsty",
       "artist": "Daya",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3437,8 +5993,11 @@
       "month": "2016-06",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "CAN'T STOP THE FEELING!",
       "artist": "Justin Timberlake",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3456,8 +6015,11 @@
       "month": "2016-06",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Freedom",
       "artist": "Pitbull",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3475,8 +6037,11 @@
       "month": "2016-06",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Lost Boy",
       "artist": "Ruth B",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3494,8 +6059,11 @@
       "month": "2016-06",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Final Song",
       "artist": "MØ",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3513,8 +6081,11 @@
       "month": "2016-06",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Back 2 U",
       "artist": "Steve Aoki/Boehm/Walk The Moon",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3532,8 +6103,11 @@
       "month": "2016-06",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Send My Love (To Your New Lover)",
       "artist": "Adele",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3551,8 +6125,11 @@
       "month": "2016-06",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Oasis",
       "artist": "Kygo",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3570,8 +6147,11 @@
       "month": "2016-07",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Cake By the Ocean",
       "artist": "DNCE",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3589,8 +6169,11 @@
       "month": "2016-07",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Growing Pains",
       "artist": "Birdy",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3608,8 +6191,11 @@
       "month": "2016-07",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "FOOLS",
       "artist": "Troye Sivan",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3627,8 +6213,11 @@
       "month": "2016-07",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Work From Home",
-      "artist": "Fifth Harmony / Ty Dolla $ign （网易云暂缺）",
+      "artist": "Fifth Harmony / Ty Dolla $ign",
+      "note": "网易云暂缺",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3646,8 +6235,11 @@
       "month": "2016-07",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "What We Live For",
       "artist": "American Authors",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3665,8 +6257,11 @@
       "month": "2016-07",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Gasoline",
       "artist": "Halsey",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3684,8 +6279,11 @@
       "month": "2016-07",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Change",
       "artist": "Christina Aguilera",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3703,8 +6301,11 @@
       "month": "2016-07",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Heathens",
       "artist": "Twenty One Pilots",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3722,8 +6323,11 @@
       "month": "2016-07",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Waving Goodbye",
       "artist": "Sia",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3741,8 +6345,11 @@
       "month": "2016-07",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Middle",
       "artist": "DJ Snake / Bipolar Sunshine",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3760,8 +6367,11 @@
       "month": "2016-09",
       "period": "早起",
       "periodLabel": "早起",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Ride",
       "artist": "Twenty One Pilots",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3779,8 +6389,11 @@
       "month": "2016-09",
       "period": "第一节",
       "periodLabel": "第一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Rise",
       "artist": "Katy Perry",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3798,8 +6411,11 @@
       "month": "2016-09",
       "period": "第三节",
       "periodLabel": "第三节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Closer",
       "artist": "The Chainsmokers ft.Halsey",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3817,8 +6433,11 @@
       "month": "2016-09",
       "period": "第四节",
       "periodLabel": "第四节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Make Me...",
       "artist": "Britney Spears",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3836,8 +6455,11 @@
       "month": "2016-09",
       "period": "第五节",
       "periodLabel": "第五节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Gold",
       "artist": "Kiiara",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3855,8 +6477,11 @@
       "month": "2016-09",
       "period": "第六节",
       "periodLabel": "第六节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Somebody's Love",
       "artist": "Passenger",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3874,8 +6499,11 @@
       "month": "2016-09",
       "period": "第七节",
       "periodLabel": "第七节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Never Be Like You",
       "artist": "Flume",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3893,8 +6521,11 @@
       "month": "2016-09",
       "period": "第九节",
       "periodLabel": "第九节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "H.O.L.Y.",
       "artist": "Florida Georgia Line",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3912,8 +6543,11 @@
       "month": "2016-09",
       "period": "第十节",
       "periodLabel": "第十节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "Cold Water",
       "artist": "Major Lazer/Justin Bieber",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
@@ -3931,33 +6565,17 @@
       "month": "2016-09",
       "period": "第十一节",
       "periodLabel": "第十一节",
+      "originalPeriodLabel": null,
+      "sessionBlock": null,
       "title": "I Took A Pill In Abiza (SeeB Remix)",
       "artist": "Mike Posner",
+      "note": "",
       "status": "candidate",
       "confidence": "网易云简介",
       "source": {
         "playlistId": "449148391",
         "playlistUrl": "https://music.163.com/#/playlist?id=449148391",
         "descriptionRaw": "第十一节：I Took A Pill In Abiza (SeeB Remix) - Mike Posner"
-      },
-      "review": {
-        "votes": [],
-        "note": "尚未经过校友确认"
-      }
-    },
-    {
-      "id": "netease-description-2021-04-01",
-      "month": "2021-04",
-      "period": "早三",
-      "periodLabel": "早三",
-      "title": "Gone",
-      "artist": "ROSÉ (로제)网易无资源",
-      "status": "candidate",
-      "confidence": "网易云简介",
-      "source": {
-        "playlistId": "6716240824",
-        "playlistUrl": "https://music.163.com/#/playlist?id=6716240824",
-        "descriptionRaw": "早三 Gone - ROSÉ (로제)网易无资源"
       },
       "review": {
         "votes": [],

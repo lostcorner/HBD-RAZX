@@ -1,0 +1,6 @@
+# catalog.js 内容的中转副本，运行 scripts/build-site-catalog.mjs 可随时重建。
+# 真正需要提交的是 data/tieba-slot-records.json、data/apple-previews.json 和 dist/catalog.js。
+data/catalog-records.json
+
+# 本地协作工具的会话记录，与站点内容无关。
+.workbuddy/

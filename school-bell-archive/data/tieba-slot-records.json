@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "description": "贴吧原帖正文中逐课次列出的月度校铃记录。只收录楼主（或明确转录）给出的正式歌单，普通回帖的推荐不计入。",
+  "confidenceLevels": {
+    "A": "原帖正文直接写明月份、课次、歌名与歌手",
+    "B": "来自原帖正文，但课次为按原帖分组或顺序还原，需校友确认"
+  },
+  "periodNotes": "原帖在不同时期使用了不同的课次写法：2013–2014 年白天用「第一~第八节下课」连续编号、晚自习用「晚第一节/晚第二节」；2015 年起改用「第八、九节」「第十节」「第十一节」等写法。period 字段统一为本项目猜题库使用的课次名。",
+  "months": [
+    {
+      "month": "2013-12",
+      "confidence": "A",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/2253394145",
+        "threadTitle": "【计协】课间铃声歌单",
+        "floor": 63,
+        "postedAt": "2013-12-01",
+        "kind": "原帖正文",
+        "raw": "【2013.12】早 起床 Better Than I Know Myself - Adam Lambert／第一节下课 Applause - Lady Gaga／第三节下课 Beauty And A Beat - Justin Bieber／第四节下课 Red - Taylor Swift [201312]／第五节下课 International Smile - Katy Perry／第六节下课 Let Her Go - Passenger／第七节下课 Plan B - Kylee [201316]／第八节下课 Here's To Never Growing Up - Avril Lavigne [201302]／晚 第一节下课 We Can't Stop - Miley Cyrus／晚 第二节下课 Good Time - Owl City [201301]／晚 睡觉 Chasing Pavements - Adele"
+      },
+      "records": [
+        { "period": "早起", "title": "Better Than I Know Myself", "artist": "Adam Lambert", "playStatus": "played" },
+        { "period": "第一节", "title": "Applause", "artist": "Lady Gaga", "playStatus": "played" },
+        { "period": "第三节", "title": "Beauty and a Beat", "artist": "Justin Bieber", "playStatus": "played" },
+        { "period": "第四节", "title": "Red", "artist": "Taylor Swift", "playStatus": "played", "note": "201312 班投稿" },
+        { "period": "第五节", "title": "International Smile", "artist": "Katy Perry", "playStatus": "played" },
+        { "period": "第六节", "title": "Let Her Go", "artist": "Passenger", "playStatus": "played" },
+        { "period": "第七节", "title": "Plan B", "artist": "Kylee", "playStatus": "played", "note": "201316 班投稿" },
+        { "period": "第八节", "title": "Here's to Never Growing Up", "artist": "Avril Lavigne", "playStatus": "played", "note": "201302 班投稿" },
+        { "period": "晚自习第一节", "title": "We Can't Stop", "artist": "Miley Cyrus", "playStatus": "played" },
+        { "period": "晚自习第二节", "title": "Good Time", "artist": "Owl City", "playStatus": "played", "note": "201301 班投稿" },
+        { "period": "就寝", "title": "Chasing Pavements", "artist": "Adele", "playStatus": "played" }
+      ]
+    },
+    {
+      "month": "2014-06",
+      "confidence": "B",
+      "openQuestion": "原帖把三个时段各自从「第一节」重新编号。本表按「白天连续编号」还原：上午第一~五节、下午第一~三节等于第六~八节、晚自习第一~二节。若当年上午只有四节，则「Where Is the Love?」与「Lucky」的课次需要重新确认。",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/2253394145",
+        "threadTitle": "【计协】课间铃声歌单",
+        "floor": 129,
+        "postedAt": "2014-06-29",
+        "kind": "原帖正文",
+        "raw": "【2014.06】早起：You raise me up - Westlife／第一节：Love you so - Natalie／第三节：Mad - Ne-yo／第四节：I Believe - Agnes Clarlsson／第五节：Where is the love? - Black Eyed Peas／第一节：Lucky - Jason Marz／第二节：Farewell - Rihanna／第三节：Burn It Down - Linkin Park／第一节：Hush Hush - The Pussycats Dolls／第二节：Nothing On You - B.O.B／这次选老歌"
+      },
+      "records": [
+        { "period": "早起", "title": "You Raise Me Up", "artist": "Westlife", "playStatus": "played", "note": "原帖说明本次选老歌，允许返场", "sessionLabel": "早起" },
+        { "period": "第一节", "title": "Love You So", "artist": "Natalie", "playStatus": "played", "sessionLabel": "上午第一节" },
+        { "period": "第三节", "title": "Mad", "artist": "Ne-Yo", "playStatus": "played", "sessionLabel": "上午第三节" },
+        { "period": "第四节", "title": "I Believe", "artist": "Agnes Carlsson", "playStatus": "played", "note": "原帖拼作 Clarlsson", "sessionLabel": "上午第四节" },
+        { "period": "第五节", "title": "Where Is the Love?", "artist": "The Black Eyed Peas", "playStatus": "played", "sessionLabel": "上午第五节" },
+        { "period": "第六节", "title": "Lucky", "artist": "Jason Mraz", "playStatus": "played", "note": "原帖拼作 Marz", "sessionLabel": "下午第一节" },
+        { "period": "第七节", "title": "Farewell", "artist": "Rihanna", "playStatus": "played", "sessionLabel": "下午第二节" },
+        { "period": "第八节", "title": "Burn It Down", "artist": "Linkin Park", "playStatus": "played", "sessionLabel": "下午第三节" },
+        { "period": "晚自习第一节", "title": "Hush Hush", "artist": "The Pussycat Dolls", "playStatus": "played", "sessionLabel": "晚自习第一节" },
+        { "period": "晚自习第二节", "title": "Nothin' on You", "artist": "B.o.B", "playStatus": "played", "sessionLabel": "晚自习第二节" }
+      ]
+    },
+    {
+      "month": "2015-06",
+      "confidence": "A",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/3323924877",
+        "threadTitle": "下课铃歌单",
+        "floor": 109,
+        "postedAt": "2015-06-08",
+        "kind": "原帖正文",
+        "raw": "2015.6 早起：Can We Dance-The Vamps／第一节:Bad Blood-Taylor Swift／第三节:Go Hard Or Go Home-Wiz Khalifa&Iggy(Furious7)／第四节:Big Girls Cry-Sia／第五节:Get Low-Dillon Francis&Dj Snake(Furious7)／第六节:Wear Me Out-Skylar Grey／第七节:Poison-Rita Ora／第八、九节:Shut Up And Dance-Walk The Moon／第十节:Evil In The Night-Adam Lambert／第十一节:This Summer's Gonna Hurt Like A MotherFucker-Maroon5"
+      },
+      "records": [
+        { "period": "早起", "title": "Can We Dance", "artist": "The Vamps", "playStatus": "played" },
+        { "period": "第一节", "title": "Bad Blood", "artist": "Taylor Swift", "playStatus": "played" },
+        { "period": "第三节", "title": "Go Hard or Go Home", "artist": "Wiz Khalifa & Iggy Azalea", "playStatus": "played", "note": "《Furious 7》原声" },
+        { "period": "第四节", "title": "Big Girls Cry", "artist": "Sia", "playStatus": "played" },
+        { "period": "第五节", "title": "Get Low", "artist": "Dillon Francis & DJ Snake", "playStatus": "played", "note": "《Furious 7》原声" },
+        { "period": "第六节", "title": "Wear Me Out", "artist": "Skylar Grey", "playStatus": "played", "note": "有回帖称军训时播放过" },
+        { "period": "第七节", "title": "Poison", "artist": "Rita Ora", "playStatus": "played" },
+        { "period": "第八、九节", "title": "Shut Up and Dance", "artist": "Walk the Moon", "playStatus": "played" },
+        { "period": "第十节", "title": "Evil in the Night", "artist": "Adam Lambert", "playStatus": "played" },
+        { "period": "第十一节", "title": "This Summer's Gonna Hurt", "artist": "Maroon 5", "playStatus": "played", "note": "原题含敏感词，公开展示时使用洁净标题" }
+      ]
+    },
+    {
+      "month": "2015-09",
+      "confidence": "A",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/4020077190",
+        "threadTitle": "下课铃歌单（2015.9起）",
+        "floor": null,
+        "postedAt": null,
+        "kind": "人工转录",
+        "raw": "resource/resource.md 中的人工转录：2015.9 早起：Go Big Or Go Home-American Authors／第一节：Blank Space-Taylor Swift／第三节：Drag Me Down-One Direction／第四节：One Last Time-Ariana Grande／第五节：Uma Thurman-Fall Out Boy／第六节：Wings（Acoustic）-Birdy／第七节：Cheerleader-Omi／第八、九节：Honey, I'm Good-Andy Grammer／第十节：Rumors-Adam Lambert（feat.Tove Lo）／第十一节：Lean On-Major Lazer＆DJ Snake＆MØ"
+      },
+      "records": [
+        { "period": "早起", "title": "Go Big Or Go Home", "artist": "American Authors", "playStatus": "played", "note": "网易云歌单首曲为 Taylor Wise Remix，原版/混音版待确认" },
+        { "period": "第一节", "title": "Blank Space", "artist": "Taylor Swift", "playStatus": "played" },
+        { "period": "第三节", "title": "Drag Me Down", "artist": "One Direction", "playStatus": "played" },
+        { "period": "第四节", "title": "One Last Time", "artist": "Ariana Grande", "playStatus": "played" },
+        { "period": "第五节", "title": "Uma Thurman", "artist": "Fall Out Boy", "playStatus": "played" },
+        { "period": "第六节", "title": "Wings (Acoustic)", "artist": "Birdy", "playStatus": "played" },
+        { "period": "第七节", "title": "Cheerleader", "artist": "OMI", "playStatus": "played" },
+        { "period": "第八、九节", "title": "Honey, I'm Good", "artist": "Andy Grammer", "playStatus": "played" },
+        { "period": "第十节", "title": "Rumors", "artist": "Adam Lambert feat. Tove Lo", "playStatus": "played" },
+        { "period": "第十一节", "title": "Lean On", "artist": "Major Lazer, DJ Snake & MØ", "playStatus": "played" }
+      ]
+    },
+    {
+      "month": "2015-10",
+      "confidence": "A",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/4020077190",
+        "threadTitle": "下课铃歌单（2015.9起）",
+        "floor": null,
+        "postedAt": null,
+        "kind": "人工转录",
+        "raw": "resource/resource.md 中的人工转录：2015.10 早起：Invincible-Kelly Clarkson／第一节：Today's The Day-P!NK／第三节：Stitches-Shawn Mendes／第四节：Somebody-Natalie La Rose&Jeremih／第五节：Friend Zone-Danielle Bradbery／第六节：One Call Away-Charlie Puth／第七节：Style-Taylor Swift／第九节：Cannonball-Skylar Grey&X Ambassadors／第十节：Fire N Gold-Bea Miller／第十一节：What Do You Mean-Justin Bieber"
+      },
+      "records": [
+        { "period": "早起", "title": "Invincible", "artist": "Kelly Clarkson", "playStatus": "played" },
+        { "period": "第一节", "title": "Today's the Day", "artist": "P!nk", "playStatus": "played" },
+        { "period": "第三节", "title": "Stitches", "artist": "Shawn Mendes", "playStatus": "played" },
+        { "period": "第四节", "title": "Somebody", "artist": "Natalie La Rose feat. Jeremih", "playStatus": "played" },
+        { "period": "第五节", "title": "Friend Zone", "artist": "Danielle Bradbery", "playStatus": "played" },
+        { "period": "第六节", "title": "One Call Away", "artist": "Charlie Puth", "playStatus": "played" },
+        { "period": "第七节", "title": "Style", "artist": "Taylor Swift", "playStatus": "played" },
+        { "period": "第九节", "title": "Cannonball", "artist": "Skylar Grey feat. X Ambassadors", "playStatus": "played" },
+        { "period": "第十节", "title": "Fire N Gold", "artist": "Bea Miller", "playStatus": "planned-not-played", "note": "10 月未播放，顺延至 11 月第十节" },
+        { "period": "第十一节", "title": "What Do You Mean?", "artist": "Justin Bieber", "playStatus": "played" }
+      ]
+    },
+    {
+      "month": "2015-11",
+      "confidence": "A",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/4020077190",
+        "threadTitle": "下课铃歌单（2015.9起）",
+        "floor": null,
+        "postedAt": null,
+        "kind": "人工转录",
+        "raw": "resource/resource.md 中的人工转录：2015.11 早起：I Don't Want to Go to Bed-Simple Plan&Nelly／第一节：Turnin'-Young Rising Sons／第三节：Something In the Way You Move-Ellie Goulding／第四节：Perfect-One Direction／第五节：Confident-Demi Lovato／第六节：Hello-Adele／第七节：Lay It All On Me-Rudimental&Ed Sheeren／第九节：Bang my Head-David Guetta&Sia&Fetty Wap／第十节：Fire N Gold-Bea Miller(这一首歌上个月没有放于是挪到这个月）／第十一节：How Deep Is Your Love-Calvin Harris"
+      },
+      "records": [
+        { "period": "早起", "title": "I Don't Want to Go to Bed", "artist": "Simple Plan feat. Nelly", "playStatus": "played" },
+        { "period": "第一节", "title": "Turnin'", "artist": "Young Rising Sons", "playStatus": "played" },
+        { "period": "第三节", "title": "Something in the Way You Move", "artist": "Ellie Goulding", "playStatus": "played" },
+        { "period": "第四节", "title": "Perfect", "artist": "One Direction", "playStatus": "played" },
+        { "period": "第五节", "title": "Confident", "artist": "Demi Lovato", "playStatus": "played" },
+        { "period": "第六节", "title": "Hello", "artist": "Adele", "playStatus": "played" },
+        { "period": "第七节", "title": "Lay It All on Me", "artist": "Rudimental feat. Ed Sheeran", "playStatus": "played" },
+        { "period": "第九节", "title": "Bang My Head", "artist": "David Guetta feat. Sia & Fetty Wap", "playStatus": "played" },
+        { "period": "第十节", "title": "Fire N Gold", "artist": "Bea Miller", "playStatus": "played", "note": "10 月未播放，移至本月" },
+        { "period": "第十一节", "title": "How Deep Is Your Love", "artist": "Calvin Harris & Disciples", "playStatus": "played", "note": "原转录只写 Calvin Harris" }
+      ]
+    },
+    {
+      "month": "2015-12",
+      "confidence": "A",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/4020077190",
+        "threadTitle": "下课铃歌单（2015.9起）",
+        "floor": null,
+        "postedAt": null,
+        "kind": "人工转录",
+        "raw": "resource/resource.md 中的人工转录：2015.12 早起：Get Over Me-Nick Carter&Avril Lavigne／第一节：Stand By You-Rachel Platten／第三节：Hoping For Snow-The Vamps／第四节：Wildest Dream-Taylor Swift／第五节：Wolves-Rag'n'bone Man／第六节：Wild-Troye Sivan／第七节：Boys Like You-Ariana Grande&Meghan Trainor&Who Is Fancy／第九节：A Head Full Of Dreams-Coldplay／第十节：I Know What You Did Last SummerS - Shawn Mendes&Camila Cabello／第十一节：Roses-The Chainsmokers&Rozes"
+      },
+      "records": [
+        { "period": "早起", "title": "Get Over Me", "artist": "Nick Carter feat. Avril Lavigne", "playStatus": "played" },
+        { "period": "第一节", "title": "Stand by You", "artist": "Rachel Platten", "playStatus": "played" },
+        { "period": "第三节", "title": "Hoping for Snow", "artist": "The Vamps", "playStatus": "played" },
+        { "period": "第四节", "title": "Wildest Dreams", "artist": "Taylor Swift", "playStatus": "played" },
+        { "period": "第五节", "title": "Wolves", "artist": "Rag'n'Bone Man", "playStatus": "played" },
+        { "period": "第六节", "title": "WILD", "artist": "Troye Sivan", "playStatus": "played" },
+        { "period": "第七节", "title": "Boys Like You", "artist": "Who Is Fancy feat. Meghan Trainor & Ariana Grande", "playStatus": "played" },
+        { "period": "第九节", "title": "A Head Full of Dreams", "artist": "Coldplay", "playStatus": "played" },
+        { "period": "第十节", "title": "I Know What You Did Last Summer", "artist": "Shawn Mendes & Camila Cabello", "playStatus": "played" },
+        { "period": "第十一节", "title": "Roses", "artist": "The Chainsmokers feat. ROZES", "playStatus": "played" }
+      ]
+    },
+    {
+      "month": "2017-08",
+      "confidence": "A",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/4020077190",
+        "threadTitle": "下课铃歌单（2015.9起）",
+        "floor": 164,
+        "postedAt": "2017-08-04",
+        "kind": "原帖正文",
+        "raw": "2017.08 早起：Linkin Park - Numb／第一节：Walk off the Earth - Summer Vibe／第三节：Martin Garrix Troye Sivan - There For You／第四节：Ella Vos - You Don't Know About Me／第五节：Electric Light Orchestra - Mr. Blue Sky／第六节：Lady Gaga - Just Another Day／第七节：Travis Garland - Didn't Stand A Chance／第九节：Emma Stevens - So Stop the World／第十节：Liam Payne - Strip That Down／第十一节：Pvris - Mind over Matter (Acoustic)／*注意：本来8月的早起铃不是LP的，但不幸的消息——2017.7.20Linkin Park的主唱Chester Bennington自缢身亡——传出后，为了纪念贝宁顿和林肯公园，临时变更换上其代表曲目之一：Numb."
+      },
+      "records": [
+        { "period": "早起", "title": "Numb", "artist": "Linkin Park", "playStatus": "played", "note": "Chester Bennington 去世后临时替换曲目" },
+        { "period": "第一节", "title": "Summer Vibe", "artist": "Walk off the Earth", "playStatus": "played" },
+        { "period": "第三节", "title": "There for You", "artist": "Martin Garrix & Troye Sivan", "playStatus": "played" },
+        { "period": "第四节", "title": "You Don't Know About Me", "artist": "Ella Vos", "playStatus": "played" },
+        { "period": "第五节", "title": "Mr. Blue Sky", "artist": "Electric Light Orchestra", "playStatus": "played" },
+        { "period": "第六节", "title": "Just Another Day", "artist": "Lady Gaga", "playStatus": "played" },
+        { "period": "第七节", "title": "Didn't Stand a Chance", "artist": "Travis Garland", "playStatus": "played" },
+        { "period": "第九节", "title": "So Stop the World", "artist": "Emma Stevens", "playStatus": "played" },
+        { "period": "第十节", "title": "Strip That Down", "artist": "Liam Payne feat. Quavo", "playStatus": "played", "note": "原帖只写 Liam Payne" },
+        { "period": "第十一节", "title": "Mind over Matter (Acoustic)", "artist": "PVRIS", "playStatus": "played" }
+      ]
+    },
+    {
+      "month": "2018-07",
+      "confidence": "A",
+      "source": {
+        "thread": "https://tieba.baidu.com/p/4020077190",
+        "threadTitle": "瑞中校铃_2017-2018",
+        "floor": 72,
+        "postedAt": "2018-07-10",
+        "kind": "原帖正文",
+        "raw": "2018.07 早起：1.Wonderful Humans - Don't You／第一节：2.iLY - You Give Me Life／第三节：3.Virginia To Vegas - Lights Out／第四节：4.Truitt,Light House - Tokyo／第五节：5.Little Mix & Charlie Puth - Oops／第六节：6.Andrew Allen - Loving You Tonight／第七节：7.Jai Waetford - Girl With a Suntan／第八节：8.Allie X - That's So Us／第十节：9.Jai Waetford - We Don't Have To／第十一节：10.TRONICBOX,The Chainsmokers,Halsey - Closer (80s Remix)"
+      },
+      "records": [
+        { "period": "早起", "title": "Don't You", "artist": "Wonderful Humans", "playStatus": "played" },
+        { "period": "第一节", "title": "You Give Me Life", "artist": "iLY", "playStatus": "played" },
+        { "period": "第三节", "title": "Lights Out", "artist": "Virginia to Vegas", "playStatus": "played" },
+        { "period": "第四节", "title": "Tokyo", "artist": "Truitt & Light House", "playStatus": "played" },
+        { "period": "第五节", "title": "Oops", "artist": "Little Mix feat. Charlie Puth", "playStatus": "played" },
+        { "period": "第六节", "title": "Loving You Tonight", "artist": "Andrew Allen", "playStatus": "played" },
+        { "period": "第七节", "title": "Girl with a Suntan", "artist": "Jai Waetford", "playStatus": "played" },
+        { "period": "第八节", "title": "That's So Us", "artist": "Allie X", "playStatus": "played" },
+        { "period": "第十节", "title": "We Don't Have To", "artist": "Jai Waetford", "playStatus": "played" },
+        { "period": "第十一节", "title": "Closer (80s Remix)", "artist": "TRONICBOX / The Chainsmokers / Halsey", "playStatus": "played" }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,20 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import vm from "node:vm";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const app = readFileSync(resolve(root, "dist/app.js"), "utf8").split("// 月度歌单")[0];
-const sandbox = { window: {} };
-vm.runInNewContext(`${app}; window.records = records;`, sandbox);
-const tiebaRecords = sandbox.window.records;
+const tiebaSource = JSON.parse(readFileSync(resolve(root, "data/tieba-slot-records.json"), "utf8"));
+const tiebaRecords = tiebaSource.months.flatMap((month) => month.records.map((record, index) => ({
+  id: `${month.month}-${String(index + 1).padStart(2, "0")}`,
+  month: month.month,
+  period: record.period,
+  title: record.title,
+  artist: record.artist,
+  playStatus: record.playStatus,
+  source: month.source.thread,
+  sourceFloor: month.source.floor,
+  confidence: `${month.confidence === "A" ? "原帖记录" : "原帖记录·课次待确认"}`
+})));
 const metadata = JSON.parse(readFileSync(resolve(root, "resource_netmusic/netease-metadata.json"), "utf8"));
 const playlists = metadata.playlists;
 const normalize = (value) => String(value || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g, "");
@@ -80,7 +87,7 @@ const merged = {
   generatedAt: new Date().toISOString(),
   sources: {
     tiebaRaw: { file: "resource/resource.md", urls: [...new Set(readFileSync(resolve(root, "resource/resource.md"), "utf8").match(/https?:\/\/tieba\.baidu\.com\/p\/\d+(?:\?[^\s]*)?/g) || [])] },
-    tiebaStructured: { file: "dist/app.js", crossCheck: "bell-catalog-draft.md" },
+    tiebaStructured: { file: "data/tieba-slot-records.json", crossCheck: "bell-catalog-draft.md" },
     netease: { file: "resource_netmusic/歌单.md", snapshot: "resource_netmusic/netease-metadata.json" }
   },
   rules: {
