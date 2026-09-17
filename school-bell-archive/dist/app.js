@@ -221,7 +221,7 @@ function chooseMemoryTrack() {
   $("#memory-audio-toggle").disabled = false;
   $("#memory-audio-progress").value = 0;
   $("#memory-audio-current").textContent = "0:00";
-  $("#memory-audio-status").textContent = "点击左侧星球播放。";
+  $("#memory-audio-status").textContent = "点击星球播放。";
 }
 
 function renderChoices() {
